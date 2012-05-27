@@ -5,8 +5,8 @@ html
   margin: 0
   padding: 0
   background: #756359
-  font-family: 'Fondamento'
-  font-size: 17pt
+  font-family: 'Times New Roman'
+  font-size: 14pt
 
 .game-container,
 .map-container
@@ -19,62 +19,27 @@ html
 .game-canvas
   height: 100%
   width: 1280px
+  padding: 10px 0
   margin: auto
   position: relative
   
   .location
-    position: absolute
-    top: 20px
-    right: 100px
+    margin: auto
+    width: 640px
     img
       box-shadow: 1px 1px 10px #000
   .subs
-    position: absolute
-    top: 520px
-    right: 100px
-    width: 543px
-    height: 209px
-    padding: 35px 50px
-    background: url('text_frame.png')
+    margin: auto
+    width: 580px
+    height: 279px
+    padding: 0 30px
+    background: black
     color: #756359
-    text-align: center
-  .map_link
-    background: url('map.png')
-    width: 105px
-    height: 149px
-    position: absolute
-    top: 50px
-    left: 140px
-    cursor: pointer
-  .equip_link
-    background: url('equip.png')
-    width: 176px
-    height: 116px
-    position: absolute
-    top: 220px
-    left: 100px
-    cursor: pointer
-  .parrot
-    background: url('parrot.png')
-    width: 180px
-    height: 330px
-    position: absolute
-    top: 420px
-    left: 100px
+    
+  
   a
     text-decoration: none
     color: #756359
     &:hover
-      color: black
+      color: red
 
-.map-container
-  background: #756359 url('bg_map.png')
-
-.map-canvas
-  height: 100%
-  width: 1280px
-  margin: auto
-  position: relative
-  .mini
-    position: absolute
-    cursor: pointer
