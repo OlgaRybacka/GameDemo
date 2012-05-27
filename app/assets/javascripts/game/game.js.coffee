@@ -260,7 +260,53 @@ $ ->
     game.goto(11)
 
 #--------L2-1------------11
+  game.push(new Location({
+    img: '/assets/game/PARK3.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wchodzisz do parku. Brama zamyka się ze skrzypnięciem. Oglądasz się za siebie. Cyganka po drugiej stronie szepcze: <i>Tak będzie lepiej.</i> Odchodzi. Zostajesz sam. Wszystkie ścieżki wyglądają tak samo. Którą wybierasz? <br/><br/><a href="do:park11A">1: [Idź na wschód]<br/><a href="do:park11B">2: [Idź na zachód] </a><br/><a href="do:park11C">3: [Idź na północ] </a>'
+      })
+      b: new LocationState({
+        text: 'Wchodzisz do parku. Brama zamyka się ze skrzypnięciem. Oglądasz się za siebie. Cyganka po drugiej stronie śmieje się. <br>Cyganka:<i> Boli kolano? Nie przesadzisz bramy?</i><br/>Odchodzi. Zostajesz sam. Wszystkie ścieżki wyglądają tak samo. Którą wybierasz?<br/><br/><a href="do:park11A">1: [Idź na wschód]<br/><a href="do:park11B">2: [Idź na zachód] </a><br/><a href="do:park11C">3: [Idź na północ] </a>'
+      })
+      c: new LocationState({
+        text: 'Brama nadal zamknięta. Cyganki ani śladu. Jesteś skazany na dalsze błądzenie po parku. Gdzie teraz? <br/><br/><a href="do:park11A">1: [Idź na wschód]<br/><a href="do:park11B">2: [Idź na zachód] </a><br/><a href="do:park11C">3: [Idź na północ] </a>'
+      })
+    },
+  }))
+  game.pushAction "park11A", =>
+    game.state(11, 'c')
+    game.lactivate(13)
+    game.goto(13)
+  game.pushAction "park11B", =>
+    game.state(11, 'c')
+    game.lactivate(12)
+    game.goto(12)
+  game.pushAction "park11C", =>
+    game.state(11, 'c')
+    game.lactivate(16)
+    game.goto(16)
+
 #--------L2-2------------12
+  game.push(new Location({
+    img: '/assets/game/PARK4.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park12A">1: [Idź na wschód]</a><br/><a href="do:park12B">2: [Idź na północ]</a>'
+      })
+    },
+  }))
+  game.pushAction "park12A", =>
+    game.lactivate(11)
+    game.goto(11)
+  game.pushAction "park12B", =>
+    game.lactivate(15)
+    game.goto(15)
+
 #--------L2-3------------13
 #--------L2-4------------14
 #--------L2-5------------15
