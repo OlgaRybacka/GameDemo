@@ -314,7 +314,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park13A">1: [Idź na wschód]</a><br/><a href="do:park13B">2: [Idź na zachód]</a><a href="do:park13C">3: [Idź na północ]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park13A">1: [Idź na wschód]</a><br/><a href="do:park13B">2: [Idź na zachód]</a><br/><a href="do:park13C">3: [Idź na północ]</a>'
       })
     },
   }))
@@ -353,7 +353,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park15A">1: [Idź na wschód]</a><br/><a href="do:park15B">2: [Idź na północ]</a><a href="do:park15C">3: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park15A">1: [Idź na wschód]</a><br/><a href="do:park15B">2: [Idź na północ]</a><br/><a href="do:park15C">3: [Idź na południe]</a>'
       })
     },
   }))
@@ -375,7 +375,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park16A">1: [Idź na wschód]</a><br/><a href="do:park16B">2: [Idź na zachód]</a><a href="do:park16C">3: [Idź na północ]</a><a href="do:park16D">4: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park16A">1: [Idź na wschód]</a><br/><a href="do:park16B">2: [Idź na zachód]</a><br/><a href="do:park16C">3: [Idź na północ]</a><br/><a href="do:park16D">4: [Idź na południe]</a>'
       })
     },
   }))
@@ -399,7 +399,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park17A">1: [Idź na wschód]</a><br/><a href="do:park17B">2: [Idź na zachód]</a><a href="do:park17C">3: [Idź na północ]</a><a href="do:park17D">4: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park17A">1: [Idź na wschód]</a><br/><a href="do:park17B">2: [Idź na zachód]</a><br/><a href="do:park17C">3: [Idź na północ]</a><br/><a href="do:park17D">4: [Idź na południe]</a>'
       })
     },
   }))
@@ -423,7 +423,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park18A">1: [Idź na zachód]</a><br/><a href="do:park18B">2: [Idź na północ]</a><a href="do:park18C">3: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park18A">1: [Idź na zachód]</a><br/><a href="do:park18B">2: [Idź na północ]</a><br/><a href="do:park18C">3: [Idź na południe]</a>'
       })
     },
   }))
@@ -444,7 +444,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park19A">1: [Idź na wschód]</a><br/><a href="do:park19B">2: [Idź na północ]</a><a href="do:park19C">3: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park19A">1: [Idź na wschód]</a><br/><a href="do:park19B">2: [Idź na północ]</a><br/><a href="do:park19C">3: [Idź na południe]</a>'
       })
     },
   }))
@@ -465,7 +465,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park20A">1: [Idź na wschód]</a><br/><a href="do:park20B">2: [Idź na zachód]</a><a href="do:park20C">3: [Idź na północ]</a><a href="do:park20D">4: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park20A">1: [Idź na wschód]</a><br/><a href="do:park20B">2: [Idź na zachód]</a><br/><a href="do:park20C">3: [Idź na północ]</a><br/><a href="do:park20D">4: [Idź na południe]</a>'
       })
     },
   }))
@@ -489,7 +489,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park21A">1: [Idź na zachód]</a><br/><a href="do:park21B">2: [Idź na północ]</a><a href="do:park21C">3: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park21A">1: [Idź na zachód]</a><br/><a href="do:park21B">2: [Idź na północ]</a><br/><a href="do:park21C">3: [Idź na południe]</a>'
       })
     },
   }))
@@ -528,7 +528,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park23A">1: [Idź na wschód]</a><br/><a href="do:park23B">2: [Idź na zachód]</a><a href="do:park23C">3: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park23A">1: [Idź na wschód]</a><br/><a href="do:park23B">2: [Idź na zachód]</a><br/><a href="do:park23C">3: [Idź na południe]</a>'
       })
     },
   }))
@@ -549,7 +549,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park24A">1: [Idź na wschód]</a><br/><a href="do:park24B">2: [Idź na zachód]</a><a href="do:park24C">3: [Idź na południe]</a>'
+        text: 'Gdzie teraz?</i><br/><br/><a href="do:park24A">1: [Idź na wschód]</a><br/><a href="do:park24B">2: [Idź na zachód]</a><br/><a href="do:park24C">3: [Idź na południe]</a>'
       })
     },
   }))
@@ -619,7 +619,7 @@ $ ->
     states: {
       a: new LocationState({
         text: 'Nie wiesz – mrugnąłeś, czy straciłeś przytomność, ale jest noc. Huśtawka znów zajęta. Siedzi na niej dziewczynka, na oko dziesięcioletnia i uważnie ci się przypatruje. Wygląda znajomo. Najpierw myślisz, że to kwestia sukienki i klucza na szyi, ale nie, to nie to... 
-<br/><br/><a href="do:park28A">1: <i>Nie powinnaś być o tej porze w domu?</i></a><br/><a href="do:park28B">2: <i>Jak masz na imię?</i></a><a href="do:park28C">3: <i>Pohuśtać cię?</i></a>'
+<br/><br/><a href="do:park28A">1: <i>Nie powinnaś być o tej porze w domu?</i></a><br/><a href="do:park28B">2: <i>Jak masz na imię?</i></a><br/><a href="do:park28C">3: <i>Pohuśtać cię?</i></a>'
       })
     },
   }))
@@ -640,7 +640,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Gdzie teraz?</i><br/><br/><a href="do:park29A">1: <i>Jak masz na imię?</i></a><br/><a href="do:park29B">2: <i>Pohuśtać cię?</i></a>'
+        text: 'Dziewczynka uśmiecha się tylko.<br/><br/><a href="do:park29A">1: <i>Jak masz na imię?</i></a><br/><a href="do:park29B">2: <i>Pohuśtać cię?</i></a>'
       })
     },
   }))
@@ -652,11 +652,105 @@ $ ->
     game.goto(31)
 
 #--------L3-5------------30
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Dziewczynka: <i>Ewa.</i><br/>Nie wiesz co powiedzieć. Chciałbyś spytać ją o tyle rzeczy, ale to przecież dziecko. Może jest tylko do niej podobna?<br/><br/><a href="do:park30A">1: <i>Rodzice pewnie się o ciebie martwią. Może odprowadzę cię do domu?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "park30A", =>
+    game.lactivate(33)
+    game.goto(33)
+
 #--------L3-6------------31
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Dziewczynka: <i>Poproszę.</i><br/>Lekko popychasz huśtawkę. Dziewczynka mocniej chwyta się
+ sznurów. <br/>Dziewczynka: <i>Wyżej!</i><br/><br/><a href="do:park31A">1: [Mocniej popychasz huśtawkę]</a>'
+      })
+    },
+  }))
+  game.pushAction "park31A", =>
+    game.lactivate(32)
+    game.goto(32)
+
 #--------L3-7------------32
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Dziewczynka śmieje się. Poznajesz ten śmiech. Mało komu udaje się przenieść ten rodzaj radości w dorosłość, ale Ewie zdarzały się chwile zapomnienia, gdy śmiała się jak mała dziewczynka, całą sobą.<br/><br/><a href="do:park32A">1: <i>Ewa?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "park32A", =>
+    game.lactivate(30)
+    game.goto(30)
+
 #--------L3-8------------33
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ewa: <i>Nikt się o mnie nie martwi, bo to nie dzieje się naprawdę. Wyjdźmy stąd razem, dobrze?</i><br/>Ewa zeskakuje z huśtawki i chwyta cię za rękę. Patrzy ci prosto w oczy.<br/>Ewa: <i>Idziemy?</i><br/><br/><a href="do:park33A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "park33A", =>
+    game.lactivate(34)
+    game.goto(34)
+
 #--------L3-9------------34
+  game.push(new Location({
+    img: '/assets/game/PARK4.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Robicie kilka kroków i nagle do waszych uszu docierają niepokojące dźwięki.Ewa mocniej ściska twoją rękę. <br/><br/><a href="do:park34A">1: <i>Rozdzielmy się. Zostań tutaj, a ja pójdę zobaczyć, co to za hałasy.</i></a><br/><a href="do:park34B">2: <i>Chodźmy zobaczyć, co to.</i></a><br/><a href="do:park34C">3: <i>Nie bój się.</i>[Idźcie w przeciwnym kierunku]</a>'
+      })
+    },
+  }))
+  game.pushAction "park34A", =>
+    game.lactivate(37)
+    game.goto(37)
+  game.pushAction "park34B", =>
+    game.lactivate(39)
+    game.goto(39)
+  game.pushAction "park34C", =>
+    game.lactivate(35)
+    game.goto(35)
+
 #--------L3-10-----------35
+  game.push(new Location({
+    img: '/assets/game/PARK4.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Park wygląda dość upiornie. Sam masz stracha, ale cały czas powtarzasz Ewie, że wszystko będzie dobrze, a brama jest już blisko. W końcu faktycznie do niej docieracie. Klucz Ewy pasuje do zamka. W zasadzie moglibyście już wyjść, ale z lewej strony dostrzegasz mroczną, opuszczoną szopę w pajęczynach. Przed nią studnia. W szopie szepty. <br/><br/><a href="do:park35A">1: [Postanawiasz, że zajrzycie do szopy]</a><br/><a href="do:park35B">2: [Opuszczacie park]</a>'
+      })
+    },
+  }))
+  game.pushAction "park35A", =>
+    game.lactivate(45)
+    game.goto(45)
+  game.pushAction "park35B", =>
+    game.lactivate(36)
+    game.goto(36)
+
 #--------L3-11-----------36
 #--------L3-12-----------37
 #--------L3-13-----------38
