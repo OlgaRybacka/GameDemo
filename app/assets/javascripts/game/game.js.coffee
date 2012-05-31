@@ -48,8 +48,10 @@ class Game
 #zmienne globalne
 Flagi = {}
 window.Flagi = Flagi
-Flagi.czy_park = true;
-Flagi.czy_teatr = true; 
+Flagi.czy_park = true
+Flagi.czy_teatr = true
+Flagi.temp_points = 0
+Flagi.points = 0
   
 $ ->
   window.game = new Game()
@@ -923,7 +925,201 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.lactivate(38)
     game.goto(38)
 
+
+#---MIESZKANIE-CHŁOPAKA----
+
+#-----------M-CH-1-------46
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: '<br/><br/><a href="do:mie_ch46A">...</a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch46A", =>
+    game.lactivate(47)
+    game.goto(47)
+
+#-----------M-CH-2-------47
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: '<br/><br/><a href="do:mie_ch47A">...</a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch47A", =>
+    game.lactivate(48)
+    game.goto(48)
+
+#-----------M-CH-3-------48
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: '<br/><br/><a href="do:mie_ch48A">...</a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch48A", =>
+    game.lactivate(49)
+    game.goto(49)
+
+#-----------M-CH-4-------49
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Budzi cię telefon.<br/><br/><a href="do:mie_ch49A">1: <i>Halo?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch49A", =>
+    game.lactivate(50)
+    game.goto(50)
+
+#-----------M-CH-5-------50
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Głos w słuchawce: <i>Cześć, tu Alicja.  Jestem przyjaciółką Ewy. Mam twój numer od jednej znajomej.</i><br/><br/><a href="do:mie_ch50A">1: <i>OK, a o co chodzi?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch50A", =>
+    game.lactivate(51)
+    game.goto(51)
+
+#-----------M-CH-6-------51
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Alicja: <i>Wiem, że nie jesteś już z Ewą…</i><br/><br/><a href="do:mie_ch51A">1: <i>Trochę się zmieniło ostanio. </i></a><br/><a href="do:mie_ch51B">2: <i>Brawo za spostrzegawczość.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch51A", =>
+    Flagi.temp_points = Flagi.temp_points + 1
+    game.lactivate(52)
+    game.goto(52)
+  game.pushAction "mie_ch51B", =>
+    Flagi.temp_points = Flagi.temp_points - 1
+    game.lactivate(52)
+    game.goto(52)
+
+#-----------M-CH-7-------52
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Alicja: <i>Ale czy nie mógłbyś mi pomóc mimo to? Nie wiesz, gdzie jest Ewa? Miała mnie odebrać z dworca, ale nie pojawiła się, nie mogę się też do niej dodzwonić. Coś się z nią dzieje?</i><br/><br/><a href="do:mie_ch52A">1: <i>Pojęcia nie mam, to już dwa tygodnie, jak się rozstaliśmy. Dzwoniłaś do kogoś innego?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch52A", =>
+    game.lactivate(53)
+    game.goto(53)
+
+#-----------M-CH-8-------53
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Alicja: <i>Do Izy tylko, ale ona też nie wie, co się dzieje.</i><br/><br/><a href="do:mie_ch51A">1: <i>To wydaje się dziwne. </i></a><br/><a href="do:mie_ch51B">2: <i>Gdzie ją posiało?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch51A", =>
+    Flagi.temp_points = Flagi.temp_points + 1
+    game.lactivate(54)
+    game.goto(54)
+  game.pushAction "mie_ch51B", =>
+    Flagi.temp_points = Flagi.temp_points - 1
+    game.state(54, 'b')
+    game.lactivate(54)
+    game.goto(54)
+
+#-----------M-CH-9-------54
+game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Alicja: <i>No właśnie, coś się musiało stać.Pomóż mi, znajdź ją. Proszę. Możesz to zrobić?</i><br/><br/><a href="do:park54A">1: <i>OK, poszukam jej. Pewnie coś musiało ją zatrzymać i zgubiła telefon przy okazji, ot. </i></a>'
+      })
+      b: new LocationState({
+        text: 'Alicja: <i>Nie wiem, nic nie wiem. Pomóż mi, znajdź ją. Proszę. Możesz to zrobić?</i><br/><br/><a href="do:park54A">1: <i>OK, poszukam jej. Pewnie coś musiało ją zatrzymać i zgubiła telefon przy okazji, ot. </i></a>'
+      })
+    },
+  }))
+  game.pushAction "park54A", =>
+    game.lactivate(55)
+    game.goto(55)
+
+#-----------M-CH-10------55
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Alicja: <i>Gdybyś czegoś się dowiedział, daj mi znać od razu, jestem pod tym numerem.</i><br/><br/><a href="do:mie_ch55A">1: <i>No dobra, popytam u niej w pracy, tam może być, albo na wydziale. Bądź dobrej myśli.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch55A", =>
+    game.lactivate(56)
+    game.goto(56)
+
+#-----------M-CH-11------56
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Alicja: <i>OK, powodzenia.</i><br/><br/><a href="do:mie_ch56A">1: <i>Co się mogło tam stać?...  </i></a><br/><a href="do:mie_ch56B">2: <i>Nie jestem już z nią, ale wciąż muszę robić coś za nią...</i></a>'
+      })
+    },
+  }))
+  game.pushAction "mie_ch56A", =>
+    Flagi.temp_points = Flagi.temp_points + 1
+    if Flagi.temp_points > 0
+      Flagi.points = Flagi.points + 1
+    Flagi.temp_points = 0
+    game.lactivate(0)
+    game.goto(0)
+  game.pushAction "mie_ch56B", =>
+    Flagi.temp_points = Flagi.temp_points - 1
+    if Flagi.temp_points > 0
+      Flagi.points = Flagi.points + 1
+    Flagi.temp_points = 0
+    game.lactivate(0)
+    game.goto(0)
+
 #--------------------------
+
 
   $('a').live('click', (e) ->
     href = $(this).attr('href')
