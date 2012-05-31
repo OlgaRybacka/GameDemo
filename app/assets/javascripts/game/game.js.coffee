@@ -1129,4 +1129,4 @@ game.push(new Location({
       game.action(action)
   )
   game.ready =>
-    game.goto(0)
+    game.goto(46)
