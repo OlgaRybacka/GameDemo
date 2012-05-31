@@ -846,7 +846,7 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
     game.goto(41)
 
 #--------L3-16-----------41
-game.push(new Location({
+  game.push(new Location({
     img: '/assets/game/PARK2.png',
     active: true,
     activeState: 'a',
@@ -1060,7 +1060,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.goto(54)
 
 #-----------M-CH-9-------54
-game.push(new Location({
+  game.push(new Location({
     img: '/assets/game/PARK2.png',
     active: true,
     activeState: 'a',
