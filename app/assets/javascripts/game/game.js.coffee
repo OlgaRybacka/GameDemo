@@ -252,9 +252,9 @@ $ ->
     },
   }))
   game.pushAction "park10A", =>
-#    game.state(36, 'b')
-#    game.state(38, 'b')
-#    game.state(41, 'b')
+    game.state(36, 'b')
+    game.state(38, 'b')
+    game.state(41, 'b')
     game.state(11, 'b')
     game.lactivate(11)
     game.goto(11)
@@ -772,14 +772,157 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
     game.goto(0)
 
 #--------L3-12-----------37
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Idziesz w kierunku hałasów, ale szybko cichną. Oglądasz się za siebie. Ewy nie ma tam, gdzie ją zostawiłeś. Wracasz biegiem w to miejsce. Dziewczynki nie ma, na ziemi leży laleczka, którą wcześniej znalazłeś na huśtawce. Ktoś pozbawił ją oczu. <br/><br/><a href="do:park37A">1: [Podnieś laleczkę]</a>'
+      })
+    },
+  }))
+  game.pushAction "park37A", =>
+    game.lactivate(38)
+    game.goto(38)
+
 #--------L3-13-----------38
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Znów jest jasno. Stoisz przed bramą Parku Par. W kieszeni znajdujesz oczy laleczki.<br/><br/><a href="do:park37A">1: [MAPA]</a>'
+      })
+      b: new LocationState({
+        text: 'Znów jest jasno. Stoisz przed bramą Parku Par. W kieszeni znajdujesz oczy laleczki. Kolano boli.<br/><br/><a href="do:park37A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "park38A", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #--------L3-14-----------39
+  game.push(new Location({
+    img: '/assets/game/PARK4.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Robicie kilka kroków i nagle do waszych uszu docierają niepokojące dźwięki.Ewa mocniej ściska twoją rękę. <br/><br/><a href="do:park39A">1: [Wyrzuć dwie szóstki]</a><br/><a href="do:park39B">2: [Wyrzuć piątkę i dwójkę]</a><br/><a href="do:park39C">3: [Podaj kości Ewie]</a><br/><a href="do:park39D">4: [Zaproponuj Ewie, że każde z was wykona po rzucie]</a>'
+      })
+    },
+  }))
+  game.pushAction "park39A", =>
+    game.lactivate(40)
+    game.goto(40)
+  game.pushAction "park39B", =>
+    game.lactivate(42)
+    game.goto(42)
+  game.pushAction "park39C", =>
+    game.lactivate(43)
+    game.goto(43)
+  game.pushAction "park39D", =>
+    game.lactivate(44)
+    game.goto(44)
+
 #--------L3-15-----------40
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Naprawdę myślałeś, że to się uda? Że wystarczy bardzo chcieć? Wyrzucasz szóstkę i jedynkę. Wszystko dzieje się bardzo szybko. Tajemnicza postać chwyta Ewę za włosy i zanim zdążysz cokolwiek zrobić, na ścieżce nie ma nikogo.<br/><br/><a href="do:park40A">1: [Szukaj wyjścia]</a>'
+      })
+    },
+  }))
+  game.pushAction "park40A", =>
+    game.lactivate(41)
+    game.goto(41)
+
 #--------L3-16-----------41
+game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Długo kluczysz po parku, ale w końcu znajdujesz bramę. W chwili, gdy przez nią przechodzisz wszystko wraca do normalności. Znów jest jasno. W parku śpiewają ptaki. <br/><br/><a href="do:park41A">1: [MAPA]</a>'
+      })
+      b: new LocationState({
+        text: 'Długo kluczysz po parku, ale w końcu znajdujesz bramę. W chwili, gdy przez nią przechodzisz wszystko wraca do normalności. Znów jest jasno. W parku śpiewają ptaki.<br/> Boli cię kolano.<br/><br/><a href="do:park41A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "park41A", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #--------L3-17-----------42
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wyrzucasz piątkę i dwójkę. Wszystko dzieje się bardzo szybko. Tajemnicza postać chwyta Ewę za włosy i zanim
+zdążysz cokolwiek zrobić, na ścieżce nie ma nikogo.<br/><br/><a href="do:park42A">1: [Szukaj wyjścia]</a>'
+      })
+    },
+  }))
+  game.pushAction "park42A", =>
+    game.lactivate(41)
+    game.goto(41)
+
 #--------L3-18-----------43
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ewa bierze głęboki wdech. Niechętnie puszcza twoją dłoń i sięga po kostki. Wyrzuca szóstkę i jedynkę. Ze
+smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszystko dzieje się bardzo szybko. Tajemnicza postać chwyta Ewę za włosy i zanim zdążysz cokolwiek zrobić, na ścieżce nie ma nikogo.<br/><br/><a href="do:park43A">1: [Szukaj wyjścia]</a>'
+      })
+    },
+  }))
+  game.pushAction "park43A", =>
+    game.lactivate(41)
+    game.goto(41)
+
 #--------L3-19-----------44
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie puszczając ręki Ewy chwytasz jedną kostkę. Dziewczynka bierze drugą. Chucha na szczęście i ty robisz to samo. Rzucacie. Wypadają dwie szóstki. Ewa śmieje się głośno. Tajemnicza postać odchodzi, co chwila potykając się o skraj długiej szaty. <br/><br/><a href="do:park44A">1: [Dalej szukajcie wyjścia]</a>'
+      })
+    },
+  }))
+  game.pushAction "park44A", =>
+    game.lactivate(35)
+    game.goto(35)
+
 #--------L3-20-----------45
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Na palcach podchodzicie do szopy. Nagle drzwi otwierają się, plątanina rąk wciąga Ewę do środka. Drzwi zamykają się z trzaskiem, szepty cichną. Naciskasz na klamkę. W środku nie ma nikogo. Na podłodze szopy leży laleczka, którą wcześniej znalazłeś na huśtawce. Ktoś pozbawił ją oczu.<br/><br/><a href="do:park45A">1: [Podnieś laleczkę]</a>'
+      })
+    },
+  }))
+  game.pushAction "park45A", =>
+    game.lactivate(38)
+    game.goto(38)
+
 #--------------------------
 
   $('a').live('click', (e) ->
