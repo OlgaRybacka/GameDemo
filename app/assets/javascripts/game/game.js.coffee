@@ -752,6 +752,25 @@ $ ->
     game.goto(36)
 
 #--------L3-11-----------36
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Za bramą Ewa puszcza twoją dłoń. Uśmiecha się, odwraca na pięcie i odchodzi w podskokach, podśpiewując
+coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, znów jest jasno. <br/><br/><a href="do:park36A">1: [MAPA]</a>'
+      })
+      b: new LocationState({
+        text: 'Za bramą Ewa puszcza twoją dłoń. Uśmiecha się, odwraca na pięcie i odchodzi w podskokach, podśpiewując
+coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, znów jest jasno. Kolano boli.<br/><br/><a href="do:park36A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "park36A", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #--------L3-12-----------37
 #--------L3-13-----------38
 #--------L3-14-----------39
