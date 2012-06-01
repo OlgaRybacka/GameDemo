@@ -64,16 +64,16 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAteatr">2: Do teatru</a>'
+        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a>'
       })
     },
   }))
   game.pushAction "MAPApark", =>
     game.lactivate(1)
     game.goto(1)
-  game.pushAction "MAPAteatr", =>
-    game.lactivate(100)
-    game.goto(100)
+  game.pushAction "MAPAuczelnia", =>
+    game.lactivate(57)
+    game.goto(57)
     
 #----------PARK------------
 #--------L1-1-------------1
@@ -1118,6 +1118,159 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.lactivate(0)
     game.goto(0)
 
+#-----------UCZELNIA-------
+#-----------U-1A---------57
+  game.push(new Location({
+    img: '/assets/game/uczelnia1.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie bez problemu udaje ci się otworzyć ciężkie i ogromne drzwi prowadzące do wnętrza Collegium Maius. Znajdujesz się w przestronnym holu, po swojej prawej stronie widzisz portiernię. Rozglądasz się chwilę po pustej przestrzeni aż w końcu dostrzegasz stojącego kawałek przed tobą Profesora. Poznajesz go! To promotor Ewy. Zaprasza cię gestem ręki do siebie.<br/><br/><a href="do:uczelnia57A">1: [Podejdź do profesora]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia57A", =>
+    game.lactivate(58)
+    game.goto(58)
+
+#-----------U-1B---------58
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor: <i>Witam serdecznie szanownego prelegenta! Tak się wspaniale składa, że konferencja już się zaczęła, a pan, jak widzę, punktualny! Zapraszam, zapraszam ze mną na górę!</i><br/>Patrzysz przez chwilę na Profesora, który gestem wskazuje schody.<br/><br/><a href="do:uczelnia58A">1: [Pójdź za Profesorem]</a><br/><a href="do:uczelnia58B">2: [Przyznaj się, że pomylił cię z kimś]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia58A", =>
+    game.lactivate(59)
+    game.goto(59)
+  game.pushAction "uczelnia58B", =>
+    game.lactivate(60)
+    game.goto(60)
+
+#-----------U-1C---------59
+  game.push(new Location({
+    img: '/assets/game/uczelnia1.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Tak, oczywiście, chodźmy w takim razie do sali.</i><br/>Wchodzicie po szerokich, ale krętych schodach. Profesor pokonuje je bez wysiłku, pod tobą jednak uginają się kolana – kto wie, ze zmęczenia, ze strachu? Błądzicie chwilę po korytarzach i ostatecznie trafiacie do właściwej sali. Profesor otwiera przed tobą drzwi i oboje wchodzicie do środka.<br/><br/><a href="do:uczelnia59A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia59A", =>
+    game.lactivate(61)
+    game.goto(61)
+
+#-----------U-1D---------60
+  game.push(new Location({
+    img: '/assets/game/uczelnia1.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Niestety, ale pan Profesor pomylił mnie z kimś. Szukam Ewy, zna ją pan. Wiem, że studiowała tutaj. Wydaje mi się, że zaginęła. Może mi pan pomóc?</i><br/>Profesor zastanawia się chwilę, po czym potakująco kiwa głową i zaprasza cię gestem na górę. Wchodzicie po szerokich, ale krętych schodach. Profesor pokonuje je bez wysiłku, pod tobą jednak uginają się kolana – kto wie, ze zmęczenia, ze strachu? Błądzicie chwilę po korytarzach i ostatecznie trafiacie do właściwego gabinetu. Profesor otwiera przed tobą drzwi i oboje wchodzicie do środka.<br/><br/><a href="do:uczelnia60A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia60A", =>
+    game.lactivate(82)
+    game.goto(82)
+
+#-----------U-2A---------61
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Sala pełna jest gości. Część z nich to zapewne sami prelegenci, reszta zaś to goście, którzy pojawili się, by wysłuchać referatów. Profesor patrzy na ciebie i wskazuje gestem mównicę. <br/><br/><a href="do:uczelnia61A">1: [Podejdź do Profesora i spróbuj wyjaśnić tę pomyłkę.]</a><br/><a href="do:uczelnia61B">2: [Podejdź to mównicy tak, jakbyś chciał wygłosić referat.]</a><br/><a href="do:uczelnia61C">3: [Podejdź do mównicy i spróbuj opowiedzieć słuchaczom o Ewie. ]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia61A", =>
+    game.lactivate(62)
+    game.goto(62)
+  game.pushAction "uczelnia61B", =>
+    game.lactivate(63)
+    game.goto(63)
+  game.pushAction "uczelnia61C", =>
+    game.lactivate(64)
+    game.goto(64)
+
+#-----------U-2B---------62
+  game.push(new Location({
+    img: '/assets/game/uczelnia1.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do Profesora i prosisz go szeptem, by odszedł z tobą na bok.<br/><br/><a href="do:uczelnia62A">1: <i>Panie Profesorze, obawiam się, że zaszła pomyłka. Tak naprawdę nie jestem jedną z osób, które miały wygłaszać tutaj referat. Szukam Ewy. Sądzę, że zaginęła.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia62A", =>
+    game.lactivate(65)
+    game.goto(65)
+
+#-----------U-2C---------63
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do mównicy. Lekko trzęsą ci się ręce. Nie masz pojęcia, co teraz zrobić.<br/><br/><a href="do:uczelnia63A">1: [Powiedz profesorowi, że w roztargnieniu zostawiłeś wydruk referatu na dworcu PKP]</a><br/><a href="do:uczelnia58B">2: [Opowiedz dowcip]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia63A", =>
+    game.lactivate(70)
+    game.goto(70)
+  game.pushAction "uczelnia63B", =>
+    game.lactivate(71)
+    game.goto(71)
+
+#-----------U-2D---------64
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do mównicy. Nie masz żadnego referatu, ale chcesz opowiedzieć o Ewie. Może ktoś wie, co się z nią stało...<br/>Ty: <i>Nie wygłoszę dziś referatu, bo mam do przekazania ważniejszą wiadomość. Zaginęła Ewa. Może ktoś z was wie, co się z nią stało?</i><br/><br/><a href="do:uczelnia64A">1: [Powiedz, że to do niej niepodobne]</a><br/><a href="do:uczelnia64B">2: [Powiedz, że wiedziałeś, że może się to kiedyś zdarzyć]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia64A", =>
+    game.lactivate(76)
+    game.goto(76)
+  game.pushAction "uczelnia64B", =>
+    game.lactivate(77)
+    game.goto(77)
+
+#-----------U-2E---------65
+#-----------U-2F---------66
+#-----------U-2G---------67
+#-----------U-2H---------68
+#-----------U-2I---------69
+#-----------U-2J---------70
+#-----------U-2K---------71
+#-----------U-2L---------72
+#-----------U-2M---------73
+#-----------U-2N---------74
+#-----------U-2O---------75
+#-----------U-2P---------76
+#-----------U-2R---------77
+#-----------U-2S---------78
+#-----------U-2T---------79
+#-----------U-2U---------80
+#-----------U-2W---------81
 #--------------------------
 
 
