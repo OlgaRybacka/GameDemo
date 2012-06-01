@@ -1225,7 +1225,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Podchodzisz do mównicy. Lekko trzęsą ci się ręce. Nie masz pojęcia, co teraz zrobić.<br/><br/><a href="do:uczelnia63A">1: [Powiedz profesorowi, że w roztargnieniu zostawiłeś wydruk referatu na dworcu PKP]</a><br/><a href="do:uczelnia58B">2: [Opowiedz dowcip]</a>'
+        text: 'Podchodzisz do mównicy. Lekko trzęsą ci się ręce. Nie masz pojęcia, co teraz zrobić.<br/><br/><a href="do:uczelnia63A">1: [Powiedz profesorowi, że w roztargnieniu zostawiłeś wydruk referatu na dworcu PKP]</a><br/><a href="do:uczelnia63B">2: [Opowiedz dowcip]</a>'
       })
     },
   }))
