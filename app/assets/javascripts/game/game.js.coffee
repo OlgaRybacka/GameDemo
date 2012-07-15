@@ -52,6 +52,7 @@ Flagi.czy_park = true
 Flagi.czy_teatr = true
 Flagi.temp_points = 0
 Flagi.points = 0
+Flagi.temp = 0
   
 $ ->
   window.game = new Game()
@@ -1179,8 +1180,8 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     },
   }))
   game.pushAction "uczelnia60A", =>
-    game.lactivate(82)
-    game.goto(82)
+    game.lactivate(84)
+    game.goto(84)
 
 #-----------U-2A---------61
   game.push(new Location({
@@ -1200,6 +1201,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.lactivate(63)
     game.goto(63)
   game.pushAction "uczelnia61C", =>
+    Flagi.temp = 0
     game.lactivate(64)
     game.goto(64)
 
@@ -1210,7 +1212,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Podchodzisz do Profesora i prosisz go szeptem, by odszedł z tobą na bok.<br/><br/><a href="do:uczelnia62A">1: <i>Panie Profesorze, obawiam się, że zaszła pomyłka. Tak naprawdę nie jestem jedną z osób, które miały wygłaszać tutaj referat. Szukam Ewy. Sądzę, że zaginęła.</i></a>'
+        text: 'Podchodzisz do Profesora i prosisz go szeptem, by odszedł z tobą na bok.<br/>Ty: <i>Panie Profesorze, obawiam się, że zaszła pomyłka. Tak naprawdę nie jestem jedną z osób, które miały wygłaszać tutaj referat. Szukam Ewy. Sądzę, że zaginęła.</i><br/><br/><a href="do:uczelnia62A">1: [Dalej]</a>'
       })
     },
   }))
@@ -1248,6 +1250,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     },
   }))
   game.pushAction "uczelnia64A", =>
+    Flagi.temp = Flagi.temp + 1
     game.lactivate(76)
     game.goto(76)
   game.pushAction "uczelnia64B", =>
@@ -1255,23 +1258,1144 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.goto(77)
 
 #-----------U-2E---------65
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor wygląda na wzburzonego. Chwilę milczy, ale zaraz zasypuje cię pytaniami. <br/>PROFESOR: <i>Ale jak to, okłamał mnie pan? Co z referatem? Co to za historia z Ewą? Proszę to natychmiast wyjaśnić!</i><br/><br/><a href="do:uczelnia65A">1: [Spróbuj przekonać Profesora, że Ewa jest ważniejsza od jakiegoś tam referatu.]</a><br/><a href="do:uczelnia65B">2: [Przeproś i opowiedz o zaginięciu Ewy.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia65A", =>
+    game.lactivate(66)
+    game.goto(66)
+  game.pushAction "uczelnia65B", =>
+    game.lactivate(67)
+    game.goto(67)
+
 #-----------U-2F---------66
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty: <i>Żaden referat mnie nie obchodzi, zaginęła Ewa i przyszedłem tutaj, bo sądziłem, że ktoś może wiedzieć, co się z nią stało. To pan mnie z kimś pomylił!</i><br/><br/><a href="do:uczelnia66A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia66A", =>
+    game.lactivate(68)
+    game.goto(68)
+
 #-----------U-2G---------67
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty: <i>Przepraszam, zrobiłem to tylko dlatego, żeby dowiedzieć się czegoś o Ewie. Zaginęła i próbuję ją odnaleźć!</i><br/><br/><a href="do:uczelnia67A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia67A", =>
+    game.lactivate(69)
+    game.goto(69)
+
 #-----------U-2H---------68
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor: <i>Ależ co to za bezczelność! Pan podszywa się pod prelegenta i opowiada tu jakieś brednie! Proszę stąd natychmiast wyjść!</i><br/><br/><a href="do:uczelnia68A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia68A", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #-----------U-2I---------69
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor patrzy na ciebie podejrzliwie, ale po chwili wyraz zdumienia znika z jego twarzy.<br/>Profesor: <i>To dopiero historia… Zaginęła, mówi pan? Zapraszam do swojego gabinetu, tam będziemy mogli o tym porozmawiać.</i><br/><br/><a href="do:uczelnia69A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia69A", =>
+    game.lactivate(84)
+    game.goto(84)
+
 #-----------U-2J---------70
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor patrzy na ciebie z rozbawieniem.<br/><br/><a href="do:uczelnia70A">1: <i>Panie Profesorze, zdaje się, że z wrażenia zostawiłem swoją kopię referatu na dworcu. Czy nie wysyłałem może kopii referatu na skrzynkę mailową konferencji?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia70A", =>
+    game.lactivate(72)
+    game.goto(72)
+
 #-----------U-2K---------71
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty: <i>Na polonistyce UAM było czterech bardzo dobrych studentów, którzy radzili sobie świetnie na wszystkich egzaminach i testach. Zbliżał się egzamin z historii doktryn literackich, miał być w poniedziałek o 8.00, wszystkim z ocen wychodziła 5. Byli tak pewni siebie, że przed egzaminem zdecydowali się poimprezować u kolegów z uniwersytetu w Krakowie. Było super, ale przesadzili i kiedy zasnęli w niedzielę po południu, to obudzili się w poniedziałek około 12.00.</i><br/><br/><a href="do:uczelnia71A">1: [Opowiadaj dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia71A", =>
+    game.lactivate(82)
+    game.goto(82)
+
 #-----------U-2L---------72
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor: <i>Tak się szczęśliwie składa, że wydrukowaliśmy dziś wszystkie przesłane nam referaty. Proszę, oto pański!</i><br/><br/><a href="do:uczelnia72A">1: [Odczytaj referat.]</a><br/><a href="do:uczelnia72B">2: [Przyznaj się, że nastąpiła pomyłka.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia72A", =>
+    game.lactivate(73)
+    game.goto(73)
+  game.pushAction "uczelnia72B", =>
+    game.lactivate(62)
+    game.goto(62)
+
 #-----------U-2M---------73
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Starasz się rozumieć to, co czytasz, ale szybko gubisz wątek. Nigdy byś czegoś takiego nie napisał. Ze wszystkich wymienionych nazwisk kilka kojarzy ci się z prezenterami telewizyjnymi i piłkarzami, może czasem przypomina ci się coś, o czym mówiła ci kiedyś Ewa. Kiedy kończysz czytać referat, słuchacze zaczynają zadawać pytania.<br/><br/><a href="do:uczelnia73A">1: [Spróbuj odpowiedzieć.]</a><br/><a href="do:uczelnia73B">2: [Poproś o chwilę przerwy i ucieknij.]</a><br/><a href="do:uczelnia73C">3: [Przyznaj się, że nastąpiła pomyłka.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia73A", =>
+    game.lactivate(74)
+    game.goto(74)
+  game.pushAction "uczelnia73B", =>
+    game.lactivate(75)
+    game.goto(75)
+  game.pushAction "uczelnia73C", =>
+    game.lactivate(68)
+    game.goto(68)
+
 #-----------U-2N---------74
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor: <i>Tak, to był ciekawy referat, niech się pan nie przejmuje pytaniami. Rozumiem, że to pewnie efekt męczącej podróży. W każdym razie, to już koniec konferencji, zapraszam za rok!</i><br/><br/><a href="do:uczelnia74A">1: [Spróbuj wyjaśnić Profesorowi, że szukasz Ewy.]</a><br/><a href="do:uczelnia74B">2: [Wyjdź z uniwersytetu.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia74A", =>
+    game.lactivate(62)
+    game.goto(62)
+  game.pushAction "uczelnia74B", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #-----------U-2O---------75
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wymawiasz się chwilową niedyspozycją i obiecujesz wrócić za chwilę. Zbiegasz schodami w dół, byle tylko szybko stąd uciec.<br/><br/><a href="do:uczelnia75A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia75A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+
 #-----------U-2P---------76
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ludzie patrzą na ciebie zdumieni, ale wciąż słuchają.<br/>Ty: <i>To do niej zupełnie niepodobne, nie odzywa się, nie odbiera telefonów.  Boję się, że coś się z nią stało.</i><br/><br/><a href="do:uczelnia76A">1: [Powiedz, że jest zagubiona.]</a><br/><a href="do:uczelnia76B">2: [Powiedz, że jest bezmyślna.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia76A", =>
+    Flagi.temp = Flagi.temp + 1
+    game.lactivate(78)
+    game.goto(78)
+  game.pushAction "uczelnia76B", =>
+    game.lactivate(79)
+    game.goto(79)
+
 #-----------U-2R---------77
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ludzie patrzą na ciebie zdumieni, ale wciąż słuchają.<br/>Ty: <i>Ewa była zawsze bardzo dziwna i skryta, bałem się, że kiedyś może zrobić coś tak głupiego. Teraz trzeba ją przede wszystkim znaleźć!</i><br/><br/><a href="do:uczelnia77A">1: [Powiedz, że jest zagubiona.]</a><br/><a href="do:uczelnia77B">2: [Powiedz, że jest bezmyślna.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia77A", =>
+    Flagi.temp = Flagi.temp + 1
+    game.lactivate(78)
+    game.goto(78)
+  game.pushAction "uczelnia77B", =>
+    game.lactivate(79)
+    game.goto(79)
+
 #-----------U-2S---------78
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Na sali widać poruszenie.<br/>Ty: <i>Musi być teraz zdezorientowana i zagubiona! Może nawet ma jakieś kłopoty, o jakich nie chciała nikomu powiedzieć?</i><br/><br/><a href="do:uczelnia78A">1: [Powiedz, że będziesz jej szukał dalej.]</a><br/><a href="do:uczelnia78B">2: [Powiedz, że masz dość.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia78A", =>
+    Flagi.temp = Flagi.temp + 1
+    game.lactivate(80)
+    game.goto(80)
+  game.pushAction "uczelnia78B", =>
+    game.lactivate(81)
+    game.goto(81)
+
 #-----------U-2T---------79
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Na sali widać poruszenie.<br/>Ty: <i>Ewa jest zupełnie bezmyślna! Jak można w ten sposób zniknąć! To przecież szczyt idiotyzmu!</i><br/><br/><a href="do:uczelnia79A">1: [Powiedz, że będziesz jej szukał dalej.]</a><br/><a href="do:uczelnia79B">2: [Powiedz, że masz dość.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia79A", =>
+    Flagi.temp = Flagi.temp + 1
+    game.lactivate(80)
+    game.goto(80)
+  game.pushAction "uczelnia79B", =>
+    game.lactivate(81)
+    game.goto(81)
+
 #-----------U-2U---------80
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Niektórzy zaczynają wychodzić, inni tracą zainteresowanie tym, co mówisz.<br/>Ty: <i>Będę jej szukał dalej, ale jeżeli możecie mi pomóc, dajcie znać! Może ktoś z was widział ją dziś albo z nią rozmawiał?</i><br/><br/><a href="do:uczelnia80A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia80A", =>
+    if Flagi.temp > 1
+      Flagi.temp = 0
+      game.lactivate(69)
+      game.goto(69)
+    else
+      Flagi.temp = 0
+      game.lactivate(68)
+      game.goto(68)
+
 #-----------U-2W---------81
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Niektórzy zaczynają wychodzić, inni tracą zainteresowanie tym, co mówisz.<br/>Ty: <i>Mam już dość tych poszukiwań. Nie wiem, czy chce mi się dalej biegać po tych wszystkich miejscach, gdzie mogłaby być.</i><br/><br/><a href="do:uczelnia81A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia81A", =>
+    if Flagi.temp > 1
+      Flagi.temp = 0
+      game.lactivate(69)
+      game.goto(69)
+    else
+      Flagi.temp = 0
+      game.lactivate(68)
+      game.goto(68)
+
+#-----------U-2K'--------82
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Na egzamin oczywiście nie zdążyli. Postanowili zabajerować profesora. Tłumaczyli się, że w weekend pojechali do kolegów do Krakowa, żeby pogłębić wiedzę i wymienić doświadczenia. Niestety, w drodze powrotnej gdzieś w lasach złapali gumę, nie mieli koła zapasowego i długo nie mogli znaleźć nikogo do pomocy. Dlatego, niestety, przyjechali dopiero około południa. Profesor przemyślał to i powiedział:<br/>- Dobrze, możecie przystąpić do egzaminu jutro rano.</i><br/><br/><a href="do:uczelnia82A">1: [Opowiadaj dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia82A", =>
+    game.lactivate(83)
+    game.goto(83)
+
+#-----------U-2K''-------83
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Studenci zadowoleni, że się udało go zbajerować, pouczyli się jeszcze trochę w nocy i na drugi dzień przyszli jak zwykle pewni siebie. Profesor posadził ich w czterech osobnych pokojach, zamknął drzwi, a asystenci rozdali pytania. Cały test był za 100 punktów. Na pierwszej stronie było zadanie za 5 punktów – rola retoryki w poezji od starożytności do oświecenia. Studenci rozwiązali je bez problemu. Na drugiej stronie było tylko jedno pytanie za 95 punktów:<br/>- Które koło?</i><br/><br/><a href="do:uczelnia83A">1: [Czekaj na reakcję publiczności]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia83A", =>
+    game.lactivate(68)
+    game.goto(68)
+
+
+
+#-----------U-3A---------84
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Pokój Profesora jest niewielki. Stół, biurko, kilka krzeseł i półki zawalone książkami. <br/>Profesor: <i>A więc Ewa zaginęła? To naprawdę niespotykana sprawa. Jestem w szoku! Skąd pan w ogóle wie o tym? To pana znajoma?</i><br/><br/><a href="do:uczelnia84A">1: [Powiedz, że to twoja dziewczyna. ]</a><br/><a href="do:uczelnia84B">2: [Powiedz, że to twoja współlokatorka. ]</a><br/><a href="do:uczelnia84C">3: [Powiedz, że to twoja siostra. ]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia84A", =>
+    game.lactivate(85)
+    game.goto(85)
+  game.pushAction "uczelnia84B", =>
+    game.state(100, 'b')
+    game.lactivate(86)
+    game.goto(86)
+  game.pushAction "uczelnia84C", =>
+    game.state(100, 'b')
+    game.lactivate(87)
+    game.goto(87)
+
+#-----------U-3B---------85
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wolisz powiedzieć Profesorowi prawdę i przejść do dalszych wyjaśnień.<br/>Ty:<i> Jesteśmy ze sobą od jakiegoś czasu. Dziś Ewa nagle zniknęła.</i><br/><br/><a href="do:uczelnia85A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia85A", =>
+    game.lactivate(88)
+    game.goto(88)
+
+#-----------U-3C---------86
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor nie musi wiedzieć wszystkiego. Wystarczy, że powie coś, co pomoże ci w poszukiwaniach.<br/>Ty:<i> Od jakiegoś czasu mieszkamy razem. Dziś Ewa nagle zniknęła.</i><br/><br/><a href="do:uczelnia86A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia86A", =>
+    game.lactivate(89)
+    game.goto(89)
+
+#-----------U-3D---------87
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor nie musi wiedzieć wszystkiego. Wystarczy, że powie coś, co pomoże ci w poszukiwaniach.<br/>Ty:<i> Ewa jest moją siostrą. Dziś nagle zniknęła.</i><br/><br/><a href="do:uczelnia87A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia87A", =>
+    game.lactivate(89)
+    game.goto(89)
+
+#-----------U-3E---------88
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor: <i>Tak, tak, rozumiem. Wszystko jasne. A jak pan sądzi, co mogło sprawić, że Ewa tak nagle zniknęła?</i><br/><br/><a href="do:uczelnia88A">1: [Powiedz ogólnie, że miała jakieś problemy.]</a><br/><a href="do:uczelnia88B">2: [Powiedz, że nie wiesz.]</a><br/><a href="do:uczelnia88C">3: [Powiedz, że między wami coś się stało.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia88A", =>
+    game.lactivate(90)
+    game.goto(90)
+  game.pushAction "uczelnia88B", =>
+    game.lactivate(91)
+    game.goto(91)
+  game.pushAction "uczelnia88C", =>
+    game.lactivate(92)
+    game.goto(92)
+
+#-----------U-3F---------89
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor: <i>Tak, tak, rozumiem. Wszystko jasne. A jak pan sądzi, co mogło sprawić, że Ewa tak nagle zniknęła?</i><br/><br/><a href="do:uczelnia89A">1: [Powiedz ogólnie, że miała jakieś problemy.]</a><br/><a href="do:uczelnia89B">2: [Powiedz, że nie wiesz.]</a><br/><a href="do:uczelnia89C">3: [Powiedz, że między wami coś się stało.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia89A", =>
+    game.lactivate(90)
+    game.goto(90)
+  game.pushAction "uczelnia89B", =>
+    game.lactivate(91)
+    game.goto(91)
+  game.pushAction "uczelnia89C", =>
+    game.lactivate(92)
+    game.goto(92)
+
+#-----------U-3G---------90
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Wiem, że miała jakieś problemy, nie bardzo chciała o tym mówić. Myślę, że dlatego gdzieś zniknęła. </i><br/><br/><a href="do:uczelnia90A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia90A", =>
+    game.lactivate(95)
+    game.goto(95)
+
+#-----------U-3H---------91
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor: <i>Naprawdę nic nie przychodzi panu do głowy? To mogłoby nam bardzo pomóc!</i><br/><br/><a href="do:uczelnia91A">1: [Powiedz ogólnie, że miała jakieś problemy.]</a><br/><a href="do:uczelnia91B">2: [Powiedz, że nie wiesz.]</a><br/><a href="do:uczelnia91C">3: [Powiedz, że między wami coś się stało.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia91A", =>
+    game.lactivate(90)
+    game.goto(90)
+  game.pushAction "uczelnia91B", =>
+    game.lactivate(93)
+    game.goto(93)
+  game.pushAction "uczelnia91C", =>
+    game.lactivate(92)
+    game.goto(92)
+
+#-----------U-3I---------92
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Myślę, że to mogło się stać przeze mnie. Szukam jej teraz wszędzie, potrzebuję wskazówek, gdzie mogła się udać. </i><br/><br/><a href="do:uczelnia92A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia92A", =>
+    game.lactivate(99)
+    game.goto(99)
+
+#-----------U-3J---------93
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Przykro mi, ale wiem tylko, że Ewa zaginęła. Nie myślałem prawie w ogóle o tym, jak to się stało.</i><br/><br/><a href="do:uczelnia93A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia93A", =>
+    game.lactivate(94)
+    game.goto(94)
+
+#-----------U-3K---------94
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor rozkłada bezradnie ręce.<br/>Profesor:<i> No cóż, nie jestem w stanie panu w żaden sposób pomóc. Niech pan lepiej zgłosi sprawę na policję, oni powinni się tym zająć!</i><br/><br/><a href="do:uczelnia94A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia94A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#-----------U-3L---------95
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor wygląda na zmartwionego i zaciekawionego zarazem.<br/>Profesor: <i>Problemy? Z pewnością? Ale czy pan się domyśla, co to mogło być? To by nam bardzo pomogło!</i><br/><br/><a href="do:uczelnia95A">1: [Powiedz, że nie masz pojęcia, o co mogło chodzić.]</a><br/><a href="do:uczelnia95B">2: [Powiedz, że między wami coś się stało.]</a><br/><a href="do:uczelnia95C">3: [Powiedz, że boisz się, że Ewa nie do końca zdaje sobie sprawę z tego, co zrobiła.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia95A", =>
+    game.lactivate(93)
+    game.goto(93)
+  game.pushAction "uczelnia95B", =>
+    game.lactivate(92)
+    game.goto(92)
+  game.pushAction "uczelnia95C", =>
+    game.lactivate(96)
+    game.goto(96)
+
+#-----------U-3M---------96
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> To zabrzmi brutalnie, ale myślę, że ona ma teraz ograniczoną poczytalność. Krótko mówiąc, odbiło jej. Nie rozumiem tego w ogóle.</i><br/><br/><a href="do:uczelnia96A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia96A", =>
+    game.lactivate(97)
+    game.goto(97)
+
+#-----------U-3N---------97
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor wygląda na wzbudzonego twoimi słowami.<br/>Profesor: <i>Naprawdę sądzi pan, że to wyłącznie jej wina? To znaczy – uroiła coś sobie, nie myśli racjonalnie?</i><br/><br/><a href="do:uczelnia97A">1: [Powiedz, że Ewa musiała zwariować.]</a><br/><a href="do:uczelnia97B">2: [Powiedz, że między wami coś się stało.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia97A", =>
+    game.lactivate(98)
+    game.goto(98)
+  game.pushAction "uczelnia97B", =>
+    game.lactivate(92)
+    game.goto(92)
+
+#-----------U-3O---------98
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Ewie odbiło. Nikt przy zdrowych zmysłach nie robi czegoś takiego, nie ucieka tak po prostu, nie dając znaku życia.</i><br/><br/><a href="do:uczelnia98A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia98A", =>
+    game.lactivate(94)
+    game.goto(94)
+
+#-----------U-3P---------99
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor wygląda na zaskoczonego twoimi słowami.<br/>Profesor: <i>Hm, to ciekawe, co pan mówi. Powoli się to zaczyna układać, ta cała ucieczka. Jest pan pewien, że to przez pana?</i><br/><br/><a href="do:uczelnia99A">1: [Powiedz, że nie masz pojęcia, o co mogło chodzić.]</a><br/><a href="do:uczelnia99B">2: [Powiedz, że Ewa musiała zwariować.]</a><br/><a href="do:uczelnia99C">3: [Powiedz, że miała odebrać koleżankę, ale nie pojawiła się na dworcu.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia99A", =>
+    game.lactivate(93)
+    game.goto(93)
+  game.pushAction "uczelnia99B", =>
+    game.lactivate(98)
+    game.goto(98)
+  game.pushAction "uczelnia99C", =>
+    game.lactivate(100)
+    game.goto(100)
+
+#-----------U-3R---------100
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Rano dzwoniła koleżanka, którą Ewa miała odebrać z dworca. Od tamtej pory jej szukam.</i><br/><br/><a href="do:uczelnia100A">1: [Dalej]</a>'
+      }),
+      b: new LocationState({
+        text: 'Ty:<i> Rano dzwoniła koleżanka, którą Ewa miała odebrać z dworca. Od tamtej pory jej szukam.</i><br/><br/><a href="do:uczelnia100B">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia100A", =>
+    game.lactivate(101)
+    game.goto(101)
+  game.pushAction "uczelnia100B", =>
+    game.lactivate(104)
+    game.goto(104)
+
+#-----------U-3S---------101
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor znów marszczy brwi, wydaje się chwilę zastanawiać, a gdy wreszcie odzywa się, w jego głosie pobrzmiewa nuta rezygnacji.<br/>Profesor: <i>Wszystko się chyba wyjaśniło. Nie mogę panu niestety pomóc. Ewa to jedna z moich bardziej błyskotliwych studentek. Proszę szukać jej dalej. Mam coś jednak dla pana. Gdyby pan ją znalazł, proszę dać jej tę książkę, bardzo chciała ją ode mnie ostatnio pożyczyć. To Logika sensu Gillesa Deleuze’a.</i><br/><br/><a href="do:uczelnia101A">1: [Odmów]</a><br/><a href="do:uczelnia101B">2: [Weź książkę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia101A", =>
+    game.lactivate(102)
+    game.goto(102)
+  game.pushAction "uczelnia101B", =>
+    game.lactivate(103)
+    game.goto(103)
+
+#-----------U-3T---------102
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Dziękuję, ale w tej chwili i tak książka nie przyda się żadnemu z nas.</i><br/><br/><a href="do:uczelnia102A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia102A", =>
+    game.lactivate(94)
+    game.goto(94)
+
+#-----------U-3U---------103
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Dziękuję, przekażę Ewie tę książkę, jak tylko uda mi się ją znaleźć.</i><br/><br/><a href="do:uczelnia103A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia103A", =>
+    game.lactivate(108)
+    game.goto(108)
+
+#-----------U-3W---------104
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor wygląda na zmęczonego twoją opowieścią.<br/>Profesor: <i>Tak, rozumiem, to wszystko rzeczywiście nie wygląda dobrze. Nie do końca wiem, jak mógłbym panu pomóc. Cz chciałby pan powiedzieć coś jeszcze?</i><br/><br/><a href="do:uczelnia104A">1: [Powiedz, że to wszystko.]</a><br/><a href="do:uczelnia104B">2: [Powiedz, że tak naprawdę jesteście razem z Ewą.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia104A", =>
+    game.lactivate(105)
+    game.goto(105)
+  game.pushAction "uczelnia104B", =>
+    game.lactivate(106)
+    game.goto(106)
+
+#-----------U-3X---------105
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> To chyba cała historia. Czy nie mógłby mi pan Profesor pomóc?</i><br/><br/><a href="do:uczelnia105A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia105A", =>
+    game.lactivate(94)
+    game.goto(94)
+
+#-----------U-3Y---------106
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ty:<i> Panie Profesorze, w jednej kwestii nie byłem szczery – tak naprawdę jesteśmy z Ewą razem. Nie chciałem o tym mówić, bałem się, że to skomplikuje naszą rozmowę.</i><br/><br/><a href="do:uczelnia106A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia106A", =>
+    game.lactivate(107)
+    game.goto(107)
+
+#-----------U-3Z---------107
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Profesor wygląda na zaskoczonego twoimi słowami.<br/>Profesor:<i> Naprawdę nie rozumiem, po co uciekać się do takich wybiegów. Trzeba było prosto z mostu, że to pana dziewczyna. Ech…</i><br/><br/><a href="do:uczelnia107A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia107A", =>
+    game.lactivate(101)
+    game.goto(101)
+
 #--------------------------
+#---UNIWERSYTET-ONIRYCZNY--
+#----------UO-1A---------108
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otwierasz oczy i z trudem przyzwyczajasz się do oślepiającej bieli otoczenia. Wszędzie wokół ciebie pustka. Dopiero gdy otrząsasz się z szoku dostrzegasz kilkanaście kroków przed sobą coś w kształcie szpitalnego łóżka. Co więcej, wydaje się, że ktoś na nim leży. Chcesz dokładniej się temu przyjrzeć, więc podchodzisz kilka kroków do przodu.<br/><br/><a href="do:uczelnia108A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia108A", =>
+    game.lactivate(109)
+    game.goto(109)
+
+#----------UO-1B---------109
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kiedy podchodzisz, ze zdziwieniem stwierdzasz, że na szpitalnym łóżku leży Ewa. W twojej ręce nieoczekiwanie materializuje się skalpel – nabierasz pewności, że musisz rozciąć jej ciało, by cała sytuacja nabrała SENSU.<br/><br/><a href="do:uczelnia109A">1: [Spróbuj płytkiego poziomego, wręcz naskórkowego nacięcia.]</a><br/><a href="do:uczelnia109B">2: [Spróbuj silnego głębokiego cięcia.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia109A", =>
+    game.lactivate(110)
+    game.goto(110)
+  game.pushAction "uczelnia109B", =>
+    game.lactivate(134)
+    game.goto(134)
+
+#----------UO-2A---------110
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Tniesz bardzo płytko, ledwie nacinasz naskórek, ale pewnie prowadzisz skalpel przez całe ciało dziewczyny. Kiedy łapiesz za obydwa brzegi rany i delikatnie je rozchylasz, masz wrażenie, jakbyś przed chwilą potknął się i spadał w czeluść bezdennej jamy lub nory. Na moment miga ci twarz poważnego dżentelmena, który wydaje się kiwać potakująco głową, ale nie jesteś pewny, czy się to nie było tylko przewidzenie.<br/><br/><a href="do:uczelnia110A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia110A", =>
+    Flagi.temp = 6
+    game.lactivate(111)
+    game.goto(111)
+
+#----------UO-2B---------111
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Lądujesz w pomieszczeniu z niewielkimi drzwiami, nie większymi niż jedna stopa. Nie ma możliwości, byś dał radę przejść przez te drzwi – masz jakiś sążeń wzrostu! Na stoliku dostrzegasz dwa ciasteczka z karteczkami. Podchodzisz i bierzesz je do ręki.<br/><br/><a href="do:uczelnia111A">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia111B">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia111A", =>
+    game.state(112, 'a')
+    game.state(113, 'a')
+    Flagi.temp = Flagi.temp - 2
+    game.lactivate(112)
+    game.goto(112)
+  game.pushAction "uczelnia111B", =>
+    game.state(112, 'a')
+    game.state(113, 'a')
+    Flagi.temp = Flagi.temp + 1
+    game.lactivate(113)
+    game.goto(113)
+
+#----------UO-2C---------112
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'aMalejesz o łokieć.<br/><br/><a href="do:uczelnia112A">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia112B">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      }),
+      b: new LocationState({
+        text: 'bMalejesz o łokieć.<br/><br/><a href="do:uczelnia112C">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia112D">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      }),
+      c: new LocationState({
+        text: 'cMalejesz o łokieć.<br/><br/><a href="do:uczelnia112E">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia112F">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia112A", =>
+    Flagi.temp = Flagi.temp - 2
+    if Flagi.temp == 1
+      game.lactivate(114)
+      game.goto(114)
+    else
+      if Flagi.temp > 0
+        game.lactivate(112)
+        game.goto(112)
+      else
+        Flagi.temp = 0
+        game.lactivate(116)
+        game.goto(116)      
+  game.pushAction "uczelnia112B", =>
+    Flagi.temp = Flagi.temp + 1
+    if Flagi.temp == 1
+      game.lactivate(114)
+      game.goto(114)
+    else
+      if Flagi.temp < 18
+        game.lactivate(113)
+        game.goto(113)
+      else
+        Flagi.temp = 0
+        game.lactivate(117)
+        game.goto(117)
+  game.pushAction "uczelnia112C", =>
+    Flagi.temp = Flagi.temp - 2
+    if Flagi.temp > 11 and Flagi.temp < 18
+      game.lactivate(115)
+      game.goto(115)
+    else
+      if Flagi.temp > 0
+        game.lactivate(112)
+        game.goto(112)
+      else
+        Flagi.temp = 0
+        game.lactivate(116)
+        game.goto(116)      
+  game.pushAction "uczelnia112D", =>
+    Flagi.temp = Flagi.temp + 1
+    if Flagi.temp > 11 and Flagi.temp < 18
+      game.lactivate(115)
+      game.goto(115)
+    else
+      if Flagi.temp < 18
+        game.lactivate(113)
+        game.goto(113)
+      else
+        Flagi.temp = 0
+        game.lactivate(117)
+        game.goto(117)
+  game.pushAction "uczelnia112E", =>
+    Flagi.temp = Flagi.temp - 2
+    if Flagi.temp == 1
+      game.lactivate(119)
+      game.goto(119)
+    else
+      if Flagi.temp > 0
+        game.lactivate(112)
+        game.goto(112)
+      else
+        Flagi.temp = 0
+        game.lactivate(116)
+        game.goto(116)      
+  game.pushAction "uczelnia112F", =>
+    Flagi.temp = Flagi.temp + 1
+    if Flagi.temp == 1
+      game.lactivate(119)
+      game.goto(119)
+    else
+      if Flagi.temp < 18
+        game.lactivate(113)
+        game.goto(113)
+      else
+        Flagi.temp = 0
+        game.lactivate(117)
+        game.goto(117)   
+
+#----------UO-2D---------113
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'aRośniesz o stopę. <br/><br/><a href="do:uczelnia113A">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia113B">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      }),
+      b: new LocationState({
+        text: 'bRośniesz o stopę. <br/><br/><a href="do:uczelnia113C">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia113D">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      }),
+      c: new LocationState({
+        text: 'cRośniesz o stopę. <br/><br/><a href="do:uczelnia113E">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia113F">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia113A", =>
+    Flagi.temp = Flagi.temp - 2
+    if Flagi.temp == 1
+      game.lactivate(114)
+      game.goto(114)
+    else
+      if Flagi.temp > 0
+        game.lactivate(112)
+        game.goto(112)
+      else
+        Flagi.temp = 0
+        game.lactivate(116)
+        game.goto(116)      
+  game.pushAction "uczelnia113B", =>
+    Flagi.temp = Flagi.temp + 1
+    if Flagi.temp == 1
+      game.lactivate(114)
+      game.goto(114)
+    else
+      if Flagi.temp < 18
+        game.lactivate(113)
+        game.goto(113)
+      else
+        Flagi.temp = 0
+        game.lactivate(117)
+        game.goto(117)
+  game.pushAction "uczelnia113C", =>
+    Flagi.temp = Flagi.temp - 2
+    if Flagi.temp > 11 and Flagi.temp < 18
+      game.lactivate(115)
+      game.goto(115)
+    else
+      if Flagi.temp > 0
+        game.lactivate(112)
+        game.goto(112)
+      else
+        Flagi.temp = 0
+        game.lactivate(116)
+        game.goto(116)      
+  game.pushAction "uczelnia113D", =>
+    Flagi.temp = Flagi.temp + 1
+    if Flagi.temp > 11 and Flagi.temp < 18
+      game.lactivate(115)
+      game.goto(115)
+    else
+      if Flagi.temp < 18
+        game.lactivate(113)
+        game.goto(113)
+      else
+        Flagi.temp = 0
+        game.lactivate(117)
+        game.goto(117)
+  game.pushAction "uczelnia113E", =>
+    Flagi.temp = Flagi.temp - 2
+    if Flagi.temp == 1
+      game.lactivate(119)
+      game.goto(119)
+    else
+      if Flagi.temp > 0
+        game.lactivate(112)
+        game.goto(112)
+      else
+        Flagi.temp = 0
+        game.lactivate(116)
+        game.goto(116)      
+  game.pushAction "uczelnia113F", =>
+    Flagi.temp = Flagi.temp + 1
+    if Flagi.temp == 1
+      game.lactivate(119)
+      game.goto(119)
+    else
+      if Flagi.temp < 18
+        game.lactivate(113)
+        game.goto(113)
+      else
+        Flagi.temp = 0
+        game.lactivate(117)
+        game.goto(117)
+
+#----------UO-2E---------114
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Hurra! Masz wreszcie około stopy wzrostu, uda ci się przejść przez drzwi. Podchodzisz i szarpiesz za klamkę, ale okazuje się, że są zamknięte. Spoglądasz w górę i dostrzegasz zawieszony na sznurku klucz. Niestety, co najmniej na wysokości dwóch sążni!<br/><br/><a href="do:uczelnia114A">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia114B">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia114A", =>
+    Flagi.temp = 0
+    game.lactivate(116)
+    game.goto(116)
+  game.pushAction "uczelnia114B", =>
+    Flagi.temp = 2
+    game.state(112, 'b')
+    game.state(113, 'b')
+    game.lactivate(113)
+    game.goto(113)
+
+#----------UO-2F---------115
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Udało ci się dosięgnąć klucza. Teraz trzeba znów się zmniejszyć.<br/><br/><a href="do:uczelnia115A">1: [Ugryź mniejsze ciasteczko (na karteczce napis – malejesz o łokieć)]</a><br/><a href="do:uczelnia115B">2: [Ugryź większe ciasteczko (na karteczce napis – rośniesz o stopę)]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia115A", =>
+    Flagi.temp = Flagi.temp - 2
+    game.state(112, 'c')
+    game.state(113, 'c')
+    game.lactivate(112)
+    game.goto(112)
+  game.pushAction "uczelnia115B", =>
+    Flagi.temp = Flagi.temp + 1
+    game.state(112, 'c')
+    game.state(113, 'c')
+    game.lactivate(113)
+    game.goto(113)
+
+#----------UO-2G---------116
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'O nie! Zmalałeś do zera! Świat wokół ciebie wiruje ci przed oczami.<br/><br/><a href="do:uczelnia116A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia116A", =>
+    game.lactivate(118)
+    game.goto(118)
+
+#----------UO-2H---------117
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'O nie! Jesteś już tak wysoki, ze przebijasz głową sufit! Świat wokół ciebie wiruje ci przed oczami.<br/><br/><a href="do:uczelnia117A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia117A", =>
+    game.lactivate(118)
+    game.goto(118)
+
+#----------UO-2I---------118
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wizja powoli się kończy, czujesz narastający w głowie szum, przez chwilę mrugasz oczami, by przyzwyczaić się do światła.<br/><br/><a href="do:uczelnia118A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia118A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#----------UO-2J---------119
+#----------UO-2K---------120
+#----------UO-2L---------121
+#----------UO-2M---------122
+#----------UO-2N---------123
+#----------UO-2O---------124
+#----------UO-2P---------125
+#----------UO-2R---------126
+#----------UO-2S---------127
+#----------UO-2SA--------128
+#----------UO-2SB--------129
+#----------UO-2SC--------130
+#----------UO-2SD--------131
+#----------UO-2T---------132
+#----------UO-2U---------133
+#----------UO-3A---------134
+#----------UO-3B---------135
+#----------UO-3C---------136
+#----------UO-3D---------137
+#----------UO-3E---------138
+#----------UO-3F---------139
+#----------UO-3G---------140
+#----------UO-3H---------141
+#----------UO-3I---------142
+#----------UO-3J---------143
+#----------UO-3K---------144
+#----------UO-3L---------145
+#----------UO-3M---------146
+#----------UO-4A---------147
+#----------UO-4B---------148
+#----------UO-4C---------149
+#----------UO-4D---------150
+#----------UO-4E---------151
+#----------UO-4F---------152
+
+
+
 
 
   $('a').live('click', (e) ->
