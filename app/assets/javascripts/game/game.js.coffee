@@ -65,7 +65,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a>'
+        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a><br/><a href="do:MAPArestauracja">3: Do restauracji</a>'
       })
     },
   }))
@@ -75,6 +75,9 @@ $ ->
   game.pushAction "MAPAuczelnia", =>
     game.lactivate(57)
     game.goto(57)
+  game.pushAction "MAPArestauracja", =>
+    game.lactivate(152)
+    game.goto(152)
     
 #----------PARK------------
 #--------L1-1-------------1
@@ -2033,6 +2036,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.lactivate(110)
     game.goto(110)
   game.pushAction "uczelnia109B", =>
+    game.state(120, 'b')
     game.lactivate(134)
     game.goto(134)
 
@@ -2360,39 +2364,679 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.goto(0)
 
 #----------UO-2J---------119
-#----------UO-2K---------120
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przechodzisz przez drzwi, za którymi spodziewasz się odnaleźć SENS tego wszystkiego.Przechodzisz przez drzwi, za którymi spodziewasz się odnaleźć SENS tego wszystkiego.<br/><br/><a href="do:uczelnia119A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia119A", =>
+    game.lactivate(120)
+    game.goto(120)
+
+#----------UO-2K/3B------120
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przy wielkim, nakrytym białym obrusem stole siedzą Zając,  Suseł i Kapelusznik. Ilość naczyń na stole świadczy o tym, że muszą czekać na ciebie już od dłuższego czasu.<br/><br/><a href="do:uczelnia120A">1: [Podejdź do Zająca.]</a><br/><a href="do:uczelnia120B">2: [Podejdź do Susła.]</a><br/><a href="do:uczelnia120C">3: [Podejdź do Kapelusznika.]</a>'
+      }),
+      b: new LocationState({
+        text: 'Znajdujesz się teraz w niewielkim, ale zapełnionym po brzegi TYM i OWYM sklepiku. Za ladą stoi Elegancko Wyglądająca Owca.<br/>Elegancko Wyglądająca Owca: <i>Proszę, zapraszam, niech się szanowny dobrodziej rozejrzy! Jestem do usług.</i><br/><br/><a href="do:uczelnia120D">1: [Obejrzyj towar na półkach.]</a><br/><a href="do:uczelnia120E">2: [Obejrzyj towar w głębi sklepu.]</a><br/><a href="do:uczelnia120F">3: [Podejdź do lady.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia120A", =>
+    game.lactivate(121)
+    game.goto(121)
+  game.pushAction "uczelnia120B", =>
+    game.lactivate(122)
+    game.goto(122)
+  game.pushAction "uczelnia120C", =>
+    game.lactivate(123)
+    game.goto(123)
+  game.pushAction "uczelnia120D", =>
+    game.lactivate(135)
+    game.goto(135)
+  game.pushAction "uczelnia120E", =>
+    game.lactivate(136)
+    game.goto(136)
+  game.pushAction "uczelnia120F", =>
+    game.lactivate(137)
+    game.goto(137)
+
 #----------UO-2L---------121
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do Zająca, choć nie jesteś przekonany, czy to było SENSOWNE posunięcie.<br/>Zając: <i>Tak, tak! Dobrze, mam TO, czego szukasz! Wiem, mam! Zagramy w grę, dobrze? Wkładam TO pod filiżankę, a ty znajdujesz lub nie znajdujesz! Masz trzy próby!</i><br/><br/><a href="do:uczelnia121A">1: [Zagraj z Zającem]</a><br/><a href="do:uczelnia121B">2: [Nie graj z Zającem]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia121A", =>
+    game.lactivate(124)
+    game.goto(124)
+  game.pushAction "uczelnia121B", =>
+    game.lactivate(120)
+    game.goto(120)
+
 #----------UO-2M---------122
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do Susła, który wydaje się drzemać na stole. Trzyma przy tym w łapce pękniętą filiżankę, z której, jakimś cudem, nie wylewa się herbata. Nie jesteś pewien, czy to bezsensowne, czy absurdalne.<br/><br/><a href="do:uczelnia122A">1: [Zostaw Susła w spokoju.]</a><br/><a href="do:uczelnia122B">2: [Spróbuj obudzić Susła.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia122A", =>
+    game.lactivate(120)
+    game.goto(120)
+  game.pushAction "uczelnia122B", =>
+    game.lactivate(127)
+    game.goto(127)
+
 #----------UO-2N---------123
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do Kapelusznika, który dosypuje właśnie kawy do filiżanki wypełnionej cukrem. Nie zauważa cię od razu, gdy podchodzisz, ale kiedy odzywa się wreszcie, odnosisz wrażenie, że po prostu nie podszedłeś od razu, gdy cię zauważył.<br/>Kapelusznik: <i>Dobrze się składa, bo jestem już po słowie z TYM, więc wypada świętować! Dobrodzieju, proponuję, co następuje: odstąpię ci TO, jeżeli tylko chcesz lub opowiem o TYM i wyjdziesz z TEGO obronną ręką.</i><br/><br/><a href="do:uczelnia123A">1: [Weź TO.]</a><br/><a href="do:uczelnia123B">2: [Posłuchaj o TYM.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia123A", =>
+    game.lactivate(132)
+    game.goto(132)
+  game.pushAction "uczelnia123B", =>
+    game.lactivate(133)
+    game.goto(133)
+
 #----------UO-2O---------124
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Zając wkłada TO szybkim ruchem pod jedną z filiżanek. Następnie wielokrotnie przestawia je, tak, by cię zmylić. Na początku udaje ci się śledzić jego ruchy – interesowała cię środkowa filiżanka, która następnie przesunęła się na lewo, potem na prawo, by wreszcie znowu znaleźć się na środku, ale po chwili ruchy Zająca stały się tak szybkie, że zupełnie straciłeś orientację.<br/><br/><a href="do:uczelnia124ABC">1: [Wybierz filiżankę stojącą po lewej.]</a><br/><a href="do:uczelnia124ABC">2: [Wybierz filiżankę stojącą po prawej.]</a><br/><a href="do:uczelnia124ABC">3: [Wybierz filiżankę stojącą na środku.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia124ABC", =>
+    game.lactivate(125)
+    game.goto(125)
+
 #----------UO-2P---------125
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wybierasz filiżankę, ale pod spodem niczego nie ma. Zając patrzy na ciebie z zaciekawieniem.<br/><br/><a href="do:uczelnia125ABC">1: [Wybierz filiżankę stojącą po lewej.]</a><br/><a href="do:uczelnia125ABC">2: [Wybierz filiżankę stojącą po prawej.]</a><br/><a href="do:uczelnia125ABC">3: [Wybierz filiżankę stojącą na środku.]</a>'
+      })
+      b: new LocationState({
+        text: 'Wybierasz filiżankę, ale pod spodem niczego nie ma. Zając patrzy na ciebie z zaciekawieniem.<br/><br/><a href="do:uczelnia125DEF">1: [Wybierz filiżankę stojącą po lewej.]</a><br/><a href="do:uczelnia125DEF">2: [Wybierz filiżankę stojącą po prawej.]</a><br/><a href="do:uczelnia125DEF">3: [Wybierz filiżankę stojącą na środku.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia125ABC", =>
+    game.state(125, 'b')
+    game.lactivate(125)
+    game.goto(125)
+  game.pushAction "uczelnia125DEF", =>
+    game.state(125, 'a')
+    game.lactivate(126)
+    game.goto(126)
+
 #----------UO-2R---------126
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wybierasz filiżankę, ale pod spodem niczego nie ma. Jesteś tak zły, że przetrząsasz wszystkie leżące na stole naczynia w poszukiwaniu TEGO, co ukrył Zając. Nie znajdujesz TEGO jednak ani w imbryczkach, ani pod filiżankami i talerzami pełnymi herbatników. Dajesz Zającowi spokój.<br/><br/><a href="do:uczelnia126A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia126A", =>
+    game.lactivate(120)
+    game.goto(120)
+
 #----------UO-2S---------127
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Potrząsasz Susłem, by choć na chwilę się obudził.<br/>Suseł: <i>Hm, mrugaj, mrugaj, mrugaj… Tak? A, tak! Wiem, wiem, przyśniło mi się TO przed chwilą. Zaczekaj, zmrużę na chwilę oczy, przypomnę TO sobie i zaraz ci opowiem!</i><br/><br/><a href="do:uczelnia127A">1: [Odejdź od Susła.]</a><br/><a href="do:uczelnia127B">2: [Pozwól mu zdrzemnąć się chwilę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia127A", =>
+    game.lactivate(120)
+    game.goto(120)
+  game.pushAction "uczelnia127B", =>
+    game.lactivate(128)
+    game.goto(128)
+
 #----------UO-2SA--------128
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Czekasz chwilę, ale gdy słyszysz, że Suseł zaczyna chrapać w najlepsze, znów nim potrząsasz.<br/>Suseł: <i>Tak, tak, TO było całkiem SENSOWNE! Zaczekaj jeszcze chwilę, wpadnę w głębszy sen i już na pewno wszystko zrozumiem!</i><br/><br/><a href="do:uczelnia128A">1: [Odejdź od Susła.]</a><br/><a href="do:uczelnia128B">2: [Pozwól mu zdrzemnąć się chwilę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia128A", =>
+    game.lactivate(120)
+    game.goto(120)
+  game.pushAction "uczelnia128B", =>
+    game.lactivate(129)
+    game.goto(129)
+
 #----------UO-2SB--------129
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Czekasz chwilę, ale gdy słyszysz, że Suseł zaczyna chrapać w najlepsze, znów nim potrząsasz.<br/>Suseł: <i>Czekaj, czekaj, TO brzmiało całkiem sensownie, ale kiedy się budzę, ciężko mi TO wytłumaczyć… Pozwól mi zmrużyć oczy jeszcze na chwilę, a tym razem na pewno się uda!</i><br/><br/><a href="do:uczelnia129A">1: [Odejdź od Susła.]</a><br/><a href="do:uczelnia129B">2: [Pozwól mu zdrzemnąć się chwilę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia129A", =>
+    game.lactivate(120)
+    game.goto(120)
+  game.pushAction "uczelnia129B", =>
+    game.lactivate(130)
+    game.goto(130)
+
 #----------UO-2SC--------130
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Czekasz chwilę, ale gdy słyszysz, że Suseł zaczyna chrapać w najlepsze, znów nim potrząsasz.<br/>Suseł: <i>TO nie do wiary! Prawie TO miałem. TO jednak nie takie proste. Może przyśni mi się TO raz jeszcze. Zaczekaj chwilkę…</i><br/><br/><a href="do:uczelnia130A">1: [Odejdź od Susła.]</a><br/><a href="do:uczelnia130B">2: [Pozwól mu zdrzemnąć się chwilę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia130A", =>
+    game.lactivate(120)
+    game.goto(120)
+  game.pushAction "uczelnia130B", =>
+    game.lactivate(131)
+    game.goto(131)
+
 #----------UO-2SD--------131
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Czekasz chwilę, ale gdy słyszysz, że Suseł zaczyna chrapać w najlepsze, znów nim potrząsasz.<br/>Suseł: <i>Ciężko TO wytłumaczyć… Chyba muszę przespać się z TYM, może później ci pomogę.</i><br/><br/><a href="do:uczelnia131A">1: [Odejdź od Susła.]</a><br/><a href="do:uczelnia131B">2: [Pozwól mu zdrzemnąć się chwilę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia131A", =>
+    game.lactivate(120)
+    game.goto(120)
+  game.pushAction "uczelnia131B", =>
+    game.lactivate(131)
+    game.goto(131)
+
 #----------UO-2T---------132
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Decydujesz się wziąć TO. Kapelusznik kiwa głową i wręcza ci niewielki pakunek. Kiedy rozrywasz papier, okazuje się, że w środku znajduje się intrygująco wyglądająca kurtka z wężowej skóry.<br/><br/><a href="do:uczelnia132A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia132A", =>
+    game.lactivate(146)
+    game.goto(146)
+
 #----------UO-2U---------133
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Decydujesz się, by Kapelusznik opowiedział ci o TYM. Ten dłuższą chwilę milczy i zapisuje coś na kartce, którą następnie Ci wręcza. Odczytujesz zapisane drżącą ręką słowa: „Sowy nie są TYM, czym się wydają.”<br/><br/><a href="do:uczelnia133A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia133A", =>
+    game.lactivate(146)
+    game.goto(146)
+
 #----------UO-3A---------134
-#----------UO-3B---------135
-#----------UO-3C---------136
-#----------UO-3D---------137
-#----------UO-3E---------138
-#----------UO-3F---------139
-#----------UO-3G---------140
-#----------UO-3H---------141
-#----------UO-3I---------142
-#----------UO-3J---------143
-#----------UO-3K---------144
-#----------UO-3L---------145
-#----------UO-3M---------146
-#----------UO-4A---------147
-#----------UO-4B---------148
-#----------UO-4C---------149
-#----------UO-4D---------150
-#----------UO-4E---------151
-#----------UO-4F---------152
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Tniesz tak głęboko, jakbyś tym cięciem starał się dotrzeć do SENSU tej sytuacji. Skalpel przechodzi przez kolejne warstwy skóry, kości i narządy, a ty masz wrażenie jakbyś przed chwilą potknął się i spadał w czeluść bezdennej jamy lub nory. Na moment miga ci twarz poważnego dżentelmena, który wydaje się kiwać przecząco głową, ale nie jesteś pewny, czy się to nie było tylko przewidzenie.<br/><br/><a href="do:uczelnia134A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia134A", =>
+    game.lactivate(111)
+    game.goto(111)
+
+#----------UO-3C---------135
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do półek, które wydają się być zapełnione po brzegi. Kątem oka dostrzegasz na jednej z najniższych półek coś, co wygląda SENSOWNIE. Kiedy spoglądasz w tamtą stronę, owo coś znika, ale wydaje ci się, że znajduje się teraz półkę wyżej.<br/><br/><a href="do:uczelnia135A">1: [Odejdź od półek.]</a><br/><a href="do:uczelnia135B">2: [Spójrz wyżej.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia135A", =>
+    game.lactivate(120)
+    game.goto(120)
+  game.pushAction "uczelnia135B", =>
+    Flagi.temp = 1
+    game.lactivate(138)
+    game.goto(138)
+
+#----------UO-3D---------136
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Idziesz w głąb sklepu, w nadziei, że tam znajdziesz coś SENSOWNEGO. Wszędzie znajduje się pełno bibelotów, ale twoją uwagę przyciąga Dżentelmen w Cieniu. Gestem wskazuje ci, byś podszedł bliżej.<br/><br/><a href="do:uczelnia136A">1: [Podejdź do Dżentelmena w Cieniu.]</a><br/><a href="do:uczelnia136B">2: [Cofnij się.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia136A", =>
+    game.lactivate(140)
+    game.goto(140)
+  game.pushAction "uczelnia136B", =>
+    game.lactivate(120)
+    game.goto(120)
+
+#----------UO-3E---------137
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do lady, przy której stoi Elegancko Wyglądająca Owca. Nie rozmawiałeś nigdy z owcą, która prowadziłaby sklep. Z drugiej strony, w ogóle niewiele rozmawiałeś z owcami, więc po chwili stwierdzasz, że SENSOWNIEJ byłoby powiedzieć, że po prostu słabo znasz owce.<br/>Elegancko Wyglądająca Owca: <i>Panie dobrodzieju, słowo daję, że akurat przed chwilą przyszło do mnie coś SENSOWNEGO, akurat dla pana! Musi pan wybrać – mam przedmiot, którego SENS może panu pomóc albo pytanie, które, gdy na nie odpowiedzieć, może nadać panu SENS!</i><br/><br/><a href="do:uczelnia137A">1: [Wybierz przedmiot.]</a><br/><a href="do:uczelnia137B">2: [Wybierz pytanie.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia137A", =>
+    game.lactivate(144)
+    game.goto(144)
+  game.pushAction "uczelnia137B", =>
+    game.lactivate(145)
+    game.goto(145)
+
+#----------UO-3F---------138
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przenosisz wzrok na wyższą półkę, ale błyskawicznie owo coś przenosi się jeszcze wyżej, a tam, gdzie patrzysz nie ma już niczego.<br/><br/><a href="do:uczelnia138A">1: [Spójrz wyżej.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia138A", =>
+    Flagi.temp = Flagi.temp + 1
+    if Flagi.temp == 10
+      Flagi.temp = 0
+      game.lactivate(139)
+      game.goto(139)
+    else
+      game.lactivate(138)
+      game.goto(138)
+
+#----------UO-3G---------139
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie widzisz SENSU w tej absurdalnej zabawie. Odchodzisz od półek.<br/><br/><a href="do:uczelnia139A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia139A", =>
+    game.lactivate(120)
+    game.goto(120)
+
+#----------UO-3H---------140
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Dżentelmen w Cieniu: <i>Ciężko znaleźć tutaj cokolwiek SENSOWNEGO, prawda? Znam taką piosenkę, której SENS może ci pomóc. Musisz tylko zrozumieć jej tytuł. Nazywa się on „Środek tygodnia”. Czy mnie rozumiesz?</i><br/><br/><a href="do:uczelnia140ABC">1: [Zapytaj, czy tak brzmi tytuł piosenki.]</a><br/><a href="do:uczelnia140ABC">2: [Zapytaj, czy tak nazywa się piosenka.]</a><br/><a href="do:uczelnia140ABC">3: [Zapytaj, czy to tytuł piosenki.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia140ABC", =>
+    game.lactivate(141)
+    game.goto(141)
+
+#----------UO-3I---------141
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Dżentelmen w Cieniu: <i>Nic nie rozumiesz! „Środek tygodnia” to tylko nazwa tytułu piosenki! Sama piosenka nazywa się „Wąż znający grekę”.</i><br/><br/><a href="do:uczelnia141ABC">1: [Zapytaj, czy tak brzmi tytuł piosenki.]</a><br/><a href="do:uczelnia141ABC">2: [Zapytaj, czy to nazwa tytułu piosenki.]</a><br/><a href="do:uczelnia141ABC">3: [Zapytaj, czy to tytuł piosenki.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia141ABC", =>
+    game.lactivate(142)
+    game.goto(142)
+
+#----------UO-3J---------142
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Dżentelmen w Cieniu: <i>Gadasz bez SENSU! To nie ma nic wspólnego z tytułem! Tytuł to „Gorycz życia”.</i><br/><br/><a href="do:uczelnia142ABC">1: [Zapytaj, czy to sens tytułu.]</a><br/><a href="do:uczelnia142ABC">2: [Zapytaj, czy to nazwa piosenki.]</a><br/><a href="do:uczelnia142ABC">3: [Zapytaj, czy tak brzmi tytuł piosenki.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia142ABC", =>
+    game.lactivate(143)
+    game.goto(143)
+
+#----------UO-3K---------143
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Dżentelmen w Cieniu: <i>Wszystko pomieszałeś! Tak się tylko nazywa tytuł piosenki… Jej SENS jest zupełnie gdzie indziej! Chyba się nie dogadamy…</i><br/><br/><a href="do:uczelnia143A">1: [Spróbuj jeszcze raz.]</a><br/><a href="do:uczelnia143B">2: [Odejdź od Dżentelmena w Cieniu.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia143A", =>
+    game.lactivate(140)
+    game.goto(140)
+  game.pushAction "uczelnia143B", =>
+    game.lactivate(120)
+    game.goto(120)
+
+#----------UO-3L---------144
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wybierasz przedmiot, a Elegancko Wyglądająca Owca podaje ci parę gustownych białych rękawiczek z koźlej skóry.<br/>Elegancko Wyglądająca Owca: <i>Proszę się tym dobrze zaopiekować, bo pamiętam kogoś, kto je zgubił!</i><br/><br/><a href="do:uczelnia144A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia144A", =>
+    game.lactivate(146)
+    game.goto(146)
+
+#----------UO-3M---------145
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wybierasz pytanie, a Elegancko Wyglądająca Owca przypatruje ci się chwilę uważnie, po czym wyjmuje karteczkę, na której widzisz jakieś dziwne znaczki.<br/>Elegancko Wyglądająca Owca: <i>Wychodzi na to, dobrodzieju, że musi pan sobie odpowiedzieć na proste pytanie: „Kim jest John Galt?”.</i><br/><br/><a href="do:uczelnia145A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia145A", =>
+    game.lactivate(146)
+    game.goto(146)
+
+#----------UO-4A---------146
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ciężko ci nadążyć za takim rozwojem wypadków, zamykasz oczy, by na chwilę pomyśleć. Kiedy jednak otwierasz je znów, widzisz, że wszystko wokół ciebie się zmieniło. Zwierzęta, karty i figury szachowe patrzą na ciebie zaskoczone, zupełnie tak, jakbyś przerwał przygotowanie czegoś bardzo ważnego. Po chwili podchodzi do ciebie Biały Królik.<br/>Biały Królik: <i>WSzanowny pan spóźniony, ale na szczęście jeszcze nie zaczęliśmy! Za chwilę startujemy! Rozumiem, że dobrodziej bierze udział w wyścigu?</i><br/><br/><a href="do:uczelnia146A">1: [Weź udział w wyścigu.]</a><br/><a href="do:uczelnia146B">2: [Nie bierz udziału w wyścigu.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia146A", =>
+    game.lactivate(147)
+    game.goto(147)
+  game.pushAction "uczelnia146B", =>
+    game.lactivate(118)
+    game.goto(118)
+
+#----------UO-4B---------147
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Pada sygnał do startu, widzisz, że wszyscy rozbiegają się na różne strony.<br/><br/><a href="do:uczelnia147ABC">1: [Biegnij w lewo.]</a><br/><a href="do:uczelnia147ABC">2: [Biegnij w prawo.]</a><br/><a href="do:uczelnia147ABC">3: [Biegnij prosto.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia147ABC", =>
+    game.lactivate(148)
+    game.goto(148)
+
+#----------UO-4C---------148
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wyścig nabiera tempa. Wokół obok ciebie walet kier przyjmuje bezbłędnie zagrywkę, figury szachowe wykonują błyskawiczny nawrót, by kontynuować wyścig stylem motylkowym. Kawałek dalej uśmiech bez kota żwawo drybluje pomiędzy zdezorientowanymi jaskółkami.<br/><br/><a href="do:uczelnia148ABC">1: [Przejmij pałeczkę od żaby.]</a><br/><a href="do:uczelnia148ABC">2: [Wbiegnij między ptaki, by uciec z pozycji spalonej.]</a><br/><a href="do:uczelnia148ABC">3: [Refuj foksztaksel, by uniknąć złamania masztu.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia148ABC", =>
+    game.lactivate(149)
+    game.goto(149)
+
+#----------UO-4D---------149
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przeczuwasz, że to ostatnie metry tego szaleńczego rajdu. Blisko ciebie pelikan, uderzając klinem, trafia piłeczką do dołka w trzecim uderzeniu, a tuż obok goniec ma już dwukrotną przewagę w pchełkach nad ubraną w wiktoriańską suknię kurą. Wydaje się, że szachom-cyklistom, do zakończenia rajdu pozostało tylko ukończenie etapu górskiego.<br/><br/><a href="do:uczelnia149ABC">1: [Zwód i mocne uderzenie zza pola karnego.]</a><br/><a href="do:uczelnia149ABC">2: [Wykonaj podwójny toeloop i zakończ kombinację rittbergerem.]</a><br/><a href="do:uczelnia149ABC">3: [Poproś o podwyższenie poprzeczki do 8.05 m i wykonaj swoją trzecią próbę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia149ABC", =>
+    game.lactivate(150)
+    game.goto(150)
+
+#----------UO-4E---------150
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wydaje się, że wyścig się już skończył, choć chyba nikt nie zna jego wyniku. Biały Królik podchodzi do ciebie po chwili, a wszyscy uczestnicy zabawy patrzą wyczekująco w twoją stronę.<br/>Biały Królik: <i>Panie dobrodzieju, zagapiłem się zupełnie! Na szczęście, pan pewnie wie, jak to wszystko się skończyło. Proszę mi szybko powiedzieć!</i><br/><br/><a href="do:uczelnia150AB">1: [Powiedz, że wygrałeś.]</a><br/><a href="do:uczelnia150AB">2: [Powiedz, że przegrałeś.]</a><br/><a href="do:uczelnia150C">3: [Krzyknij „Gioconda!”.]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia150AB", =>
+    game.lactivate(118)
+    game.goto(118)
+  game.pushAction "uczelnia150C", =>
+    game.lactivate(151)
+    game.goto(151)
+
+#----------UO-4F---------151
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Biały Królik nie wydaje się specjalnie zaskoczony twoją odpowiedzią. Kiwa tylko głową i uśmiecha się przyjaźnie. Podaje ci zmiętą karteczkę, którą po chwili rozwijasz. Odczytujesz słowa zapisane pięknymi, ozdobnymi literami: „Contradictoria ad invicem idem significant”.<br/><br/><a href="do:uczelnia151A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "uczelnia151A", =>
+    game.lactivate(118)
+    game.goto(118)
+
+#--------------------------------------
+
+#--------RESTAURACJA----------
+#------S1--1--------------152
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ale tłok! Trudno tu będzie kogokolwiek znaleźć. Muszę się chyba rozejrzeć. Spróbuję się tu trochę pokręcić…<br/><br/><a href="do:restauracja152A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja152A", =>
+    game.lactivate(153)
+    game.goto(153)
+
+#------S1--2--------------153
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner (podchodzi): <i>Dobry wieczór Panu! Niestety nie mamy wolnych stolików.</i><br/><br/><a href="do:restauracja153A">1: <i>Nie szkodzi – ja właściwie nie przyszedłem tutaj na kolację. Szukam kogoś.</i></a><br/><a href="do:restauracja153B">2: <i>Jak to nie ma wolnych miejsc? Mam tutaj rezerwację na nazwisko Paluch.</i>(kłamstwo)</a><br/><a href="do:restauracja153C">3: <i>Nic dziwnego – w całym Poznaniu nie ma drugiej takiej restauracji. Mogę przynajmniej zamówić coś na wynos? Bardzo mi zależy. Co dzisiaj polecacie?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja153A", =>
+    game.lactivate(154)
+    game.goto(154)
+  game.pushAction "restauracja153B", =>
+    game.lactivate(159)
+    game.goto(159)
+  game.pushAction "restauracja153C", =>
+    game.lactivate(162)
+    game.goto(162)
+
+#------S1--2.1------------154
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>W restauracji? Był Pan z kimś umówiony?</i><br/><br/><a href="do:restauracja154A">1: <i>Tak – rozejrzę się po lokalu.</i></a><br/><a href="do:restauracja154B">2: <i>Właściwie nie… może widział Pan tu dzisiaj piękną kobietę: brunetę, dosyć wysoką, z zielonymi oczami?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja154A", =>
+    game.lactivate(155)
+    game.goto(155)
+  game.pushAction "restauracja154B", =>
+    game.lactivate(156)
+    game.goto(156)
+
+#------S1--2.1.1----------155
+#------S1--2.1.2----------156
+#------S1--2.1.2.1--------157
+#------S1--2.1.2.2--------158
+#------S1--2.2------------159
+#------S1--2.2.1----------160
+#------S1--2.2.2----------161
+#------S1--2.3------------162
+#------S1--2.3.1----------163
+
+#------S2--1--------------164
+#------S2--2--------------165
+#------S2--2.1------------166
+#------S2--2.1.1----------167
+#------S2--2.1.2----------168
+#------S2--2.1.1.1--------169
+#------S2--2.1.1.2--------170
+#------S2--2.1.1.2.1------171
+#------S2--2.1.1.2.1.1----172
+#------S2--2.1.1.2.1.1.1--173
+#------S2--2.2------------174
+#------S2--2.2.1----------175
+#------S2--2.2.1.1--------176
+#------S2--2.2.1.2--------177
+#------S2--2.3------------178
+#------S2--2.3.1----------179
+#------S2--2.3.1.1--------180
+#------S2--2.3.2----------181
+
+#------S3--1--------------182
+#------S3--2--------------183
+#------S3--2.1------------184
+#------S3--2.1.1----------185
+#------S3--2.1.2----------186
+#------S3--2.2------------187
+#------S3--3--------------189
+#------S3--3.1------------190
+#------S3--3.1.1----------191
+
+
+
+
+
+
+
+
+
 
 
 
