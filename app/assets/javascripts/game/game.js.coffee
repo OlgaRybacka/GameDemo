@@ -53,6 +53,8 @@ Flagi.czy_teatr = true
 Flagi.temp_points = 0
 Flagi.points = 0
 Flagi.temp = 0
+Flagi.klucz = false
+Flagi.MZpowrot = 0
   
 $ ->
   window.game = new Game()
@@ -3275,8 +3277,8 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     },
   }))
   game.pushAction "restauracja172A", =>
-    game.lactivate(180)
-    game.goto(180)
+    game.lactivate(173)
+    game.goto(173)
 
 #------S2--2.2.1----------173
   game.push(new Location({
@@ -3529,7 +3531,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Kelner: <i>2.3 Tam w lewo </i>(wskazuje ręką)<i>. Najmocniej przepraszam!</i><br/><br/><a href="do:restauracja188A">1: [Dalej]</a>'
+        text: 'Kelner: <i>Tam, w lewo </i>(wskazuje ręką)<i>. Najmocniej przepraszam!</i><br/><br/><a href="do:restauracja188A">1: [Dalej]</a>'
       })
     },
   }))
@@ -4173,6 +4175,387 @@ teatrze.</a>'
     game.goto(0)
 
 
+#-----MIESZKANIE-ZNAJOMEGO-----------------------
+#----------1a----------224
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wszedłeś do domu Szymona. Stoisz w salonie, który wygląda jak okop podczas pierwszej wojny światowej. Jest nawet jeden jeniec. Okazuje się, że jest to Karol w stroju księdza – Twój dalszy znajomy, za którym nie przepadasz. Karol jest zakneblowany koszulą, którą dobrze kojarzysz. Należy bowiem do Twojej dziewczyny. Jedyne co możesz w tej sytuacji zrobić to zdjąć knebel. Czy chcesz to zrobić?!<br/><br/><a href="do:MZ_224A">1: [Zdejmij knebel] </a><br/><a href="do:MZ_224B">2: [Nie zdejmuj knebla] </a>'
+      }),
+      b: new LocationState({
+        text: 'W salonie bez zmian. Karol zakneblowany koszulą Ewy.<br/><br/><a href="do:MZ_224A">1: [Zdejmij knebel] </a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_224A", =>
+    game.lactivate(225)
+    game.goto(225)
+  game.pushAction "MZ_224B", =>
+    game.lactivate(236)
+    game.goto(236)
+
+#----------1b----------225
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Karol: <i>Dzięki. Możesz mnie rozwiązać?</i><br/><br/><a href="do:MZ_225A">1: <i>Mogę, ale cię nie rozwiążę.</i> </a><br/><a href="do:MZ_225B">2: <i>Dobra.</i></a><br/><a href="do:MZ_225C">3: <i>Chyba śnisz.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_225A", =>
+    game.lactivate(226)
+    game.goto(226)
+  game.pushAction "MZ_225B", =>
+    game.lactivate(231)
+    game.goto(231)
+  game.pushAction "MZ_225C", =>
+    game.lactivate(232)
+    game.goto(232)
+
+#----------1c----------226
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Karol: <i>Bo co?</i><br/><br/><a href="do:MZ_226A">1: <i>Najpierw powiedz, co tu się wydarzyło? I dlaczego gryzłeś koszulę mojej dziewczyny?</i></a><br/><a href="do:MZ_226B">2: <i>Bo jajco!</i></a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_226A", =>
+    game.lactivate(227)
+    game.goto(227)
+  game.pushAction "MZ_226B", =>
+    game.lactivate(235)
+    game.goto(235)
+
+#----------1d----------227
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Karol: <i>To wszystko nie tak jak myślisz. Po pierwsze Szymon zaprosił nas wczoraj na oblewanie zdanego komisa. Byłem pewien, że Ciebie też zaprosi. Ale z tego co widziałem, to chyba celowo tego nie zrobił. Po drugie impreza wymknęła się spod kontroli. Zaczęło się od tego, że przebrany za kominiarza Melon wszedł na dach i zaczął grozić, że wyczyści komin. Wskoczył za nim Albert i dał mu sowicie w papę, a łapę ma jak bochen. W tym samym czasie Adrian zerwał z Natalią, bo ona wróciła z Erasmusa  i okazało się, że gustuje w Hiszpanach. Co gorsza przyprowadziła jednego Miguela, a że Albert jest przyjacielem Adriana i w dodatku kibicem Dumy Katalonii, ponownie musiał użyć swych „bochnów”. Miguel nie dość, że przeprosił Adriana za Natalię, to przyznał, że El Galaktico – Real Madryt jest największą gangreną jaką nosiła hiszpańska ziemia od czasów Czarnej Ospy.</i><br/><br/><a href="do:MZ_227A">1: <i>Do rzeczy...</i></a>'
+      }),
+      b: new LocationState({
+        text: 'Karol: <i>Jeśli chodzi o Ewę, jej koszulę i Szymona to sprawa wygląda tak. Ja tego nie widziałem i nie wiesz tego ode mnie, ale wścibska Kornelia, mówiła, że Paulina chyba widziała jak Szymon i Ewa byli sami w kuchni i odskoczyli od siebie, gdy ona weszła. W międzyczasie trochę wypiłem i przysnąłem. Mogę jedynie się domyślać, że byłem przedmiotem jakiegoś głupiego zakładu. A koszula Ewy leżała cała imprezę na kanapie. Ewa dopiero będąc u Szymona wbiła się w kostium policjantki i pewnie dlatego wykorzystali jej garderobę. Gdy się obudziłem to już nikogo nie było i nie wiem, gdzie teraz są. Powiedziałem Ci wszystko co wiem. Rozwiąż mnie to dorzucę Ci ekstra klucz do łazienki, bo czuję, że ktoś wcisnął mi go do skarpety.</i><br/><br/><a href="do:MZ_227B">1: <i>Dobra. </i>[Rozwiąż Karola]</a><br/><a href="do:MZ_227C">2: <i>Nie.</i> [Przeszukaj lewą skarpetę Karola]</a><br/><a href="do:MZ_227D">3: <i>Nie.</i> [Przeszukaj prawą skarpetę Karola]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_227A", =>
+    game.state(227,'b')
+    game.lactivate(227)
+    game.goto(227)
+  game.pushAction "MZ_227B", =>
+    game.lactivate(228)
+    game.goto(228)
+  game.pushAction "MZ_227C", =>
+    game.lactivate(229)
+    game.goto(229)
+  game.pushAction "MZ_227D", =>
+    game.lactivate(230)
+    game.goto(230)
+
+#----------1e----------228
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Karol: <i>Dzięki. Masz tu obiecany klucz.</i><br/><br/><a href="do:MZ_228A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_228A", =>
+    Flagi.klucz = true
+    if Flagi.MZpowrot == 0
+      game.lactivate(236)
+      game.goto(236)
+    else
+      game.lactivate(Flagi.MZpowrot)
+      game.goto(Flagi.MZpowrot)
+
+#----------1f----------229
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Brawo, znalazłeś klucz!<br/><br/><a href="do:MZ_229A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_229A", =>
+    Flagi.klucz = true
+    if Flagi.MZpowrot == 0
+      game.lactivate(236)
+      game.goto(236)
+    else
+      game.lactivate(Flagi.MZpowrot)
+      game.goto(Flagi.MZpowrot)
+
+#----------1g----------230
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie znalazłeś nic oprócz stopy.<br/><br/><a href="do:MZ_230A">1: [Przeszukaj lewą skarpetę]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_230A", =>
+    game.lactivate(229)
+    game.goto(229)
+
+#----------1h----------231
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Rozwiązałeś Karola, ale ten z szybkością światła rzucił się do ucieczki. Zanim zdążyłeś zareagować już go nie było. Został po nim tylko mały metalowy klucz od łazienki.<br/><br/><a href="do:MZ_231A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_231A", =>
+    Flagi.klucz = true
+    if Flagi.MZpowrot == 0
+      game.lactivate(236)
+      game.goto(236)
+    else
+      game.lactivate(Flagi.MZpowrot)
+      game.goto(Flagi.MZpowrot)
+
+#----------1i----------232
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Co teraz?<br/><br/><a href="do:MZ_232A">1: [Zaknebluj Karola ponownie i przeszukaj.]</a><br/><a href="do:MZ_232B">2: [Zostaw Karola w spokoju i idź do kuchni]</a>'
+      }),
+      b: new LocationState({
+        text: 'Co teraz?<br/><br/><a href="do:MZ_232A">1: [Zaknebluj Karola ponownie i przeszukaj.]</a><br/><a href="do:MZ_232C">2: [Zostaw Karola w spokoju i wyjdź z mieszkania Szymona]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_232A", =>
+    game.lactivate(233)
+    game.goto(233)
+  game.pushAction "MZ_232B", =>
+    game.lactivate(236)
+    game.goto(236)
+  game.pushAction "MZ_232C", =>
+    game.lactivate(235)
+    game.goto(235)
+
+#----------1j----------233
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Znalazłeś klucz do łazienki. Żeby się do niej dostać, musisz przejść przez kuchnię.<br/><br/><a href="do:MZ_233A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_233A", =>
+    Flagi.klucz = true
+    if Flagi.MZpowrot == 0
+      game.lactivate(236)
+      game.goto(236)
+    else
+      game.lactivate(Flagi.MZpowrot)
+      game.goto(Flagi.MZpowrot)
+
+#----------1x----------234
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Karol: <i>To nie mamy o czym gadać, wyjdź stąd i nie dręcz duszy!</i><br/><br/><a href="do:MZ_234A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_234A", =>
+    game.lactivate(235)
+    game.goto(235)
+
+#----------1z----------235
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nic już tutaj nie zdziałasz.<br/><br/><a href="do:MZ_235A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_235A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#----------2a----------236
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Jeśli salon był okopem to kuchnia wygląda jak krater po wybuchu bomby. W powietrzu unosi się słodki zapach napalmu o poranku. Twoją uwagę przyciąga otwarta szafka, w której żołnierze Vietcongu zostawili swoje zupki zanim uciekli w popłochu. Zza zamkniętych drzwi łazienkowych dobiega Cię stłumiony okrzyk. Nie jest to może Marsz Walkirii, ale brzmi równie dramatycznie. <br/><br/><a href="do:MZ_236A">1: [Podejdź do drzwi]</a><br/><a href="do:MZ_236B">2: [Przyrządź zupkę]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_236A", =>
+    game.lactivate(237)
+    game.goto(237)
+  game.pushAction "MZ_236B", =>
+    game.lactivate(241)
+    game.goto(241)
+
+#----------2b----------237
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Stoisz przed drzwiami do łazienki. Coraz wyraźniej słyszysz aksamitny baryton. Tylko jeden człowiek jest posiadaczem takiego głosu. MELON!<br/>Melon: <i>O! Nareszcie! Szymon? Albert?</i><br/><br/><a href="do:MZ_237A">1: [Podaj się za Szymona] </a><br/><a href="do:MZ_237B">2: [Podaj się za Alberta]</a><br/><a href="do:MZ_237C">3: [Powiedz, kim jesteś]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_237A", =>
+    game.lactivate(238)
+    game.goto(238)
+  game.pushAction "MZ_237B", =>
+    game.lactivate(239)
+    game.goto(239)
+  game.pushAction "MZ_237C", =>
+    game.lactivate(240)
+    game.goto(240)
+
+#----------2c----------238
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Melon: <i>Szymek, otwieraj drzwi. Powietrze mi się kończy.</i><br/><br/><a href="do:MZ_238A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_238A", =>
+    if Flagi.klucz
+      game.lactivate(247)
+      game.goto(247)
+    else
+      Flagi.MZpowrot = 247
+      game.lactivate(246)
+      game.goto(246)      
+
+#----------2d----------239
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Melon: <i>Odejdź stąd zdrajco. Nie chcę Cię znać przebrzydły ***.</i><br/>Próbujesz perswazji, ale wszelkie próby przekonania Melona do otwarcia wrót spełzły na niczym.<br/><br/><a href="do:MZ_239A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_239A", =>
+    game.lactivate(235)
+    game.goto(235)
+
+#----------2e----------240
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Melon: <i>Nie znam cię! Brzmisz podejrzanie! Gotów jestem ci zaufać, jeśli przyrządzisz mi ciepłą chińską zupkę, tak jak lubię – na odwrót.</i><br/>Udajesz się w pełną niebezpieczeństw podróż do szafki kuchennej.<br/><br/><a href="do:MZ_240A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_240A", =>
+    game.lactivate(241)
+    game.goto(241)
+
+#----------2f----------241
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Stoisz przed wielkim zadaniem. Przed Tobą roztacza się obraz cesarskiego imperium zupkowego. W jakiej kolejności wrzucisz składniki do miski?<br/><br/><a href="do:MZ_241A">1: Woda, makaron, przyprawa </a><br/><a href="do:MZ_241B">2: Woda, przyprawa, makaron</a><br/><a href="do:MZ_241A">3: Przyprawa, woda, makaron</a><br/><a href="do:MZ_241A">4: Przyprawa, makaron, woda</a><br/><a href="do:MZ_241A">5: Makaron, woda, przyprawa</a><br/><a href="do:MZ_241A">6: Makaron, przyprawa, woda</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_241A", =>
+    if Flagi.klucz
+      game.lactivate(243)
+      game.goto(243)
+    else
+      game.lactivate(244)
+      game.goto(244)
+  game.pushAction "MZ_241B", =>
+    game.lactivate(245)
+    game.goto(245)
+
+#----------2g----------242  
+#----------2h----------243
+#----------2i----------244
+#----------2j----------245 a, b, c
+#----------2z----------246
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie masz klucza do łazienki. Może Karol coś wie?<br/><br/><a href="do:MZ_246A">1: [Wróć do salonu]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_246A", =>
+    game.state(224,'b')
+    game.state(232,'b')
+    game.lactivate(224)
+    game.goto(224)
+
+#----------3a----------246
+#----------3b----------247
+#----------3c----------248
+#----------3d----------249
+
+#----------4a----------250
+#----------4b----------251
+#----------4c----------252
+#----------4d----------253
+#----------4e----------254
+#----------4f----------255
 
 
 
