@@ -47,7 +47,7 @@ class Location
     @disableSound()
 
   disableSound: ->
-    if @sound
+    if @sound and @game
       @game.soundSystem.stop(@sound)
   
 

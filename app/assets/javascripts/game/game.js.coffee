@@ -3394,17 +3394,783 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 
 #------S3--1--------------180
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Siedzisz sam przy stoliku, rozglądając się. W końcu postanawiasz zawołać kelnera.<br/><br/><a href="do:restauracja180A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja180A", =>
+    game.lactivate(181)
+    game.goto(181)
+
 #------S3--2--------------181
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Tak, w czym mogę służyć?</i><br/><br/><a href="do:restauracja181A">1: <i>Co pan poleca?</i></a><br/><a href="do:restauracja181B">2: <i>Na razie chcę tylko się czegoś napić. Co macie?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja181A", =>
+    game.lactivate(182)
+    game.goto(182)
+  game.pushAction "restauracja181B", =>
+    game.lactivate(185)
+    game.goto(185)
+
 #------S3--2.1------------182
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Daniem dnia są pierogi z kapustą i grzybami</i><br/><br/><a href="do:restauracja181A">1: <i>Nie, dziękuję… Właściwie chcę tylko coś do picia.</i></a><br/><a href="do:restauracja181B">2: <i>Świetnie, poproszę.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja181A", =>
+    game.lactivate(183)
+    game.goto(183)
+  game.pushAction "restauracja181B", =>
+    game.lactivate(184)
+    game.goto(184)
+
 #------S3--2.1.1----------183
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Proponuję czerwone wino.</i><br/><br/><a href="do:restauracja183A">1: <i>Proszę podać.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja183A", =>
+    game.lactivate(186)
+    game.goto(186)
+
 #------S3--2.1.2----------184
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Yhy, czy podać coś do picia? Proponuję czerwone wino.</i><br/><br/><a href="do:restauracja184A">1: <i>Tak, poproszę.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja184A", =>
+    game.lactivate(186)
+    game.goto(186)
+
 #------S3--2.2------------185
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Cola, Fanta, Sprite. Z alkoholi proponuję czerwone wino.</i><br/><br/><a href="do:restauracja185A">1: <i>Wino, proszę.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja185A", =>
+    game.lactivate(186)
+    game.goto(186)
+
 #------S3--3--------------186
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner odchodzi, po kilku minutach wraca z kieliszkiem wina na tacy. Podchodząc do ciebie, potyka się – zawartość kieliszka ląduje na twojej koszuli.<br/>Kelner: <i>Najmocniej przepraszam! Nie chciałem…</i><br/><br/><a href="do:restauracja186A">1: <i>Kurwa, ty idioto!</i></a><br/><a href="do:restauracja186B">2: <i>Trzeba to zaprać. Szybko, gdzie jest toaleta?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja186A", =>
+    game.lactivate(187)
+    game.goto(187)
+  game.pushAction "restauracja186B", =>
+    game.lactivate(188)
+    game.goto(188)
+
 #------S3--3.1------------187
-#------S3--3.1.1----------188
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wybiegając z restauracji, przewracasz kelnera. Czujesz jednak, że zareagowałeś zbyt impulsywnie.<br/><br/><a href="do:restauracja187A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja187A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#------S3--3.2------------188
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>2.3 Tam w lewo </i>(wskazuje ręką)<i>. Najmocniej przepraszam!</i><br/><br/><a href="do:restauracja188A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja188A", =>
+    game.lactivate(189)
+    game.goto(189)
+
+#-----S3--4---------------189
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Koszula wygląda już jako tako. Wychodzisz z łazienki, ale zamiast do sali restauracyjnej, wchodzisz do ciemnego pomieszczenia. Drzwi zamykają się za tobą, próbujesz znaleźć klamkę, ale ściana jest zupełnie gładka.<br/><br/><a href="do:restauracja189A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja189A", =>
+    game.lactivate(190)
+    game.goto(190)
+
+#-----------1-----------190
+  game.push(new Location({
+    img: '/assets/obrazki/1czerwony.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's0',
+    states: {
+      a: new LocationState({
+        text: 'W tle dźwięk cyrku. Czy słyszysz?<br/><br/><a href="do:AKC_0_4">1: Tak</a><br/><a href="do:AKC_0_1">2: Nie</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_0_4", =>
+    game.lactivate(194)
+    game.goto(194)
+  game.pushAction "AKC_0_1", =>
+    game.lactivate(191)
+    game.goto(191)
+    
+#--------1-1-----------191
+  game.push(new Location({
+    img: '/assets/obrazki/1czerwony.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's0',
+    states: {
+      a: new LocationState({
+        text: 'W tle dźwięk cyrku. Czy słyszysz?<br/><br/><a href="do:AKC_1_4">1: Tak</a><br/><a href="do:AKC_1_2">2: Nie</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_1_4", =>
+    game.lactivate(194)
+    game.goto(194)
+  game.pushAction "AKC_1_2", =>
+    game.lactivate(192)
+    game.goto(192)
+
+#--------1-2-----------192
+  game.push(new Location({
+    img: '/assets/obrazki/1czerwony.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's0',
+    states: {
+      a: new LocationState({
+        text: 'W tle dźwięk cyrku. Czy słyszysz?<br/><br/><a href="do:AKC_2_4">1: Tak</a><br/><a href="do:AKC_2_3">2: Nie</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_2_4", =>
+    game.lactivate(194)
+    game.goto(194)
+  game.pushAction "AKC_2_3", =>
+    game.lactivate(193)
+    game.goto(193)
 
 
+#--------1-3-----------193
+  game.push(new Location({
+    img: '/assets/obrazki/1czerwony.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's0',
+    states: {
+      a: new LocationState({
+        text: 'W tle nie słyszysz cyrku. Czy na pewno nie masz wyłączonych głośników?<br/><br/><a href="do:AKC_3_4">1: Słyszę. Żartowałem.</a><br/><a href="do:AKC_2_34">2: Nie mam. Nie słyszę. Nie mogę dalej iść.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_3_4", =>
+    game.lactivate(194)
+    game.goto(194)
+  game.pushAction "AKC_2_34", =>
+    game.lactivate(0)
+    game.goto(0)
 
+#-------2-----------194
+  game.push(new Location({
+    img: '/assets/obrazki/2bialy.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's1',
+    states: {
+      a: new LocationState({
+        text: 'Wybierz to, co chcesz!<br/><br/><a href="do:AKC_4_5">1: Danie</a><br/><a href="do:AKC_4_6">2: Posiłek</a><br/><a href="do:AKC_4_11">3: Żarcie</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_4_5", =>
+    game.lactivate(195)
+    game.goto(195)
+  game.pushAction "AKC_4_6", =>
+    game.lactivate(196)
+    game.goto(196)
+  game.pushAction "AKC_4_11", =>
+    game.lactivate(201)
+    game.goto(201)
+
+#--------2-1-----------195
+  game.push(new Location({
+    img: '/assets/obrazki/3czarny.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's2',
+    states: {
+      a: new LocationState({
+        text: 'Danie! Oszukanie. „Zgadnij na jaką literę jest moje imię: K, G, czy B?”<br/><br/><a href="do:AKC_5_7">1: K</a><br/><a href="do:AKC_5_7">2: G</a><br/><a href="do:AKC_5_7">3: B</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_5_7", =>
+    game.lactivate(197)
+    game.goto(197)
+
+#--------2-2----------196
+  game.push(new Location({
+    img: '/assets/obrazki/3czarny.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's2',
+    states: {
+      a: new LocationState({
+        text: 'Posiłek! Oszukaniec. „Zgadnij na jaką literę jest moje imię: K, G, czy B?”<br/><br/><a href="do:AKC_6_7">1: K</a><br/><a href="do:AKC_6_7">2: G</a><br/><a href="do:AKC_6_7">3: B</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_6_7", =>
+    game.lactivate(197)
+    game.goto(197)
+
+#--------3-----------197
+  game.push(new Location({
+    img: '/assets/obrazki/2bialy.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Hahaha, żadna z tych liter to nie jest prawidłowa odpowiedź. Jak szukałeś?<br/><br/><a href="do:AKC_7_8">1: Nacisnąłem byle jaką literę.</a><br/><a href="do:AKC_7_9">2: Po prostu wybrałem jakąkolwiek literkę, proszę Pani</a><br/><a href="do:AKC_7_34">3: Nie chcę już w to grać</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_7_8", =>
+    game.lactivate(198)
+    game.goto(198)
+  game.pushAction "AKC_7_9", =>
+    game.lactivate(199)
+    game.goto(199)
+  game.pushAction "AKC_7_34", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#--------3-1-----------198
+  game.push(new Location({
+    img: '/assets/obrazki/4czarnobialy.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Jak ze mną rozmawiasz? Zwróć się do mnie prawidłowo.<br/><br/><a href="do:AKC_8_9">1: Przepraszam, nie myślałem, że do Pani trzeba się zwracać</a><br/><a href="do:AKC_8_34">2: Nie chcę już w to grać</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_8_9", =>
+    game.lactivate(199)
+    game.goto(199)
+  game.pushAction "AKC_8_34", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#--------4-----------199
+  game.push(new Location({
+    img: '/assets/obrazki/5bialy.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's5',
+    states: {
+      a: new LocationState({
+        text: 'O, już rozmawiasz ze mną. Więc co wybierasz? Pamiętaj co powiedziałam. Nie masz wyboru - musisz ze mną grać.<br/><br/><a href="do:AKC_9_10">1: Posiłek</a><br/><a href="do:AKC_9_11">2: Żarcie </a><br/><a href="do:AKC_9_10">3: Danie</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_9_10", =>
+    game.lactivate(200)
+    game.goto(200)
+  game.pushAction "AKC_9_11", =>
+    game.lactivate(201)
+    game.goto(201)
+
+#--------4-1----------200
+  game.push(new Location({
+    img: '/assets/obrazki/6fiolet.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Czy na pewno nie wybierzesz tego, co powiedziałam? <br/><br/><a href="do:AKC_10_34">1: Danie</a><br/><a href="do:AKC_10_11">2: Żarcie</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_10_34", =>
+    game.lactivate(0)
+    game.goto(0)
+  game.pushAction "AKC_10_11", =>
+    game.lactivate(201)
+    game.goto(201)
+
+#--------1-----------201
+  game.push(new Location({
+    img: '/assets/obrazki/7 - juz scena 2- bialy.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's6',
+    states: {
+      a: new LocationState({
+        text: 'Danie „żar”. Danie „cię”<br/><br/><a href="do:AKC_11_12">1: Żar</a><br/><a href="do:AKC_11_17">2: Cię</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_11_12", =>
+    game.lactivate(202)
+    game.goto(202)
+  game.pushAction "AKC_11_17", =>
+    game.lactivate(207)
+    game.goto(207)
+
+#--------2-----------202
+  game.push(new Location({
+    img: '/assets/obrazki/8plamy.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's7',
+    states: {
+      a: new LocationState({
+        text: '„Jeszcze jedna plama.” Dlaczego to mówi głos kobiecy?<br/><br/><a href="do:AKC_12_13">1: Moja wina?</a><br/><a href="do:AKC_12_14">2: Precz przeklęta plamo! To ON! To kelner ją zrobił. To TY, to TY wytłumaczysz!</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_12_13", =>
+    game.lactivate(203)
+    game.goto(203)
+  game.pushAction "AKC_12_14", =>
+    game.lactivate(204)
+    game.goto(204)
+
+#--------2-1-----------203
+  game.push(new Location({
+    img: '/assets/obrazki/9plamypoglebione.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Byłeś tu z nią. Przecież dlatego tu przyszedłeś. Kelner wylał wino na twoją koszulę. Kazałeś jej mówić. Koniec sytuacji był taki, że krzyczał na nią kelner, a potem ty sam wiesz co wykrzykiwałeś. Wiesz co to znaczy?<br/><br/><a href="do:AKC_13_15">1: Tak, kelner nie powinien na nią krzyczeć. Ja na koszuli miałem wino. Miałem coś zrobić?</a><br/><a href="do:AKC_13_16">2: Błąd. Mój błąd. Czy mogę się wytłumaczyć?</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_13_15", =>
+    game.lactivate(205)
+    game.goto(205)
+  game.pushAction "AKC_13_16", =>
+    game.lactivate(206)
+    game.goto(206)
+
+#--------2-2-----------204
+  game.push(new Location({
+    img: '/assets/obrazki/9plamypoglebione.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Żołnierzem jesteś, a tchórzysz? Kto ma Ciebie wytłumaczyć?<br/><br/><a href="do:AKC_14_15">1: Ewa może, umie, potrafi. Ja nie chcę.</a><br/><a href="do:AKC_14_16">2: Powiedziałbym cytatem: „Nikt nas nie pociągnie do tłumaczenia”. Ale to nie jest mój tekst.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_14_15", =>
+    game.lactivate(205)
+    game.goto(205)
+  game.pushAction "AKC_14_16", =>
+    game.lactivate(206)
+    game.goto(206)
+
+#--------3-1-----------205
+  game.push(new Location({
+    img: '/assets/obrazki/10jakby teatr.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Więc co ma wypowiedzieć głos?<br/><br/><a href="do:AKC_15_34">1: JA nie chcę już w to grać.</a><br/><a href="do:AKC_15_24">2: Jeszcze nie po wszystkim. Ja to ja.</a><br/><a href="do:AKC_15_20">3: Jestem widzem.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_15_34", =>
+    game.lactivate(0)
+    game.goto(0)
+  game.pushAction "AKC_15_24", =>
+    game.lactivate(214)
+    game.goto(214)
+  game.pushAction "AKC_15_20", =>
+    game.lactivate(210)
+    game.goto(210)
+
+#--------3-2------------206
+  game.push(new Location({
+    img: '/assets/obrazki/10jakby teatr.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Więc co ma wypowiedzieć głos?<br/><br/><a href="do:AKC_16_24">1: Jeszcze nie po wszystkim. Ja to ja.</a><br/><a href="do:AKC_16_20">2: Jestem widzem.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_16_24", =>
+    game.lactivate(214)
+    game.goto(214)
+  game.pushAction "AKC_16_20", =>
+    game.lactivate(210)
+    game.goto(210)
+
+#--------4------------207
+  game.push(new Location({
+    img: '/assets/obrazki/8plamy.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's8',
+    states: {
+      a: new LocationState({
+        text: 'Jaki okropny szmer! śmiechy! wrzaski!<br/><br/><a href="do:AKC_17_18">1: Oni wszyscy stoją; Nienawidzą mnie wszyscy, kłaniają się, boją.</a><br/><a href="do:AKC_17_19">2: Kelner- patrz wyszczerza zęby – Dbrum – ten uśmiech jak pająk wleciał mi do gęby.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_17_18", =>
+    game.lactivate(208)
+    game.goto(208)
+  game.pushAction "AKC_17_19", =>
+    game.lactivate(209)
+    game.goto(209)
+
+#--------4-1------------208
+  game.push(new Location({
+    img: '/assets/obrazki/9plamypoglebione.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Masz na sobie koszule z czerwoną plamą. Stoisz na środku. oni wokół ciebie chodzą, kłaniają się, boją.<br/><br/><a href="do:AKC_18_15">1: Muszę coś powiedzieć. Patrzę: Gdzie ta Ewa? Przecież miała tu być. Ona im powie. Ja tu stoję.</a><br/><a href="do:AKC_18_16">2: Hahaha! Przecież jesteśmy w
+teatrze.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_18_15", =>
+    game.lactivate(205)
+    game.goto(205)
+  game.pushAction "AKC_18_16", =>
+    game.lactivate(206)
+    game.goto(206)
+
+#--------4-2------------209
+  game.push(new Location({
+    img: '/assets/obrazki/9plamypoglebione.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Patrzą się na ciebie. Szemrzą. Musisz coś powiedzieć.<br/><br/><a href="do:AKC_19_15">1: o nie, nie. Jaki szmer. epigramy, żarciki, przytyki. Gdzie mój głos?</a><br/><a href="do:AKC_19_16">2: Witam Państwa serdecznie. Ja tylko gram w grę.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_19_15", =>
+    game.lactivate(205)
+    game.goto(205)
+  game.pushAction "AKC_19_16", =>
+    game.lactivate(206)
+    game.goto(206)
+
+
+#--------1------------210
+  game.push(new Location({
+    img: '/assets/obrazki/11 scena 3 kelnerzy.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelnerzy w białych ubraniach. Co widzisz?<br/><br/><a href="do:AKC_20_21">1: Widzę szpital. Słyszę brzęk metalu.</a><br/><a href="do:AKC_20_21">2: Widzę biały bal przebierańców. Wszyscy ruszają się szybko. Muzyka jest błyskawiczna. Stroboskop rozświetla twarze i wydaję się mi, że oni mają takie same twarze.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_20_21", =>
+    game.lactivate(211)
+    game.goto(211)
+
+#--------2------------211
+  game.push(new Location({
+    img: '/assets/obrazki/11 scena 3 kelnerzy.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Czy na pewno chcesz być widzem?<br/><br/><a href="do:AKC_21_22">1: Tak.</a><br/><a href="do:AKC_21_24">2: Nie.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_21_22", =>
+    game.lactivate(212)
+    game.goto(212)
+  game.pushAction "AKC_21_24", =>
+    game.lactivate(24)
+    game.goto(24)
+
+#--------2-1------------212
+  game.push(new Location({
+    img: '/assets/obrazki/11 scena 3 kelnerzy.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Co widzisz?<br/><br/><a href="do:AKC_22_23">1: Widzę białe robaki nachodzące na siebie. Coś czerwonego jest pod nimi. Zastanawiam się, czy to moje wino.</a><br/><a href="do:AKC_22_23">2: Widzę pomalowanych na biało ludzi. Mogę dostrzec tylko ich twarze. Zamalowują na biało przestrzeń. Nie mogę dostrzec, czy to ściana, czy przedmiot. Nie wiem gdzie jestem.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_22_23", =>
+    game.lactivate(213)
+    game.goto(213)
+
+#--------2-1-1------------213
+  game.push(new Location({
+    img: '/assets/obrazki/11 scena 3 kelnerzy.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie widzisz, że nie możesz być widzem?<br/><br/><a href="do:AKC_23_34">1: Nie widzę, że to nie ja widzę. Nie widzę, że te opisy mogą pojawiać się w nieskończoność. Chcę skończyć grę. </a><br/><a href="do:AKC_23_24">2: To nie ja widzę. Ja widzę ekran monitora, a na nim obrazek głów w białej przestrzeni. Chcę grać.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_23_34", =>
+    game.lactivate(0)
+    game.goto(0)
+  game.pushAction "AKC_23_24", =>
+    game.lactivate(214)
+    game.goto(214)
+
+#--------1-----------214
+  game.push(new Location({
+    img: '/assets/obrazki/12 scena 4 rekawiczki.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's9',
+    states: {
+      a: new LocationState({
+        text: '„Witam, czy jest Pan gotowy?”<br/><br/><a href="do:AKC_24_25">1: Tak. </a><br/><a href="do:AKC_24_34">2: Nie - to pewnie skończę tę grę.</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_24_25", =>
+    game.lactivate(215)
+    game.goto(215)
+  game.pushAction "AKC_24_34", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#--------2-----------215
+  game.push(new Location({
+    img: '/assets/obrazki/13 naczynie z literkami.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's10',
+    states: {
+      a: new LocationState({
+        text: 'Ugotujesz teraz swoją zupę. Uważaj- wymienię początkowe składniki.<br/><br/><a href="do:AKC_25_26">1: DALEJ </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_25_26", =>
+    game.lactivate(216)
+    game.goto(216)
+
+#--------3-----------216
+  game.push(new Location({
+    img: '/assets/obrazki/13 naczynie z literkami.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Zapamiętałeś? Masz kolejną szansę ich usłyszenia. Uważaj, bo możesz zepsuć swoją zupę. (- Jeden nieodpowiedni składnik truje.) Jeżeli zaznaczysz wymienione, możesz usłyszeć wszystkie składniki jeszcze raz.<br/><br/><a href="do:AKC_26_27">1: A O </a><br/><a href="do:AKC_26_34">2: U Y </a><br/><a href="do:AKC_26_27">3: E I </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_26_27", =>
+    game.lactivate(217)
+    game.goto(217)
+  game.pushAction "AKC_26_34", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#--------4-----------217
+  game.push(new Location({
+    img: '/assets/obrazki/13 naczynie z literkami.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's12',
+    states: {
+      a: new LocationState({
+        text: 'Z jakich słów chcesz gotować? Pamiętaj, że jeden składnik słowa truje posiłek.<br/><br/><a href="do:AKC_27_28">1: E W A </a><br/><a href="do:AKC_27_30">2: J A </a><br/><a href="do:AKC_27_28">3: M A K B E T </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_27_28", =>
+    game.lactivate(218)
+    game.goto(218)
+  game.pushAction "AKC_27_30", =>
+    game.lactivate(220)
+    game.goto(220)
+
+
+#--------4-1-----------218
+  game.push(new Location({
+    img: '/assets/obrazki/13 naczynie z literkami.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's13',
+    states: {
+      a: new LocationState({
+        text: 'Zupa zaraz się może zatruć. Masz ostatnią szansę. Rejestruj, pisz, utrwal, spisz, wypisz. J już jest.<br/><br/><a href="do:AKC_28_29">1: DALEJ </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_28_29", =>
+    game.lactivate(219)
+    game.goto(219)
+
+#-------4-2-----------219
+  game.push(new Location({
+    img: '/assets/obrazki/13 naczynie z literkami.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Z jakich słów chcesz gotować? Pamiętaj, że jeden składnik słowa truje posiłek.<br/><br/><a href="do:AKC_29_31">1: E W A </a><br/><a href="do:AKC_29_30">2: J A </a><br/><a href="do:AKC_29_31">3: M A K B E T </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_29_31", =>
+    game.lactivate(221)
+    game.goto(221)
+  game.pushAction "AKC_29_30", =>
+    game.lactivate(220)
+    game.goto(220)
+
+#--------5-----------220
+  game.push(new Location({
+    img: '/assets/obrazki/14 bialy kolor w garnku.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's16',
+    states: {
+      a: new LocationState({
+        text: '<span style="text-decoration: underline;">JA</span> Brawo! Jeden składnik już masz. Wybierz kolejny. Pamiętaj, że jeden składnik słowa truje!<br/><br/><a href="do:AKC_30_31">1: A D A M </a><br/><a href="do:AKC_30_32">2: L E K T O R </a><br/><a href="do:AKC_30_31">3: G R A C Z </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_30_31", =>
+    game.lactivate(221)
+    game.goto(221)
+  game.pushAction "AKC_30_32", =>
+    game.lactivate(222)
+    game.goto(222)
+
+#--------5-1-----------221
+  game.push(new Location({
+    img: '/assets/obrazki/14 bialy kolor w garnku.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's15',
+    states: {
+      a: new LocationState({
+        text: 'Zatrułeś zupę. Strata zupy. <br/><br/><a href="do:AKC_31_34">1: DALEJ </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_31_34", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#----------6-----------222
+  game.push(new Location({
+    img: '/assets/obrazki/14 bialy kolor w garnku.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's18',
+    states: {
+      a: new LocationState({
+        text: '<span style="text-decoration: underline;">LEKTOR</span> Brawo! Drugi składnik już masz. Wybierz ostatni. Nie zatruj!<br/><br/><a href="do:AKC_32_33">1: G R A </a><br/><a href="do:AKC_32_31">2: M Y S Z </a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_32_33", =>
+    game.lactivate(223)
+    game.goto(223)
+  game.pushAction "AKC_32_31", =>
+    game.lactivate(221)
+    game.goto(221)
+
+#----------7-----------223
+  game.push(new Location({
+    img: '/assets/obrazki/15 zupa sie gotuje.jpg',
+    active: true,
+    activeState: 'a',
+    sound: 's19',
+    states: {
+      a: new LocationState({
+        text: 'Gratuluję! Ugotowałeś! Zupa gra <span style="text-decoration: underline;">/ja lektor gra/</span> <br/><br/><a href="do:AKC_33_34">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "AKC_33_34", =>
+    game.lactivate(0)
+    game.goto(0)
 
 
 
