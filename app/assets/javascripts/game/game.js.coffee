@@ -2966,11 +2966,11 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     game.lactivate(154)
     game.goto(154)
   game.pushAction "restauracja153B", =>
-    game.lactivate(159)
-    game.goto(159)
+    game.lactivate(157)
+    game.goto(157)
   game.pushAction "restauracja153C", =>
-    game.lactivate(162)
-    game.goto(162)
+    game.lactivate(160)
+    game.goto(160)
 
 #------S1--2.1------------154
   game.push(new Location({
@@ -2984,50 +2984,424 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     },
   }))
   game.pushAction "restauracja154A", =>
+    game.lactivate(162)
+    game.goto(162)
+  game.pushAction "restauracja154B", =>
     game.lactivate(155)
     game.goto(155)
-  game.pushAction "restauracja154B", =>
+
+#------S1--2.1.2----------155
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Nie wiem. Wszystkie kobiety są takie same. Wybaczy Pan, ale mam ważniejsze obowiązki.</i><br/><br/><a href="do:restauracja155A">1: <i>Rozumiem. Proszę się mną nie przejmować. Dam sobie radę</i></a><br/><a href="do:restauracja155B">2: <i>Pan zapomniał, że jest kelnerem? Przyzwyczaiłem się do lepszego traktowania klientów. Może dobrze, że się Pan nie przyzwyczaja do roli kelnera. Pański przełożony…</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja155A", =>
+    game.lactivate(162)
+    game.goto(162)
+  game.pushAction "restauracja155B", =>
     game.lactivate(156)
     game.goto(156)
 
-#------S1--2.1.1----------155
-#------S1--2.1.2----------156
-#------S1--2.1.2.1--------157
-#------S1--2.1.2.2--------158
-#------S1--2.2------------159
-#------S1--2.2.1----------160
-#------S1--2.2.2----------161
-#------S1--2.3------------162
-#------S1--2.3.1----------163
+#------S1--2.1.2.2--------156
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Spokojnie! Nikogo takiego tu dzisiaj nie było, przykro mi… stolik się zwolnił – może jednak pan usiądzie?</i><br/><br/><a href="do:restauracja156A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja156A", =>
+    game.lactivate(180)
+    game.goto(180)
 
-#------S2--1--------------164
-#------S2--2--------------165
-#------S2--2.1------------166
-#------S2--2.1.1----------167
-#------S2--2.1.2----------168
-#------S2--2.1.1.1--------169
-#------S2--2.1.1.2--------170
-#------S2--2.1.1.2.1------171
-#------S2--2.1.1.2.1.1----172
-#------S2--2.1.1.2.1.1.1--173
-#------S2--2.2------------174
-#------S2--2.2.1----------175
-#------S2--2.2.1.1--------176
-#------S2--2.2.1.2--------177
-#------S2--2.3------------178
-#------S2--2.3.1----------179
-#------S2--2.3.1.1--------180
-#------S2--2.3.2----------181
+#------S1--2.2------------157
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner (sprawdzając w zeszycie): <i>Bardzo mi przykro, ale nikt o takim nazwisku nie rezerwował u nas miejsca. Musiała zajść jakaś pomyłka…</i><br/><br/><a href="do:restauracja157A">1: <i>To niepoważne! Nie obchodzą mnie wasze pomyłki. Proszę mi natychmiast znaleźć stolik!</i></a><br/><a href="do:restauracja157B">2: <i>Co Pan proponuje?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja157A", =>
+    game.lactivate(158)
+    game.goto(158)
+  game.pushAction "restauracja157B", =>
+    game.lactivate(159)
+    game.goto(159)
 
-#------S3--1--------------182
-#------S3--2--------------183
-#------S3--2.1------------184
-#------S3--2.1.1----------185
-#------S3--2.1.2----------186
-#------S3--2.2------------187
-#------S3--3--------------189
-#------S3--3.1------------190
-#------S3--3.1.1----------191
+#------S1--2.2.1----------158
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Spokojnie… znajdziemy gdzieś trochę miejsca i dostawimy Panu stolik z zaplecza.</i><br/><br/><a href="do:restauracja158A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja158A", =>
+    game.lactivate(180)
+    game.goto(180)
+
+#------S1--2.2.2----------159
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Hy, może Pan poczekać. Niedługo jakieś miejsce powinno się zwolnić</i><br/><br/><a href="do:restauracja159A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja159A", =>
+    game.lactivate(162)
+    game.goto(162)
+
+#------S1--2.3------------160
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Hy, może Pan poczekać. Niedługo jakieś miejsce powinno się zwolnić</i><br/><br/><a href="do:restauracja160A">1: <i>Świetnie, poproszę pierogi.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja160A", =>
+    game.lactivate(161)
+    game.goto(161)
+
+#------S1--2.3.1----------161
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Pierogi z kapustą i grzybami raz!</i><br/><br/><a href="do:restauracja161A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja161A", =>
+    game.lactivate(162)
+    game.goto(162)
+
+#------S2--1--------------162
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Idąc wzdłuż sali, mijasz kolejne stoliki. Stara baba z dzieckiem, grupka młodych ludzi, kilka zakochanych par… wszystko miejski motłoch. Jej tu nie ma. Nagle dociera do ciebie nieprzyjemny zapach, idziesz dalej. Po kilku krokach czujesz już obrzydliwy smród… jakby ktoś się nie mył przez całe życie! Rozglądasz się. Jest! Jest źródło tego zapachu: kobieta w czerwonym, brudnym swetrze…<br/><br/><a href="do:restauracja162A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja162A", =>
+    game.lactivate(163)
+    game.goto(163)
+
+#------S2--2--------------163
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Nie! Mam prawo tu być!</i><br/>Kelner: <i>Przykro mi, ale… ale żeby zostać w restauracji musi Pani coś zamówić.</i><br/><br/><a href="do:restauracja163A">1: <i>Gówno tam „zamówić”. Wypieprzaj stąd, bo śmierdzisz!</i></a><br/><a href="do:restauracja163B">2: <i>Dwie kawy, proszę!</i>[dosiądź się]</a><br/><a href="do:restauracja163C">3: <i>Proszę się grzeczniej zwracać do kobiety.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja163A", =>
+    game.lactivate(164)
+    game.goto(164)
+  game.pushAction "restauracja163B", =>
+    game.lactivate(172)
+    game.goto(172)
+  game.pushAction "restauracja163C", =>
+    game.lactivate(176)
+    game.goto(176)
+
+#------S2--2.1------------164
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Uspokój się, pan! Nie ma wolnych miejsc! Czego pan chcesz?</i><br/><br/><a href="do:restauracja164A">1: <i>Jak już Pan wyrzuci tę śmierdzącą babę, to się stolik zwolni.</i></a><br/><a href="do:restauracja164B">2: <i>Świeżego powietrza!</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja164A", =>
+    game.lactivate(165)
+    game.goto(165)
+  game.pushAction "restauracja164B", =>
+    game.lactivate(166)
+    game.goto(166)
+
+#------S2--2.1.1----------165
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>I tak Pan tu nie usiądzie… ktoś już opłacił ten stolik.</i> (do kobiety):<i> Zamawia Pani coś, albo wychodzi.</i><br/><br/><a href="do:restauracja165A">1: (głośno) <i>A Pana praca polega na wyrzucaniu ludzi za pieniądze?. Ile muszę zapłacić, żeby Pan kogoś dla mnie…</i></a><br/><a href="do:restauracja165B">2: <i>Tak, prosimy dwie kawy!</i> [dosiądź się]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja165A", =>
+    game.lactivate(167)
+    game.goto(167)
+  game.pushAction "restauracja165B", =>
+    game.lactivate(168)
+    game.goto(168)
+
+#------S2--2.1.2----------166
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>To na zewnątrz niech pan poszuka, żegnam!</i><br/><br/><a href="do:restauracja166A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja166A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#------S2--2.1.1.1--------167
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Pana w ramach promocji wyrzucę za darmo, żegnam!</i><br/><br/><a href="do:restauracja167A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja167A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#------S2--2.1.1.2--------168
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner odchodzi zmieszany.<br/><br/><a href="do:restauracja168A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja168A", =>
+    game.lactivate(169)
+    game.goto(169)
+
+#------S2--2.1.1.2.1------169
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Mimo wszystko dziękuję… nie mam pieniędzy, żeby cokolwiek kupić.</i><br/><br/><a href="do:restauracja169A">1: <i>Po co w takim razie przychodzi Pani do restauracji?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja169A", =>
+    game.lactivate(170)
+    game.goto(170)
+
+#------S2--2.1.1.2.1.1----170
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Nie wiem… lubię takie miejsca.</i><br/><br/><a href="do:restauracja170A">1: <i>Dam Pani 15 złotych, jeżeli Pani stąd pójdzie. Zje Pani coś w innej restauracji. To chyba żadna różnica?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja170A", =>
+    game.lactivate(171)
+    game.goto(171)
+
+#------S2--2.1.1.2.1.1.1--171
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Zgoda!</i><br/><br/><a href="do:restauracja171A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja171A", =>
+    game.lactivate(180)
+    game.goto(180)
+
+#------S2--2.2------------172
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner odchodzi. Kobieta milczy.<br/><br/><a href="do:restauracja172A">1: <i>Dobra, zrobiłem to, żeby mieć stolik, ale nie chcę cię tutaj. Wypij kawę i pożegnajmy się, co? Gdyby nie ja i tak by cię już wywalili.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja172A", =>
+    game.lactivate(180)
+    game.goto(180)
+
+#------S2--2.2.1----------173
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Chcę tu zostać!</i><br/><br/><a href="do:restauracja173A">1: <i>Gówno mnie to obchodzi. I tak nie masz pieniędzy – spieprzaj stąd.</i></a><br/><a href="do:restauracja173B">2: <i>Dlaczego właściwie chcesz siedzieć w restauracji. I tak nic nie zamówisz. Nie masz pieniędzy.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja173A", =>
+    game.lactivate(174)
+    game.goto(174)
+  game.pushAction "restauracja173B", =>
+    game.lactivate(175)
+    game.goto(175)
+
+#------S2--2.2.1.1--------174
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Byłam tu pierwsza, to mój stolik. Sam spieprzaj, bo zawołam obsługę.</i><br/><br/><a href="do:restauracja174A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja174A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#------S2--2.2.1.2--------175
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Jestem bezdomna i nie mam gdzie pójść.</i><br/><br/><a href="do:restauracja175A">1: <i>Dam ci 15 złotych, jak stąd pójdziesz. Zjesz coś w innej restauracji.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja175A", =>
+    game.lactivate(171)
+    game.goto(171)
+
+#------S2--2.3------------176
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Nie pana interes. Muszę wykonywać swoje obowiązki.</i><br/><br/><a href="do:restauracja176A">1: <i>Pana obowiązkiem jest grzeczne traktowanie klientów.</i></a><br/><a href="do:restauracja176B">2: <i>Jak taki cham mógł zostać kelnerem?!</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja176A", =>
+    game.lactivate(177)
+    game.goto(177)
+  game.pushAction "restauracja176B", =>
+    game.lactivate(179)
+    game.goto(179)
+
+#------S2--2.3.1----------177
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Ona nie jest klientem! Nawet nic nie zamawia!</i><br/><br/><a href="do:restauracja177A">1: <i>To proszę nam podać dwie kawy</i>[dosiądź się]</a><br/><a href="do:restauracja177B">2: <i>Ja na przykład jestem klientem, więc może tak by się pan zajął najpierw mną? Może by mi pan znalazł jakiś stolik zamiast obrażać tę biedną kobietę?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja177A", =>
+    game.lactivate(172)
+    game.goto(172)
+  game.pushAction "restauracja177B", =>
+    game.lactivate(178)
+    game.goto(178)
+
+#------S2--2.3.1.1--------178
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Jak mam panu znaleźć stolik? Nie ma wolnych stolików. Proszę nie zawracać głowy i iść do innej restauracji.</i><br/><br/><a href="do:restauracja178A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja178A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#------S2--2.3.2----------179
+  game.push(new Location({
+    img: '/assets/game/PARK2.png',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kelner: <i>Przeszkadzasz mi pan w pracy. Idź pan stąd.</i><br/><br/><a href="do:restauracja179A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "restauracja179A", =>
+    game.lactivate(0)
+    game.goto(0)
+
+
+#------S3--1--------------180
+#------S3--2--------------181
+#------S3--2.1------------182
+#------S3--2.1.1----------183
+#------S3--2.1.2----------184
+#------S3--2.2------------185
+#------S3--3--------------186
+#------S3--3.1------------187
+#------S3--3.1.1----------188
 
 
 
