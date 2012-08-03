@@ -67,7 +67,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a><br/><a href="do:MAPArestauracja">3: Do restauracji</a>'
+        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a><br/><a href="do:MAPArestauracja">3: Do restauracji</a><br/><a href="do:MAPAmieszkanieznajomego">4: Do mieszkania Szymona</a>'
       })
     },
   }))
@@ -80,6 +80,9 @@ $ ->
   game.pushAction "MAPArestauracja", =>
     game.lactivate(152)
     game.goto(152)
+  game.pushAction "MAPAmieszkanieznajomego", =>
+    game.lactivate(224)
+    game.goto(224)
     
 #----------PARK------------
 #--------L1-1-------------1
@@ -4420,16 +4423,13 @@ teatrze.</a>'
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Jeśli salon był okopem to kuchnia wygląda jak krater po wybuchu bomby. W powietrzu unosi się słodki zapach napalmu o poranku. Twoją uwagę przyciąga otwarta szafka, w której żołnierze Vietcongu zostawili swoje zupki zanim uciekli w popłochu. Zza zamkniętych drzwi łazienkowych dobiega Cię stłumiony okrzyk. Nie jest to może Marsz Walkirii, ale brzmi równie dramatycznie. <br/><br/><a href="do:MZ_236A">1: [Podejdź do drzwi]</a><br/><a href="do:MZ_236B">2: [Przyrządź zupkę]</a>'
+        text: 'Jeśli salon był okopem to kuchnia wygląda jak krater po wybuchu bomby. W powietrzu unosi się słodki zapach napalmu o poranku. Twoją uwagę przyciąga otwarta szafka, w której żołnierze Vietcongu zostawili swoje zupki zanim uciekli w popłochu. Zza zamkniętych drzwi łazienkowych dobiega Cię stłumiony okrzyk. Nie jest to może Marsz Walkirii, ale brzmi równie dramatycznie. <br/><br/><a href="do:MZ_236A">1: [Podejdź do drzwi]</a>'
       })
     },
   }))
   game.pushAction "MZ_236A", =>
     game.lactivate(237)
     game.goto(237)
-  game.pushAction "MZ_236B", =>
-    game.lactivate(241)
-    game.goto(241)
 
 #----------2b----------237
   game.push(new Location({
@@ -4459,7 +4459,10 @@ teatrze.</a>'
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Melon: <i>Szymek, otwieraj drzwi. Powietrze mi się kończy.</i><br/><br/><a href="do:MZ_238A">1: [Dalej]</a>'
+        text: 'Melon: <i>Szymek, otwieraj drzwi. Powietrze mi się kończy.</i><br/><br/><a href="do:MZ_238A">1: [Otwórz drzwi]</a>'
+      }),
+      b: new LocationState({
+        text: 'Podchodzisz do drzwi łazienki, w której Melon czeka na Szymona-wybawcę.<br/><br/><a href="do:MZ_238A">1: [Otwórz drzwi]</a>'
       })
     },
   }))
@@ -4468,7 +4471,7 @@ teatrze.</a>'
       game.lactivate(247)
       game.goto(247)
     else
-      Flagi.MZpowrot = 247
+      Flagi.MZpowrot = 238
       game.lactivate(246)
       game.goto(246)      
 
@@ -4509,7 +4512,10 @@ teatrze.</a>'
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Stoisz przed wielkim zadaniem. Przed Tobą roztacza się obraz cesarskiego imperium zupkowego. W jakiej kolejności wrzucisz składniki do miski?<br/><br/><a href="do:MZ_241A">1: Woda, makaron, przyprawa </a><br/><a href="do:MZ_241B">2: Woda, przyprawa, makaron</a><br/><a href="do:MZ_241A">3: Przyprawa, woda, makaron</a><br/><a href="do:MZ_241A">4: Przyprawa, makaron, woda</a><br/><a href="do:MZ_241A">5: Makaron, woda, przyprawa</a><br/><a href="do:MZ_241A">6: Makaron, przyprawa, woda</a>'
+        text: 'Stoisz przed wielkim zadaniem. Przed Tobą roztacza się obraz cesarskiego imperium zupkowego. W jakiej kolejności wrzucisz składniki do miski?<br/><br/><a href="do:MZ_241B">1: Woda, makaron, przyprawa </a><br/><a href="do:MZ_241A">2: Woda, przyprawa, makaron</a><br/><a href="do:MZ_241B">3: Przyprawa, woda, makaron</a><br/><a href="do:MZ_241B">4: Przyprawa, makaron, woda</a><br/><a href="do:MZ_241B">5: Makaron, woda, przyprawa</a><br/><a href="do:MZ_241B">6: Makaron, przyprawa, woda</a>'
+      }),
+      b: new LocationState({
+        text: 'W jakiej kolejności wrzucisz składniki do miski?<br/><br/><a href="do:MZ_241B">1: Woda, makaron, przyprawa </a><br/><a href="do:MZ_241A">2: Woda, przyprawa, makaron</a><br/><a href="do:MZ_241B">3: Przyprawa, woda, makaron</a><br/><a href="do:MZ_241B">4: Przyprawa, makaron, woda</a><br/><a href="do:MZ_241B">5: Makaron, woda, przyprawa</a><br/><a href="do:MZ_241B">6: Makaron, przyprawa, woda</a>'
       })
     },
   }))
@@ -4525,9 +4531,86 @@ teatrze.</a>'
     game.goto(245)
 
 #----------2g----------242  
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Niestety, wyrżnąłeś cesarstwo zupek chińskich.<br/><br/><a href="do:MZ_242A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_242A", =>
+    game.lactivate(235)
+    game.goto(235)
+
 #----------2h----------243
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przyrządziłeś taką zupkę, jaką lubi Melon. Słyszysz dźwięk przestawiania mebli i otwierasz drzwi znalezionym kluczem. <br/><br/><a href="do:MZ_243A">1: [Dalej]</a>'
+      }),
+      b: new LocationState({
+        text: 'Podchodzisz do drzwi łazienki z zupką dla Melona. Słyszysz dźwięk przestawiania mebli i otwierasz drzwi znalezionym kluczem. <br/><br/><a href="do:MZ_243A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_243A", =>
+    game.lactivate(247)
+    game.goto(247)
+
 #----------2i----------244
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przyrządziłeś taką zupkę jaką lubi Melon, jednak...<br/><br/><a href="do:MZ_244A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_244A", =>
+    Flagi.MZpowrot = 243
+    game.state(243,'b')
+    game.lactivate(246)
+    game.goto(246)
+
 #----------2j----------245 a, b, c
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Twoja zupka nie spełnia wymogów Melona oraz Instytutu Matki i Dziecka. Na szczęście masz do wykorzystania jeszcze dwie zupki instant.<br/><br/><a href="do:MZ_245A">1: [Spróbuj ponownie]</a>'
+      }),
+      b: new LocationState({
+        text: 'Twoja zupka nie spełnia wymogów Melona oraz Instytutu Matki i Dziecka. Masz jeszcze tylko jedną szansę.<br/><br/><a href="do:MZ_245B">1: [Spróbuj ponownie]</a>'
+      }),
+      C: new LocationState({
+        text: 'Twoja zupka nie spełnia wymogów Melona oraz Instytutu Matki i Dziecka.<br/><br/><a href="do:MZ_245C">1: [Przetrząśnij kuchnię w poszukiwaniu zupki.]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_245A", =>
+    game.state(245,'b')
+    game.state(241, 'b')
+    game.lactivate(241)
+    game.goto(241)
+  game.pushAction "MZ_245B", =>
+    game.state(245,'c')
+    game.lactivate(241)
+    game.goto(241)
+  game.pushAction "MZ_245C", =>
+    game.lactivate(242)
+    game.goto(242)
+
+
 #----------2z----------246
   game.push(new Location({
     img: '/assets/obrazki/aaaaa.jpg',
@@ -4545,20 +4628,242 @@ teatrze.</a>'
     game.lactivate(224)
     game.goto(224)
 
-#----------3a----------246
-#----------3b----------247
-#----------3c----------248
-#----------3d----------249
+#----------3a----------247
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Jeśli salon jest okopem, a kuchnia wielkim kraterem, to łazienka przypomina powierzchnię Księżyca po bombardowaniu orbitalnym czyt. Verdun. Melon raczy się chińską zupką i wnet zasypia, chrapiąc przeciągle aksamitnym barytonem. (<i>hop-siu-siu... hop-siu-siu...</i>)<br/><br/><a href="do:MZ_247A">1: [Zajrzyj do wanny]</a><br/><a href="do:MZ_247B">2: [Przeszukaj Melona]</a><br/><a href="do:MZ_247C">3: [Zajrzyj do szafki z kosmetykami]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_247A", =>
+    game.lactivate(248)
+    game.goto(248)
+  game.pushAction "MZ_247B", =>
+    game.lactivate(249)
+    game.goto(249)
+  game.pushAction "MZ_247C", =>
+    game.lactivate(250)
+    game.goto(250)
 
-#----------4a----------250
-#----------4b----------251
-#----------4c----------252
-#----------4d----------253
-#----------4e----------254
-#----------4f----------255
+#----------3b----------248
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'W wannie nie ma niczego, co mogłoby przykuć twoją uwagę.<br/><br/><a href="do:MZ_248A">1: [Przeszukaj Melona]</a><br/><a href="do:MZ_248B">2: [Zajrzyj do szafki z kosmetykami]</a>'
+      }),
+      b: new LocationState({
+        text: 'W wannie nie ma niczego, co mogłoby przykuć twoją uwagę.<br/><br/><a href="do:MZ_248B">1: [Zajrzyj do szafki z kosmetykami]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_248A", =>
+    game.state(248, 'b')
+    game.lactivate(249)
+    game.goto(249)
+  game.pushAction "MZ_248B", =>
+    game.lactivate(250)
+    game.goto(250)
+
+#----------3c----------249
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przeszukujesz Melona, ale nie znajdujesz nic godnego zainteresowania.<br/><br/><a href="do:MZ_249A">1: [Zajrzyj do wanny]</a><br/><a href="do:MZ_249B">2: [Zajrzyj do szafki z kosmetykami]</a>'
+      }),
+      b: new LocationState({
+        text: 'Przeszukujesz Melona, ale nie znajdujesz nic godnego zainteresowania.<br/><br/><a href="do:MZ_249B">1: [Zajrzyj do szafki z kosmetykami]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_249A", =>
+    game.state(249, 'b')
+    game.lactivate(248)
+    game.goto(248)
+  game.pushAction "MZ_249B", =>
+    game.lactivate(250)
+    game.goto(250)
+
+#----------3d----------250
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otworzyłeś szafkę… i nic tam nie znalazłeś. Odwracasz się od szafki i dostrzegasz postać Dyla Sowizdrzała zasiadającego na tronie, dzierżącego w prawicy berło.<br/><br/><a href="do:MZ_250A">1: [Zajrzyj do wanny]</a><br/><a href="do:MZ_250B">2: [Podejdź do Sowizdrzała]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_250A", =>
+    game.lactivate(251)
+    game.goto(251)
+  game.pushAction "MZ_250B", =>
+    game.lactivate(252)
+    game.goto(252)
+
+#----------4a----------251
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'W wannie jest Nietzsche, który przykuwa twoją uwagę, jednak próby porozumienia się spełzły na niczym.<br/><br/><a href="do:MZ_251A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_251A", =>
+    game.lactivate(252)
+    game.goto(252)
+
+#----------4b----------252
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Sowizdrzał: <i>Czy też widzisz Nietzschego w wannie?</i><br/><br/><a href="do:MZ_252A">1: <i>Widzę Nietzschego.</i></a><br/><a href="do:MZ_252A">2: <i>Nie widzę niczego.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_252A", =>
+    game.lactivate(253)
+    game.goto(253)
+
+#----------4c----------253
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Sowizdrzał: <i>Ewa nie wraca ranki i wieczory.<br/>Czyżby zeżarły ją jakieś potwory?<br/>Był taki Szymon, chłopak nie lada,<br/>Usta miał słodkie jak czekolada.<br/>W kuchni rzuciła się Ewa na dziada.<br/>Biada ci biada Dyl Sowizdrzał powiada:<br/>Kto ci winien, to ci winien, samaś sobie winna<br/>Boś chodziła do Szymona, tegoś nie powinna.</i><br/><br/><a href="do:MZ_253A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_253A", =>
+    game.lactivate(254)
+    game.goto(254)
+
+#----------4d----------254
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nieco skonfudowany oddalasz się od Sowizdrzała i zmierzasz do salonu, po drodze mijając kuchnię pełną makaronowych chińskich, czerwonych żołnierzy.<br/><br/><a href="do:MZ_254A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_254A", =>
+    game.lactivate(255)
+    game.goto(255)
+
+#----------4e----------255
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wracasz do salonu, na środku którego stoi kunsztownie zdobiony konfesjonał, w którym zasiada kunsztownie zdobiony ksiądz.<br/>Ksiądz: <i>Czy też widziałeś Nietzschego w wannie?</i><br/><br/><a href="do:MZ_255A">1: <i>Widziałem, niczego sobie.</i></a><br/><a href="do:MZ_255A">2: <i>Nie widziałem Nietzschego, sobie.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_255A", =>
+    game.lactivate(256)
+    game.goto(256)
+
+#----------4f----------256
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ksiądz: <i>Nie porzucaj nadzieję jako się kolwiek dzieje.<br/>Ewa cierpliwa jest, łaskawa jest,<br/>Ewa nie zazdrości, nie szuka poklasku,<br/>Nie unosi się gniewem, nie pamięta złego<br/>Kto domniema zdrady, kochankiem będący<br/>Jest jak miedź brzęcząca albo cymbał brzmiący<br/>Nie porzucaj nadzieję jako się kolwiek dzieje.</i><br/>Podniesiony na duchu opuszczasz oniryczne podwoje mieszkania Szymona…<br/><br/><a href="do:MZ_256A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "MZ_256A", =>
+    game.lactivate(0)
+    game.goto(0)
 
 
 
+#---------PASMENTERIA---------------#
+#--------1------------------------257
+#--------1.2----------------------258
+#--------1.2.1--------------------259
+#--------1.1----------------------260
+#--------1.2.1.2------------------261
+#--------1.2.1.2.1----------------262
+#--------1.2.1.2.2----------------263
+#--------1.2.1.2.2.1--------------264
+#--------2------------------------265
+#--------2.1----------------------266
+#--------2.1.1--------------------267
+#--------2.1.2--------------------268
+#--------3------------------------269
+#--------3.1----------------------270
+#--------3.2.1--------------------271
+#--------3.1.1--------------------272
+#--------3.1.1.1------------------273
+#--------3.1.2--------------------274
+#--------3.2.1.1------------------275
+#--------3.2.1.1.2----------------276
+#--------3.2.1.1.1----------------277
+#--------3.2.1.1.1.2--------------278
+#--------3.2.1.1.1.1--------------279
+#--------4------------------------280
+#--------4.1----------------------281
+#--------4.1.1--------------------282
+#--------4.1.2--------------------283
+#--------4.1.2.1------------------284
+#--------4.1.2.2------------------285
+#--------4.1.2.3------------------286
+#--------4.1.3--------------------287
+#--------4.1.3.1------------------288
+#--------4.1.3.1.1----------------289
+#--------4.1.3.1.2----------------290
+#--------4.1.3.1.1.1--------------291
+#--------4.1.3.1.1.2--------------292
+#--------4.1.3.1.1.2.1------------293
+#--------4.1.3.1.1.1.2------------294
+#--------4.1.3.2------------------295
+#--------4.1.3.2.1----------------296
+#--------4.1.3.2.1.1--------------297
+#--------4.1.3.2.1.2--------------298
+#--------4.1.3.2.1.1.1------------299
+#--------4.1.3.2.2----------------300
+#--------4.1.3.2.2.1--------------301
+#--------4.1.3.2.2.1.1------------302
+#--------4.1.3.3------------------303
+#--------4.1.3.3.1----------------304
+#--------4.1.3.3.1.1--------------305
+#--------4.1.3.3.1.2--------------306
+#--------4.1.3.3.1.1.1------------307
+#--------4.1.3.3.2----------------308
+#--------4.1.3.3.2.1--------------309
+#--------4.1.3.3.2.1.1------------310
+#--------5------------------------311
+#--------5.1----------------------312
+#--------5.1.1--------------------313
+#--------5.1.2--------------------314
+#--------5.1.3--------------------315
+#--------5.1.2.1------------------316
 
 
 
