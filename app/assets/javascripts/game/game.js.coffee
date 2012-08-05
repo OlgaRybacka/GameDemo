@@ -67,7 +67,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a><br/><a href="do:MAPArestauracja">3: Do restauracji</a><br/><a href="do:MAPAmieszkanieznajomego">4: Do mieszkania Szymona</a>'
+        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a><br/><a href="do:MAPArestauracja">3: Do restauracji</a><br/><a href="do:MAPAmieszkanieznajomego">4: Do mieszkania Szymona</a><br/><a href="do:MAPApasmanteria">5: Do pasmanterii</a>'
       })
     },
   }))
@@ -83,6 +83,9 @@ $ ->
   game.pushAction "MAPAmieszkanieznajomego", =>
     game.lactivate(224)
     game.goto(224)
+  game.pushAction "MAPApasmanteria", =>
+    game.lactivate(257)
+    game.goto(257)
     
 #----------PARK------------
 #--------L1-1-------------1
@@ -4805,65 +4808,991 @@ teatrze.</a>'
 
 #---------PASMENTERIA---------------#
 #--------1------------------------257
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wchodzisz do podłużnego, ciemnego i zagraconego sklep. Część wyposażenia stanowią skrzynie poukładane obok siebie, w każdej znajduje się inny rodzaj suwenirów, oprócz tego wszędzie walają się typowe, pasmanteryjne rzeczy. Nigdzie nie widać sprzedawcy. Ściany ozdobione są wyblakłymi malowidłami reklamowymi, przez cały lokal biegnie namalowana wstęga, która znika zasłonięta regałem.<br/><br/><a href="do:pasmanteria257A">1: [Zagłębiasz się w poszukiwaniu lady i sprzedawcy (idąc za wstęgą)]</a><br/><a href="do:pasmanteria257B">2: [Przeszukujesz kilka intrygujących półek i skrzyni w poszukiwaniu śladów dziewczyny]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria257A", =>
+    game.lactivate(260)
+    game.goto(260)
+  game.pushAction "pasmanteria257B", =>
+    game.lactivate(258)
+    game.goto(258)
+
 #--------1.2----------------------258
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Odnajdujesz rękawiczkę, która przypomina ci taką, jaką kiedyś podarowałeś dziewczynie, nie może znaleźć drugiej, podczas tego grzebania pojawia się subiekt.<br/><br/><a href="do:pasmanteria258A">1: <i>Nie ma pan może takiej drugiej rękawiczki?</i></a><br/><a href="do:pasmanteria258B">2: <i>Szukam koleżanki, która tu pracuje. Nie wie pan może, gdzie ona może być?</i></a><br/><a href="do:pasmanteria258C">3: <i>Nareszcie, jak długo można czekać! Proszę mi powiedzieć, czy jest tu Ewa?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria258A", =>
+    game.lactivate(259)
+    game.goto(259)
+  game.pushAction "pasmanteria258B", =>
+    game.lactivate(261)
+    game.goto(261)
+  game.pushAction "pasmanteria258C", =>
+    game.lactivate(263)
+    game.goto(263)
+
 #--------1.2.1--------------------259
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Nie, nawet jej nie poznaję, musiała tu trafić przypadkiem. Druga pewnie zawieruszyła się na zapleczu.</i><br/><br/><a href="do:pasmanteria259A">1: <i>Szukam koleżanki, która tu pracuje. Nie wie pan może, gdzie ona może być?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria259A", =>
+    game.lactivate(261)
+    game.goto(261)
+
 #--------1.1----------------------260
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Docierasz do lady, subiekta dalej nie widać. Mówisz głośno: <i>Dzień dobry!</i><br/>Po chwili z zaplecza wyłania się starszy człowiek, który uśmiecha się dobrotliwie.<br/><br/><a href="do:pasmanteria260A">1: <i>Szukam koleżanki, która tu pracuje. Nie wie pan może, gdzie ona może być?</i><a><br/><a href="do:pasmanteria260B">2: <i>Nareszcie, jak długo można czekać! Proszę mi powiedzieć, czy jest tu Ewa?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria260A", =>
+    game.lactivate(261)
+    game.goto(261)
+  game.pushAction "pasmanteria260B", =>
+    game.lactivate(263)
+    game.goto(263)
+
 #--------1.2.1.2------------------261
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Mówi Pan o Ewie? Tak, to przemiła dziewczyna, pomaga mi czasami prowadzić sklep. Jak Pan widzi panuje tu teraz mały rozgardiasz</i> – staruszek rozgląda się po zagraconym wnętrzu – <i>nie widziałem jej tu od kilku dni.</i><br/><br/><a href="do:pasmanteria261A">1: <i>A nie wie pan, gdzie ona może teraz być? Może coś mówiła, zostawiła jakąś wiadomość?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria261A", =>
+    game.lactivate(262)
+    game.goto(262)
+
 #--------1.2.1.2.1----------------262
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Niestety nie wiem nic o niej. Ale jeśli pan chce, to może pan zajrzeć na górę, sprzątała tam ostatnio kilka regałów.</i><br/><br/><a href="do:pasmanteria262A">1: <i>Dziękuję, rozejrzę się tam.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria262A", =>
+    game.lactivate(265)
+    game.goto(265)
+
 #--------1.2.1.2.2----------------263
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Przepraszam pana bardzo, że musiał pan czekać. Ale, jeśli wolno zapytać, to kim pan jest i dlaczego pyta pan o Ewę?</i><br/><br/><a href="do:pasmanteria263A">1: <i>To nie pański interes, szukam jej i tyle.</i></a><br/><a href="do:pasmanteria263B">2: <i>Jestem jej przyjacielem, a jej koleżanka prosiła mnie żebym ją odnalazł, bo od dłuższego czasu nie ma z nią kontaktu.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria263A", =>
+    game.lactivate(264)
+    game.goto(264)
+  game.pushAction "pasmanteria263B", =>
+    game.lactivate(261)
+    game.goto(261)
+
 #--------1.2.1.2.2.1--------------264
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Nie widziałem jej od dawna, jeśli pan nic nie kupuje, to proszę opuścić sklep.</i><br/><br/><a href="do:pasmanteria264A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria264A", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #--------2------------------------265
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Znajdujesz się w ciemnym pomieszczeniu rozświetlanym jedynie słabą żarówką, pośród licznych obrazów i wielkiego regału z najróżniejszymi niciami. Pod ścianą stoi kilka regałów, między którymi uwija się starsza klientka najwyraźniej szukająca odpowiedniego koloru włóczki, robi przy tym straszny bałagan. Podchodzisz do kobiety.<br/><br/><a href="do:pasmanteria265A">1: <i>Przepraszam bardzo, szukam koleżanki, która tu pracuje. Może spotkała ją Pani kiedyś?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria265A", =>
+    game.lactivate(266)
+    game.goto(266)
+
 #--------2.1----------------------266
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Klientka: <i>Proszę mi dać spokój! Szukam miętowej nitki, żeby wyhaftować inicjały mojego Niuńka, a w tej gemeli niczego nie można znaleźć!</i><br/><br/><a href="do:pasmanteria266A">1: <i>Nie ma pani nic lepszego do roboty niż robienie tutaj bajzlu? Za dużo czasu na starość?</i></a><br/><a href="do:pasmanteria266B">2: <i>Ach rozumiem, jeśli pani chce, to chętnie pomogę w szukaniu.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria266A", =>
+    game.lactivate(267)
+    game.goto(267)
+  game.pushAction "pasmanteria266B", =>
+    game.lactivate(268)
+    game.goto(268)
+
 #--------2.1.1--------------------267
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Klientka: <i>Co za cham! Taka ta młodzież dzisiaj… (blablalblalbla)</i><br/>Kobieta wychodzi, przedstawiając przy tym piękno stetryczałego narzekania na zdziczałe, nowe czasy.<br/><br/><a href="do:pasmanteria267A">1: [Wracasz na parter.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria267A", =>
+    game.lactivate(269)
+    game.goto(269)
+
 #--------2.1.2--------------------268
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Klientka: <i>No jeśli chce pan… szukam miętowej muliny, żeby dobrze pasowała do swetra Niuniusia.</i><br/>Zaczynasz przeglądać półki. Już po chwili odnajdujesz poszukiwaną nić. Wręczasz ją staruszce, a ta po bąknięciu <i>Dziękuję...</i> wychodzi z pomieszczenia. Podczas rozglądania się dostrzegłeś mały, wiszący na ścianie obrazek. Przypatrując mu się bliżej, zauważyłeś w nim coś nieuchwytnego, co przypominało ci Ewę. Abstrakcyjny, surrealistyczny obrazek tańczącej kobiety mówił ci, że stworzyła go osoba dobrze ci znana. Postanawiasz dokładnie wypytać sprzedawcę.<br/><br/><a href="do:pasmanteria268A">1: [Wracasz na parter.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria268A", =>
+    game.lactivate(270)
+    game.goto(270)
+
 #--------3------------------------269
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Po powrocie na parter sklepu znowu nie widzisz nigdzie sprzedawcy. Podchodzisz cicho do drzwi z napisem zaplecze i pukasz, odpowiada ci ten sam, miły i ciepły głos co poprzednio:<br/><i>Tak, już idę…</i><br/>Uchylasz drzwi i widzisz sprzedawcę siedzącego przy ogromnym, dębowym biurku i przeglądającego stare zeszyty.<br/><br/><a href="do:pasmanteria269A">1: <i>Przepraszam bardzo, zauważyłem na górze mały obrazek, który pewnie namalowała Ewa.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria269A", =>
+    game.lactivate(271)
+    game.goto(271)
+
 #--------3.1----------------------270
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Po powrocie na parter sklepu znowu nie widzisz nigdzie sprzedawcy. Podchodzisz cicho do drzwi z napisem zaplecze i pukasz, odpowiada ci ten sam, miły i ciepły głos co poprzednio:<br/><i>Tak, już idę…</i><br/>Uchylasz drzwi i widzisz sprzedawcę siedzącego przy ogromnym, dębowym biurku i przeglądającego stare zeszyty.<br/><br/><a href="do:pasmanteria270A">1: <i>Przepraszam bardzo, zauważyłem na górze mały obrazek, który pewnie namalowała Ewa.</i></a><br/><a href="do:pasmanteria270B">2: <i>Niezły ma pan tu bajzel, ciężko coś znaleźć.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria270A", =>
+    game.lactivate(272)
+    game.goto(272)
+  game.pushAction "pasmanteria270B", =>
+    game.lactivate(274)
+    game.goto(274)
+
 #--------3.2.1--------------------271
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>A skąd pan wie, że to jej rysunek?</i><br/><br/><a href="do:pasmanteria271A">1: <i>Widziałem ich już kilka, wszystkie malowane są tą samą ręką i stylem.</i></a><br/><a href="do:pasmanteria271A">2: <i>Był podpisany jej inicjałami.</i> (kłamstwo)</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria271A", =>
+    game.lactivate(275)
+    game.goto(275)
+
 #--------3.1.1--------------------272
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>A skąd pan wie, że to jej rysunek?</i><br/><br/><a href="do:pasmanteria272A">1: <i>Widziałem ich już kilka, wszystkie malowane są tą samą ręką i stylem.</i></a><br/><a href="do:pasmanteria272A">2: <i>Był podpisany jej inicjałami.</i> (kłamstwo)</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria272A", =>
+    game.lactivate(273)
+    game.goto(273)
+
 #--------3.1.1.1------------------273
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Tak, ma pan rację, powiesiła go tam Ewa. Przed chwilą wychodziła stąd kobieta, była panu wdzięczna za pomoc. Widać, że jest pan kulturalny. Niestety nie wiem gdzie jest Ewa, ale w piwnicy zostawiła ostatnio rower i chyba torbę z książkami. Może je pan sprawdzić.</i><br/><br/><a href="do:pasmanteria273A">1: [Schodzisz do piwnicy.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria273A", =>
+    game.lactivate(280)
+    game.goto(280)
+
 #--------3.1.2--------------------274
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Faktycznie kiepsko sobie radzę ostatnio. Ale mam nadzieję, że znalazł pan wszystko, co potrzebne?</i><br/><br/><a href="do:pasmanteria274A">1: <i>Zauważyłem na górze mały obrazek, który pewnie namalowała Ewa.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria274A", =>
+    game.lactivate(272)
+    game.goto(272)
+
 #--------3.2.1.1------------------275
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Tak, ma pan rację, powiesiła go tam Ewa. Chciałbym się dowiedzieć, czy ciągle panu na niej zależy?</i><br/><br/><a href="do:pasmanteria275A">1: <i>Byłem jej chłopakiem, ale chyba niewystarczająco dobrym. To wspaniała dziewczyna. Jest dla mnie bardzo ważna.</i></a><br/><a href="do:pasmanteria275B">2: <i>Ona mnie nie obchodzi. Szukam jej tylko z czystej przyzwoitości.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria275A", =>
+    game.lactivate(277)
+    game.goto(277)
+  game.pushAction "pasmanteria275B", =>
+    game.lactivate(276)
+    game.goto(276)
+
 #--------3.2.1.1.2----------------276
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>To smutne, co pan mówi. Obrazek faktycznie powiesiła ona, ale nie widziałem jej od tego czasu. Proszę ją pozdrowić ode mnie kiedy ją pan znajdzie. A teraz przepraszam, mam dużo pracy.</i><br/><br/><a href="do:pasmanteria276A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria276A", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #--------3.2.1.1.1----------------277
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Jeśli tak, to pewnie wie pan, w jakiej sztuce miała ostatnio zagrać?</i><br/><br/><a href="do:pasmanteria277A">1: <i>Tak, w "Wyzwoleniu"</i></a><br/><a href="do:pasmanteria277B">2: <i>Tak, w "Weselu"</i></a><br/><a href="do:pasmanteria277C">3: <i>Niestety, nie pamiętam, ale wiem, że jej nie wyszło i jednak nie zagra.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria277A", =>
+    game.lactivate(279)
+    game.goto(279)
+  game.pushAction "pasmanteria277B", =>
+    game.lactivate(278)
+    game.goto(278)
+  game.pushAction "pasmanteria277C", =>
+    game.lactivate(279)
+    game.goto(279)
+
 #--------3.2.1.1.1.2--------------278
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>Nie...chyba niewiele pan o niej wie... Powodzenia w poszukiwaniach i proszę ją pozdrowić ode mnie, kiedy ją pan znajdzie. A teraz przepraszam, mam dużo pracy.</i><br/><br/><a href="do:pasmanteria278A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria278A", =>
+    game.lactivate(0)
+    game.goto(0)
+
 #--------3.2.1.1.1.1--------------279
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Subiekt: <i>To prawda... Niestety, nie wiem gdzie jest Ewa, ale w piwnicy zostawiła ostatnio rower i chyba torbę z książkami. Może je pan sprawdzić.</i><br/><br/><a href="do:pasmanteria279A">1: [Schodzisz do piwnicy.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria279A", =>
+    game.lactivate(280)
+    game.goto(280)
+
 #--------4------------------------280
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otwierasz drzwi w głębi pomieszczenia. Zagłębiasz się w ciemność, nagle gasną za tobą światła. Czujesz zapach starej tapicerki i rytmiczny szept jakiejś mechanicznej maszyny. Nagle odkrywasz, że znajdujesz się w staromodnej windzie. Ściany wykończone są drewnem i czerwonym atłasem. Mosiężne szczegóły uderzają misternością wykonania. Nad drzwiami delikatna strzałka wskazuje piętra. Jesteś na poziomie zero. Dziewięć pięter w dół. Górne piętra są niewidoczne, zaklejone czarną taśmą. Dopiero teraz zauważasz gnoma ubranego w czerwoną marynarkę i szpiczastą czapkę.<br/><br/><a href="do:pasmanteria280A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria280A", =>
+    game.lactivate(281)
+    game.goto(281)
+
 #--------4.1----------------------281
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Gnom: <i>Szanowny pan życzy sobie poziom..?</i><br/><br/><a href="do:pasmanteria281A">1: <i>Dlaczego nie pojadę w górę?</i></a><br/><a href="do:pasmanteria281B">2: <i>Poziom -1</i></a><br/><a href="do:pasmanteria281C">3: <i>Poziom -6</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria281A", =>
+    game.lactivate(282)
+    game.goto(282)
+  game.pushAction "pasmanteria281B", =>
+    game.lactivate(283)
+    game.goto(283)
+  game.pushAction "pasmanteria281C", =>
+    game.lactivate(287)
+    game.goto(287)
+
 #--------4.1.1--------------------282
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Posłuchaj i uważ u siebie,<br/>Że według Bożego rozkazu,<br/>Kto nie poznał piekła ni razu,<br/>Ten nigdy nie może być w niebie.<br/><br/><a href="do:pasmanteria282A">1: <i>Poziom -1</i></a><br/><a href="do:pasmanteria282B">2: <i>Poziom -6</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria282A", =>
+    game.lactivate(283)
+    game.goto(283)
+  game.pushAction "pasmanteria282B", =>
+    game.lactivate(287)
+    game.goto(287)
+
 #--------4.1.2--------------------283
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Drzwi otwierają się delikatnie, widzisz przed sobą ciemny korytarz, ciemności są nieprzeniknione. Zauważasz, że z boku wbita w ścianą jest pochodnia. Nie masz jednak nic, czym mógłbyś ją zapalić. Pod pochodnią zauważasz jednak tekst napisany w języku starocerkiewnosłowiańskim. Na szczęście jesteś dobry w te klocki i już po chwili odczytujesz zadanie:<br/><i>Wyrobnik postanowił zrąbać drzewo, bo widać było, że będzie z niego dobre drewno. Bał się jednak by upadająca sosna nie zniszczyła jego chaty. Miał sznur dziesięciometrowy, który przywiązany do czubka drzewa, dotykał ziemi osiem metrów od pnia. Siedlisko jego pięć metrów dzieliło od sosny. Ostoi się aby ta chata, jeśli drzewo spadnie w jego stronę? Jeśli tak  się stanie, to zginą jego małe dziatki i żona brzemienna.</i><br/>Pod zadaniem widnieją przyciski:<br/><br/><a href="do:pasmanteria283A">1: (Tak, chata przetrwa.)</a><br/><a href="do:pasmanteria283B">2: (Nie, spadające drzewo ją przygniecie.)</a><br/><a href="do:pasmanteria283C">3: (Błogosławieni niech będą święci Cyryl i Metody.)</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria283A", =>
+    game.lactivate(284)
+    game.goto(284)
+  game.pushAction "pasmanteria283B", =>
+    game.lactivate(285)
+    game.goto(285)
+  game.pushAction "pasmanteria283C", =>
+    game.lactivate(286)
+    game.goto(286)
+
 #--------4.1.2.1------------------284
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nic się nie dzieje.<br/><br/><a href="do:pasmanteria284A">1: [Wracasz do windy]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria284A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.2.2------------------285
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Wciskasz przycisk, po chwili zapala się pochodnia. Zaraz za nią zapalają się kolejne oświetlając korytarz coraz dalej. Dostrzegasz starca siedzącego dotąd w ciemności. Jego zmartwiona twarz nabiera coraz więcej spokoju, kiedy tylko zapalają się kolejne latarnie. Światło zaczyna go opromieniać.<br/><br/><a href="do:pasmanteria285A">1: [Wracasz do windy]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria285A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.2.3------------------286
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Rozlega się głośne <i>AMEN.</i><br/><br/><a href="do:pasmanteria286A">1: [Wracasz do windy]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria286A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3--------------------287
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Winda rusza, strzałka nad drzwiami powoli wędruje aż do numeru -6. Otwierają się drzwi. Widzisz mroczny loch, kryptę pachnącą całunem dawno zastygłej śmierci. W delikatnej poświecie widzisz trzy trumny, nieodparta chęć taniego poszukiwacza przygód każe ci zajrzeć do nich. Którą otwierasz najpierw?<br/><br/><a href="do:pasmanteria287A">1: [Otwierasz pierwszą trumnę - z pociemniałego drewna i obrazem wąsacza w rożowo-rdzawym kontuszu.]</a><br/><a href="do:pasmanteria287B">2: [Otwierasz blaszane pudło zanitowane z każdej strony.]</a><br/><a href="do:pasmanteria287C">3: [Otwierasz prostą drewnianą skrzynię, ozdobioną jedynie wyrzeźbionym krzyżem.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria287A", =>
+    game.lactivate(288)
+    game.goto(288)
+  game.pushAction "pasmanteria287B", =>
+    game.lactivate(295)
+    game.goto(295)
+  game.pushAction "pasmanteria287C", =>
+    game.lactivate(303)
+    game.goto(303)
+
 #--------4.1.3.1------------------288
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Z trudem podnosisz wieko, oczom twoim ukazuje się wysuszone ciało, które łypie na ciebie rybim okiem. Skóra skurczyła się, odsłaniając długie paznokcie i zęby. Zapadnięte płuca nie unoszą się, mięśnie skruszały. Serce wyżarły szczury, zresztą krew już dawno zwietrzała. Jedynie oko patrzy całkowicie przytomnie to na ciebie, to na ściany krypty. To oko jest nieśmiertelne i zawsze już będzie patrzeć na wieko trumny. To, co leży w trumnie a kiedyś było człowiekiem musiało solidnie zasłużyć sobie na taką karę. Zastanawiasz się co zrobić, kiedy nachodzi cię głód. Wyciągasz z kieszeni solidny kawał ukraińskiej chałwy i przegryzając:<br/><br/><a href="do:pasmanteria288A">1: [Wykłuwasz pozostałe oko szwajcarskim scyzorykiem.]</a><br/><a href="do:pasmanteria288B">2: [Zamykasz wieko trumny i zostawiasz  je tak jak było.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria288A", =>
+    game.lactivate(289)
+    game.goto(289)
+  game.pushAction "pasmanteria288B", =>
+    game.lactivate(290)
+    game.goto(290)
+
 #--------4.1.3.1.1----------------289
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Oko wyskakuje z zadziwiającą łatwością. Wkładasz je do kieszeni, bo „może się jeszcze przydać”. Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria289A">1: [Otwierasz blaszane pudło zanitowane z każdej strony.]</a><br/><a href="do:pasmanteria289B">2: [Otwierasz prostą drewnianą skrzynię, ozdobioną jedynie wyrzeźbionym krzyżem.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria289A", =>
+    game.lactivate(291)
+    game.goto(291)
+  game.pushAction "pasmanteria289B", =>
+    game.lactivate(292)
+    game.goto(292)
+
 #--------4.1.3.1.2----------------290
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria290A">1: [Otwierasz blaszane pudło zanitowane z każdej strony.]</a><br/><a href="do:pasmanteria290B">2: [Otwierasz prostą drewnianą skrzynię, ozdobioną jedynie wyrzeźbionym krzyżem.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria290A", =>
+    game.lactivate(291)
+    game.goto(291)
+  game.pushAction "pasmanteria290B", =>
+    game.lactivate(292)
+    game.goto(292)
+
 #--------4.1.3.1.1.1--------------291
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie jesteś w stanie w żaden sposób go otworzyć, ze środka dobiega jedynie głuchy chlupot gęstej cieczy.<br/><br/><a href="do:pasmanteria291A">1: [Otwierasz prostą drewnianą skrzynię, ozdobioną jedynie wyrzeźbionym krzyżem.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria291A", =>
+    game.lactivate(294)
+    game.goto(294)
+
 #--------4.1.3.1.1.2--------------292
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otwierasz wieko i widzisz wyścielone czerwonym suknem wnętrze. W środku nie ma nic oprócz rękawiczki, która przypomina ci tą, którą znalazłeś wcześniej. Wkładasz ją do kieszeni.<br/><br/><a href="do:pasmanteria292A">1: [Otwierasz blaszane pudło zanitowane z każdej strony.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria292A", =>
+    game.lactivate(293)
+    game.goto(293)
+
 #--------4.1.3.1.1.2.1------------293
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie jesteś w stanie w żaden sposób go otworzyć, ze środka dobiega jedynie głuchy chlupot gęstej cieczy.<br/><br/><a href="do:pasmanteria293A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria293A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3.1.1.1.2------------294
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otwierasz wieko i widzisz wyścielone czerwonym suknem wnętrze. W środku nie ma nic oprócz rękawiczki, która przypomina ci tą, którą znalazłeś wcześniej. Wkładasz ją do kieszeni.<br/><br/><a href="do:pasmanteria294A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria294A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3.2------------------295
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie jesteś w stanie w żaden sposób go otworzyć, ze środka dobiega jedynie głuchy chlupot gęstej cieczy.<br/><br/><a href="do:pasmanteria295A">1: [Otwierasz trumnę z pociemniałego drewna i obrazem wąsacza w rożowo-rdzawym kontuszu.]</a><br/><a href="do:pasmanteria295B">2: [Otwierasz prostą drewnianą skrzynię, ozdobioną jedynie wyrzeźbionym krzyżem.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria295A", =>
+    game.lactivate(296)
+    game.goto(296)
+  game.pushAction "pasmanteria295B", =>
+    game.lactivate(300)
+    game.goto(300)
+
 #--------4.1.3.2.1----------------296
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Z trudem podnosisz wieko, oczom twoim ukazuje się wysuszone ciało, które łypie na ciebie rybim okiem. Skóra skurczyła się, odsłaniając długie paznokcie i zęby. Zapadnięte płuca nie unoszą się, mięśnie skruszały. Serce wyżarły szczury, zresztą krew już dawno zwietrzała. Jedynie oko patrzy całkowicie przytomnie to na ciebie, to na ściany krypty. To oko jest nieśmiertelne i zawsze już będzie patrzeć na wieko trumny. To, co leży w trumnie a kiedyś było człowiekiem musiało solidnie zasłużyć sobie na taką karę. Zastanawiasz się co zrobić, kiedy nachodzi cię głód. Wyciągasz z kieszeni solidny kawał ukraińskiej chałwy i przegryzając:<br/><br/><a href="do:pasmanteria296A">1: [Wykłuwasz pozostałe oko szwajcarskim scyzorykiem.]</a><br/><a href="do:pasmanteria296B">2: [Zamykasz wieko trumny i zostawiasz  je tak jak było.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria296A", =>
+    game.lactivate(297)
+    game.goto(297)
+  game.pushAction "pasmanteria296B", =>
+    game.lactivate(298)
+    game.goto(298)
+
 #--------4.1.3.2.1.1--------------297
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Oko wyskakuje z zadziwiającą łatwością. Wkładasz je do kieszeni, bo „może się jeszcze przydać”. Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria297A">1: [Otwierasz prostą drewnianą skrzynię, ozdobioną jedynie wyrzeźbionym krzyżem.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria297A", =>
+    game.lactivate(299)
+    game.goto(299)
+
 #--------4.1.3.2.1.2--------------298
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria298A">1: [Otwierasz prostą drewnianą skrzynię, ozdobioną jedynie wyrzeźbionym krzyżem.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria298A", =>
+    game.lactivate(299)
+    game.goto(299)
+
 #--------4.1.3.2.1.1.1------------299
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otwierasz wieko i widzisz wyścielone czerwonym suknem wnętrze. W środku nie ma nic oprócz rękawiczki, która przypomina ci tą, którą znalazłeś wcześniej. Wkładasz ją do kieszeni.<br/><br/><a href="do:pasmanteria299A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria299A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3.2.2----------------300
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otwierasz wieko i widzisz wyścielone czerwonym suknem wnętrze. W środku nie ma nic oprócz rękawiczki, która przypomina ci tą, którą znalazłeś wcześniej. Wkładasz ją do kieszeni.<br/><br/><a href="do:pasmanteria299A">1: [Otwierasz trumnę z pociemniałego drewna i obrazem wąsacza w rożowo-rdzawym kontuszu.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria299A", =>
+    game.lactivate(301)
+    game.goto(301)
+
 #--------4.1.3.2.2.1--------------301
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Z trudem podnosisz wieko, oczom twoim ukazuje się wysuszone ciało, które łypie na ciebie rybim okiem. Skóra skurczyła się, odsłaniając długie paznokcie i zęby. Zapadnięte płuca nie unoszą się, mięśnie skruszały. Serce wyżarły szczury, zresztą krew już dawno zwietrzała. Jedynie oko patrzy całkowicie przytomnie to na ciebie, to na ściany krypty. To oko jest nieśmiertelne i zawsze już będzie patrzeć na wieko trumny. To, co leży w trumnie a kiedyś było człowiekiem musiało solidnie zasłużyć sobie na taką karę. Zastanawiasz się co zrobić, kiedy nachodzi cię głód. Wyciągasz z kieszeni solidny kawał ukraińskiej chałwy i przegryzając:<br/><br/><a href="do:pasmanteria301A">1: [Wykłuwasz pozostałe oko szwajcarskim scyzorykiem.]</a><br/><a href="do:pasmanteria301B">2: [Zamykasz wieko trumny i zostawiasz  je tak jak było.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria301A", =>
+    game.lactivate(302)
+    game.goto(302)
+  game.pushAction "pasmanteria301B", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3.2.2.1.1------------302
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Oko wyskakuje z zadziwiającą łatwością. Wkładasz je do kieszeni, bo „może się jeszcze przydać”. Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria302A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria302A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3.3------------------303
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Otwierasz wieko i widzisz wyścielone czerwonym suknem wnętrze. W środku nie ma nic oprócz rękawiczki, która przypomina ci tą, którą znalazłeś wcześniej. Wkładasz ją do kieszeni.<br/><br/><a href="do:pasmanteria303A">1: [Otwierasz trumnę z pociemniałego drewna i obrazem wąsacza w rożowo-rdzawym kontuszu.]</a><br/><a href="do:pasmanteria303B">2: [Otwierasz blaszane pudło zanitowane z każdej strony.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria303A", =>
+    game.lactivate(304)
+    game.goto(304)
+  game.pushAction "pasmanteria303B", =>
+    game.lactivate(308)
+    game.goto(308)
+
 #--------4.1.3.3.1----------------304
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Z trudem podnosisz wieko, oczom twoim ukazuje się wysuszone ciało, które łypie na ciebie rybim okiem. Skóra skurczyła się, odsłaniając długie paznokcie i zęby. Zapadnięte płuca nie unoszą się, mięśnie skruszały. Serce wyżarły szczury, zresztą krew już dawno zwietrzała. Jedynie oko patrzy całkowicie przytomnie to na ciebie, to na ściany krypty. To oko jest nieśmiertelne i zawsze już będzie patrzeć na wieko trumny. To, co leży w trumnie a kiedyś było człowiekiem musiało solidnie zasłużyć sobie na taką karę. Zastanawiasz się co zrobić, kiedy nachodzi cię głód. Wyciągasz z kieszeni solidny kawał ukraińskiej chałwy i przegryzając:<br/><br/><a href="do:pasmanteria304A">1: [Wykłuwasz pozostałe oko szwajcarskim scyzorykiem.]</a><br/><a href="do:pasmanteria304B">2: [Zamykasz wieko trumny i zostawiasz  je tak jak było.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria304A", =>
+    game.lactivate(305)
+    game.goto(305)
+  game.pushAction "pasmanteria304B", =>
+    game.lactivate(306)
+    game.goto(306)
+
 #--------4.1.3.3.1.1--------------305
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Oko wyskakuje z zadziwiającą łatwością. Wkładasz je do kieszeni, bo „może się jeszcze przydać”. Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria305A">1: [Otwierasz blaszane pudło zanitowane z każdej strony.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria305A", =>
+    game.lactivate(307)
+    game.goto(307)
+
 #--------4.1.3.3.1.2--------------306
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria306A">1: [Otwierasz blaszane pudło zanitowane z każdej strony.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria306A", =>
+    game.lactivate(307)
+    game.goto(307)
+
 #--------4.1.3.3.1.1.1------------307
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie jesteś w stanie w żaden sposób go otworzyć, ze środka dobiega jedynie głuchy chlupot gęstej cieczy.<br/><br/><a href="do:pasmanteria307A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria307A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3.3.2----------------308
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Nie jesteś w stanie w żaden sposób go otworzyć, ze środka dobiega jedynie głuchy chlupot gęstej cieczy. Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria308A">1: [Otwierasz trumnę z pociemniałego drewna i obrazem wąsacza w rożowo-rdzawym kontuszu.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria308A", =>
+    game.lactivate(309)
+    game.goto(309)
+
 #--------4.1.3.3.2.1--------------309
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Z trudem podnosisz wieko, oczom twoim ukazuje się wysuszone ciało, które łypie na ciebie rybim okiem. Skóra skurczyła się, odsłaniając długie paznokcie i zęby. Zapadnięte płuca nie unoszą się, mięśnie skruszały. Serce wyżarły szczury, zresztą krew już dawno zwietrzała. Jedynie oko patrzy całkowicie przytomnie to na ciebie, to na ściany krypty. To oko jest nieśmiertelne i zawsze już będzie patrzeć na wieko trumny. To, co leży w trumnie a kiedyś było człowiekiem musiało solidnie zasłużyć sobie na taką karę. Zastanawiasz się co zrobić, kiedy nachodzi cię głód. Wyciągasz z kieszeni solidny kawał ukraińskiej chałwy i przegryzając:<br/><br/><a href="do:pasmanteria309A">1: [Wykłuwasz pozostałe oko szwajcarskim scyzorykiem.]</a><br/><a href="do:pasmanteria309B">2: [Zamykasz wieko trumny i zostawiasz  je tak jak było.]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria309A", =>
+    game.lactivate(310)
+    game.goto(310)
+  game.pushAction "pasmanteria309B", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------4.1.3.3.2.1.1------------310
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Oko wyskakuje z zadziwiającą łatwością. Wkładasz je do kieszeni, bo „może się jeszcze przydać”. Podchodzisz do kolejnej trumny.<br/><br/><a href="do:pasmanteria310A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria310A", =>
+    game.lactivate(311)
+    game.goto(311)
+
 #--------5------------------------311
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Słyszysz wołanie gnoma, który przestrzega cię, że czas nagli i trzeba jechać dalej. Wchodzisz ponownie do windy, tym razem nie masz już wyboru. Zjeżdżasz na poziom -9. Kiedy rozchylają się drzwi, oślepia cię blask. Trafiłeś na wielką salę balową. Jednak goście budzą twój niepokój. Wchodzisz między nich, przyglądasz się chwilę i już wiesz, że coś jest nie tak. Stojący przed tobą jegomość ubrany w tradycyjny kilt szkockiego górala wlewa do trzymanej pod pachą głowy whisky. Czym prędzej oddalasz się od niego, mijając po drodze poderżnięte gardła, przetrącone kręgosłupy i przypieczone głowy. W oddali zauważasz siedzącego na podwyższeniu jegomościa ubranego w gustowny frak. Po jego lewej stronie stoi wielki, czarny kot lubieżnie patrzący myszy uwijające się wokół jakiejś koronowanej głowy. Przez chwilę widzisz jednak dziwnie zamgloną, znajomą postać. Drogę zastępuje ci chudy i blady młodzieniec trzymający pod pachą siekierą.<br/><br/><a href="do:pasmanteria311A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria311A", =>
+    game.lactivate(312)
+    game.goto(312)
+
 #--------5.1----------------------312
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Młodzieniec: <i>Jak tam pan się dzisiaj miewa? Nie ma pan może użyczyć paru rubli dla biednego studenta?</i><br/><br/><a href="do:pasmanteria312A">1: <i>Nie pożyczam nieznajomym. Kim pan jest, jeśli można wiedzieć?</i></a><br/><a href="do:pasmanteria312B">2: <i>Niestety ruble mi się skończyły. Nie widział pan może takiej efemerycznej dziewczyny, która przed chwilą tędy płynęła?</i></a><br/><a href="do:pasmanteria312C">3: <i>Raczej nie... Może mi pan powiedzieć, kim jest człowiek obok wielkiego kota?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria312A", =>
+    game.lactivate(313)
+    game.goto(313)
+  game.pushAction "pasmanteria312B", =>
+    game.lactivate(314)
+    game.goto(314)
+  game.pushAction "pasmanteria312C", =>
+    game.lactivate(315)
+    game.goto(315)
+
 #--------5.1.1--------------------313
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Młodzieniec: <i>Ach faktycznie, zdziczałem na Syberii przepraszam najmocniej, nazywam się Rodion Romanowicz.</i><br/><br/><a href="do:pasmanteria313A">1: <i>Nie widział pan może takiej efemerycznej dziewczyny, która przed chwilą tędy płynęła?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria313A", =>
+    game.lactivate(314)
+    game.goto(314)
+
 #--------5.1.2--------------------314
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Młodzieniec: <i>Mówi Pan o Białej Damie? Udała się do hallu, widocznie zmęczyła się już ta drętwa atmosfera.</i><br/><br/><a href="do:pasmanteria314A">1: <i>Dziękuje serdecznie, ale muszę już lecieć.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria314A", =>
+    game.lactivate(316)
+    game.goto(316)
+
 #--------5.1.3--------------------315
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Młodzieniec: <i>Ach tak, to nasz prokurator, oskarżyciel i ojciec naszego cudownego stanu. Przemiła istota.</i><br/><br/><a href="do:pasmanteria315A">1: <i>A kim pan jest, jeśli można wiedzieć?</i></a><br/><a href="do:pasmanteria315B">2: <i>Nie widział pan może takiej efemerycznej dziewczyny, która przed chwilą tędy płynęła?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria315A", =>
+    game.lactivate(313)
+    game.goto(313)
+  game.pushAction "pasmanteria315B", =>
+    game.lactivate(314)
+    game.goto(314)
+
 #--------5.1.2.1------------------316
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przedzierasz się w kierunku wyjścia. Stajesz w drzwiach i w przygaszonym świetlne widzisz efemeryczną kobietę, która powoli się oddala. Biegniesz za nią i kiedy docierasz do drzwi, gasną światła. Tracisz na chwilę przytomność, a kiedy ją odzyskujesz, zdajesz sobie sprawę, że znajdujesz się na podłodze w pasmanterii. <br/><br/><a href="do:pasmanteria316A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "pasmanteria316A", =>
+    game.lactivate(0)
+    game.goto(0)
 
 
 
