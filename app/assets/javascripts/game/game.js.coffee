@@ -67,7 +67,7 @@ $ ->
     activeState: 'a',
     states: {
       a: new LocationState({
-        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a><br/><a href="do:MAPArestauracja">3: Do restauracji</a><br/><a href="do:MAPAmieszkanieznajomego">4: Do mieszkania Szymona</a><br/><a href="do:MAPApasmanteria">5: Do pasmanterii</a>'
+        text: 'Dokąd chcesz się udać?<br/><br/><a href="do:MAPApark">1: Do parku</a><br/><a href="do:MAPAuczelnia">2: Na uczelnię</a><br/><a href="do:MAPArestauracja">3: Do restauracji</a><br/><a href="do:MAPAmieszkanieznajomego">4: Do mieszkania Szymona</a><br/><a href="do:MAPApasmanteria">5: Do pasmanterii</a><br/><a href="do:MAPAteatr">6: Do teatru</a>'
       })
     },
   }))
@@ -86,6 +86,9 @@ $ ->
   game.pushAction "MAPApasmanteria", =>
     game.lactivate(257)
     game.goto(257)
+  game.pushAction "MAPAteatr", =>
+    game.lactivate(317)
+    game.goto(317)
     
 #----------PARK------------
 #--------L1-1-------------1
@@ -5794,8 +5797,558 @@ teatrze.</a>'
     game.lactivate(0)
     game.goto(0)
 
+#------------TEATR----------------
+#--------1a------------------317
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Znajdujesz się w ciemnym hallu teatru, w którym pracowała twoja dziewczyna. Skrzypiąca posadzka prowadzi cię wprost do znudzonej kobiety siedzącej za oszkloną ladą.<br/><br/><a href="do:teatr317A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr317A", =>
+    game.lactivate(318)
+    game.goto(318)
 
+#--------1b------------------318
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Taaak? Dzisiaj nie wystawiamy żadnego spektaklu – chyba, że chce pan kupić bilet na jutrzejszy...</i><br/><br/><a href="do:teatr318A">1: <i>Szukam przyjaciółki. Aktorki. Powinna być dziś w teatrze – chciałem jej zrobić niespodziankę.</i></a><br/><a href="do:teatr318B">2: <i>Jestem tutaj w sprawie przesłuchania do nowego spektaklu. Gdzie powinienem się zgłosić?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "teatr318A", =>
+    game.lactivate(319)
+    game.goto(319)
+  game.pushAction "teatr318B", =>
+    game.lactivate(320)
+    game.goto(320)
 
+#--------1c------------------319
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Dobrze, proszę za mną.</i><br/><br/><a href="do:teatr319A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr319A", =>
+    game.lactivate(321)
+    game.goto(321)
+
+#--------1d------------------320
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Kobieta: <i>Dobrze, proszę za mną.</i><br/><br/><a href="do:teatr320A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr320A", =>
+    game.lactivate(331)
+    game.goto(331)
+
+#--------2a------------------321
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Przeciskasz się przez miejsca dla widowni, by dojść do intensywnie oświetlonej sceny. Z daleka jednak widzisz już, że nie ma tutaj twojej dziewczyny. W ogóle nie dostrzegasz kobiecych sylwetek. W pomieszczeniu jest bardzo głośno: krzyki aktorów, mieszają się z hukiem narzędzi pracowników mocujących scenografię.<br/><br/><a href="do:teatr321A">1: [Przeczekaj próbę.]</a><br/><a href="do:teatr321B">2: [Przeszkodź w próbie.]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr321A", =>
+    game.lactivate(322)
+    game.goto(322)
+  game.pushAction "teatr321B", =>
+    game.state(323, 'b')
+    game.lactivate(328)
+    game.goto(328)
+
+#--------2b------------------322
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Decydujesz się przeczekać próbę, choć wkrótce okazuje się ona raczej kłótnią reżysera z aktorem. Ich krzyki, powtarzane przez echo, unoszą się nieznośnie nad widownią, do momentu, aż aktor nie opuści ze wściekłością sali.<br/><br/><a href="do:teatr322A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr322A", =>
+    game.lactivate(323)
+    game.goto(323)
+
+#--------2c------------------323
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Podchodzisz do reżysera.<br/>Reżyser: <i>Czego pan chce ode mnie? Jestem bardzo zajęty!</i><br/><br/><a href="do:teatr323A">1: <i>Coś się stało? Ta kłótnia nie brzmiała najlepiej. Nie chcę panu zawracać głowy, ale szukam koleżanki aktorki – Ewy.</i></a><br/><a href="do:teatr323B">2: <i>Wie pan może, gdzie jest aktorka Ewa? Muszę się z nią skontaktować...</i></a>'
+      }),
+      b: new LocationState({
+        text: 'Podchodzisz do reżysera.<br/>Reżyser: <i>Czego pan chce ode mnie? Jestem bardzo zajęty!</i><br/><br/><a href="do:teatr323C">1: <i>Coś się stało? Ta kłótnia nie brzmiała najlepiej. Nie chcę panu zawracać głowy, ale szukam koleżanki aktorki – Ewy.</i></a><br/><a href="do:teatr323D">2: <i>Wie pan może, gdzie jest aktorka Ewa? Muszę się z nią skontaktować...</i></a>'
+      })
+    },
+  }))
+  game.pushAction "teatr323A", =>
+    game.lactivate(324)
+    game.goto(324)
+  game.pushAction "teatr323B", =>
+    game.lactivate(325)
+    game.goto(325)
+  game.pushAction "teatr323C", =>
+    game.lactivate(325)
+    game.goto(325)
+  game.pushAction "teatr323D", =>
+    game.lactivate(330)
+    game.goto(330)
+
+#--------2d------------------324
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Reżyser: <i>To nie do pomyślenia! Widzi Pan to ja jestem reżyserem, to ja wiem co wyciąć z tekstu, a co zostawić. Niech nie myśli, że może się tak po prostu zbuntować. A co do Ewy to nie widziałem jej od czasu przesłuchania – chyba się obraziła, że nie dostała roli. No cóż, nie będę zatrudniał kogoś kto kwestionuje moje zdanie! Gdyby się ze mną nie kłóciła i nie wygłaszała tych bezsensownych opinii to kto wie...</i><br/><br/><a href="do:teatr324A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr324A", =>
+    game.lactivate(326)
+    game.goto(326)
+
+#--------2e------------------325
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Reżyser: <i>To nie do pomyślenia! Ja nie jestem niańką tych prowincjonalnych aktorów. Ta Ewa wcale nie była lepsza od innych... Bardzo słaba aktorka. Bardzo dobrze, że nie dałem jej tej roli!</i><br/><br/><a href="do:teatr325A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr325A", =>
+    game.lactivate(326)
+    game.goto(326)
+
+#--------2f------------------326
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Reżyser odchodzi niezadowolony.<br/><br/><a href="do:teatr326A">1: [Przeszukaj scenę.]</a><br/><a href="do:teatr326B">2: [Idź do garderoby aktorów.]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr326A", =>
+    game.lactivate(327)
+    game.goto(327)
+  game.pushAction "teatr326B", =>
+    game.lactivate(331)
+    game.goto(331)
+
+#--------2g------------------327
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Na scenie widzisz wielkie połyskujące lusterko. Jego powierzchnia wydaje się nienaturalnie gładka, ale nie możesz dostrzec w niej swojego oblicza.<br/><br/><a href="do:teatr327A">1: [Przyłóż twarz do lustra.]</a><br/><a href="do:teatr327B">2: [Idź do garderoby aktorów.]</a>'
+      }),
+      b: new LocationState({
+        text: 'Na scenie widzisz wielkie połyskujące lusterko. Jego powierzchnia wydaje się nienaturalnie gładka, ale nie możesz dostrzec w niej swojego oblicza.<br/><br/><a href="do:teatr327A">1: [Przyłóż twarz do lustra.]</a><br/><a href="do:teatr327C">2: [Opuść teatr.]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr327A", =>
+    game.lactivate(340)
+    game.goto(340)
+  game.pushAction "teatr327B", =>
+    game.state(333, 'b')
+    game.lactivate(331)
+    game.goto(331)
+  game.pushAction "teatr327C", =>
+    game.lactivate(0)
+    game.goto(0)
+
+#--------2h------------------328
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Reżyser: <i>Proszę stąd natychmiast wyjść! Mamy tutaj próbę! Pró—bę! "Wyzwolenia"! Jezu! Krzysztof! Przecież tego miało nie być – jak  t o  brzmi? Chyba wycięliśmy to ze scenariusza!</i><br/><br/><a href="do:teatr328A">1: [Przeczekaj próbę]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr328A", =>
+    game.lactivate(329)
+    game.goto(329)
+
+#--------2i------------------329
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Chcąc nie chcąc, jesteś zmuszony przeczekać próbę. Jest ona raczej kłótnią reżysera z aktorem. Ich krzyki, powtarzane przez echo, unoszą się nieznośnie nad widownią, do momentu, aż aktor nie opuści z wściekłością sali.<br/><br/><a href="do:teatr329A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr329A", =>
+    game.lactivate(323)
+    game.goto(323)
+
+#--------2j------------------330
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Reżyser: <i>Nie odchodzi mnie pan ani pańska dziewczyna. Ja tutaj zajmuje się SZTUKĄ i mam własne problemy!</i><br/><br/><a href="do:teatr330A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr330A", =>
+    game.lactivate(326)
+    game.goto(326)
+
+#--------3a------------------331
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Korytarz, po którym kroczysz jest bardzo ciasny i ciemny. Na jego końcu widzisz uchylone drzwi, zza których wylewa się nieśmiało snop światła. Podchodzisz szybkim krokiem do drzwi i zaglądasz przez nie.<br/><br/><a href="do:teatr331A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr331A", =>
+    game.state(327, 'b')
+    game.lactivate(332)
+    game.goto(332)
+
+#--------3b------------------332
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'W pokoju znajduje się mężczyzna. Czesze perukę na biurku. Wydaje ci się jakby znajomy. Pukasz do drzwi, na co odpowiada wesoły, zapraszający uśmiech.<br/><br/><a href="do:teatr332A">1: [Wejdź do garderoby.]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr332A", =>
+    game.lactivate(333)
+    game.goto(333)
+
+#--------3c------------------333
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Aktor: <i>O, cześć! Jesteś nowy. Wzywają mnie na scenę? Mam nadzieję, że nie... Zresztą pewnie i tak moja postać niedługo całkowicie zniknie ze scenariusza.</i><br/><br/><a href="do:teatr333A">1: <i>Nie, nie jestem pracownikiem – przyszedłem tutaj, bo szukam Ewy. Widziałeś ją może ostatnio?</i></a><br/><a href="do:teatr333B">2: <i>Niestety, ale reżyser wzywa pana na scenę.</i></a>'
+      }),
+      b: new LocationState({
+        text: 'Aktor: <i>O, cześć! Jesteś nowy. Wzywają mnie na scenę? Mam nadzieję, że nie... Zresztą pewnie i tak moja postać niedługo całkowicie zniknie ze scenariusza.</i><br/><br/><a href="do:teatr333A">1: <i>Nie, nie jestem pracownikiem – przyszedłem tutaj, bo szukam Ewy. Widziałeś ją może ostatnio?</i></a><br/><a href="do:teatr333A">2: <i>Wydaje mi się, że już po próbie. Reżyser nieźle pociął się z jednym z aktorów. Zresztą i tak nie jestem tu dlatego – szukam Ewy. Widziałeś ją może ostatnio?</i></a><br/><a href="do:teatr333B">3: <i>Niestety, ale reżyser wzywa pana na scenę.</i></a>'
+      })
+    },
+  }))
+  game.pushAction "teatr333A", =>
+    game.lactivate(334)
+    game.goto(334)
+  game.pushAction "teatr333B", =>
+    game.lactivate(338)
+    game.goto(338)
+
+#--------3d------------------334
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Aktor: <i>Ah. Ewy nie widziałem ją od czasu wyników castingu. Starała się o rolę Harfiarki w Wyzwoleniu, które właśnie mamy nieszczęście wystawiać. W każdym razie roli tej nie dostała i od tamtej pory jej nie widziałem. Zresztą nie tylko ona „znikła”. Od dawna też nie widziałem Jerzego – jak go kiedyś spotkasz to spytaj się o Ewę, może on coś wie.</i><br/><br/><a href="do:teatr334A">1: <i>Dlaczego macie aż takie problemy z tą sztuką?</i></a><br/><a href="do:teatr334B">2: <i>Skąd te ciągłe kłótnie z reżyserem?</i></a><br/><a href="do:teatr334C">3: <i>Czy wiesz dlaczego... nie dostała tej roli?</i></a>'
+      })
+    },
+  }))
+  game.pushAction "teatr334A", =>
+    game.lactivate(335)
+    game.goto(335)
+  game.pushAction "teatr334B", =>
+    game.lactivate(336)
+    game.goto(336)
+  game.pushAction "teatr334C", =>
+    game.lactivate(337)
+    game.goto(337)
+
+#--------3e------------------335
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Aktor: <i>Reżyser (pff! Wielki mi reżyser!) ciągle tnie sztukę. Próbuje pozbawić "Wyzwolenie" Wyspiańskiego chyba wszystkich możliwych sensów. Mu jest zresztą chyba wszystko jedno – żeby tylko nie wzbudzać kontrowersji, żeby było przeciętnie.</i><br/><br/><a href="do:teatr335A">1: <i>Skąd te ciągłe kłótnie z reżyserem?</i></a><br/><a href="do:teatr335B">2: <i>Czy wiesz dlaczego... nie dostała tej roli?</i></a><br/><a href="do:teatr335C">3: [Idź na scenę]</a>'
+      }),
+      b: new LocationState({
+        text: 'Aktor: <i>Reżyser (pff! Wielki mi reżyser!) ciągle tnie sztukę. Próbuje pozbawić "Wyzwolenie" Wyspiańskiego chyba wszystkich możliwych sensów. Mu jest zresztą chyba wszystko jedno – żeby tylko nie wzbudzać kontrowersji, żeby było przeciętnie.</i><br/><br/><a href="do:teatr335D">1: <i>Czy wiesz dlaczego... nie dostała tej roli?</i></a><br/><a href="do:teatr335C">2: [Idź na scenę]</a>'
+      }),
+      c: new LocationState({
+        text: 'Aktor: <i>Reżyser (pff! Wielki mi reżyser!) ciągle tnie sztukę. Próbuje pozbawić "Wyzwolenie" Wyspiańskiego chyba wszystkich możliwych sensów. Mu jest zresztą chyba wszystko jedno – żeby tylko nie wzbudzać kontrowersji, żeby było przeciętnie.</i><br/><br/><a href="do:teatr335E">1: <i>Skąd te ciągłe kłótnie z reżyserem?</i></a><br/><a href="do:teatr335C">2: [Idź na scenę]</a>'
+      }),
+      d: new LocationState({
+        text: 'Aktor: <i>Reżyser (pff! Wielki mi reżyser!) ciągle tnie sztukę. Próbuje pozbawić "Wyzwolenie" Wyspiańskiego chyba wszystkich możliwych sensów. Mu jest zresztą chyba wszystko jedno – żeby tylko nie wzbudzać kontrowersji, żeby było przeciętnie.</i><br/><br/><a href="do:teatr335C">1: [Idź na scenę]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr335A", =>
+    game.state(336, 'b')
+    game.lactivate(336)
+    game.goto(336)
+  game.pushAction "teatr335B", =>
+    game.state(337, 'b')
+    game.lactivate(337)
+    game.goto(337)
+  game.pushAction "teatr335C", =>
+    game.lactivate(327)
+    game.goto(327)
+  game.pushAction "teatr335D", =>
+    game.state(336, 'd')
+    game.lactivate(336)
+    game.goto(336)
+  game.pushAction "teatr335E", =>
+    game.state(337, 'd')
+    game.lactivate(337)
+    game.goto(337)
+
+#--------3f------------------336
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Aktor: <i>Wiesz, on przyjechał tutaj z Warszawy. Chce zrobić ten spektakl i wyjechać z powrotem do stolicy. Traktuje nas z góry. Ciągle mu coś się nie podoba, ciągle coś wycina, ciągle zmienia obsadę. W zasadzie Ewa mogła zostać – pewnie w końcu powierzyłby jej tą rolę.</i><br/><br/><a href="do:teatr336A">1: <i>Dlaczego macie aż takie problemy z tą sztuką?</i></a><br/><a href="do:teatr336B">2: <i>Czy wiesz dlaczego... nie dostała tej roli?</i></a><br/><a href="do:teatr336C">3: [Idź na scenę]</a>'
+      }),
+      b: new LocationState({
+        text: 'Aktor: <i>Wiesz, on przyjechał tutaj z Warszawy. Chce zrobić ten spektakl i wyjechać z powrotem do stolicy. Traktuje nas z góry. Ciągle mu coś się nie podoba, ciągle coś wycina, ciągle zmienia obsadę. W zasadzie Ewa mogła zostać – pewnie w końcu powierzyłby jej tą rolę.</i><br/><br/><a href="do:teatr336D">1: <i>Czy wiesz dlaczego... nie dostała tej roli?</i></a><br/><a href="do:teatr336C">3: [Idź na scenę]</a>'
+      }),
+      c: new LocationState({
+        text: 'Aktor: <i>Wiesz, on przyjechał tutaj z Warszawy. Chce zrobić ten spektakl i wyjechać z powrotem do stolicy. Traktuje nas z góry. Ciągle mu coś się nie podoba, ciągle coś wycina, ciągle zmienia obsadę. W zasadzie Ewa mogła zostać – pewnie w końcu powierzyłby jej tą rolę.</i><br/><br/><a href="do:teatr336E">1: <i>Dlaczego macie aż takie problemy z tą sztuką?</i></a><br/><a href="do:teatr336C">2: [Idź na scenę]</a>'
+      }),
+      d: new LocationState({
+        text: 'Aktor: <i>Wiesz, on przyjechał tutaj z Warszawy. Chce zrobić ten spektakl i wyjechać z powrotem do stolicy. Traktuje nas z góry. Ciągle mu coś się nie podoba, ciągle coś wycina, ciągle zmienia obsadę. W zasadzie Ewa mogła zostać – pewnie w końcu powierzyłby jej tą rolę.</i><br/><br/><a href="do:teatr336C">1: [Wróć na scenę]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr336A", =>
+    game.state(335, 'b')
+    game.lactivate(335)
+    game.goto(335)
+  game.pushAction "teatr336B", =>
+    game.state(337, 'c')
+    game.lactivate(337)
+    game.goto(337)
+  game.pushAction "teatr336C", =>
+    game.lactivate(327)
+    game.goto(327)
+  game.pushAction "teatr336D", =>
+    game.state(335, 'd')
+    game.lactivate(335)
+    game.goto(335)
+  game.pushAction "teatr336E", =>
+    game.state(337, 'd')
+    game.lactivate(337)
+    game.goto(337)
+
+#--------3g------------------337
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Aktor: <i>Reżyser rozgłasza wszystkim, że ci, którym odmówił roli byli słabymi aktorami. Mi się wydaje, że akurat Ewy to nie dotyczy – po prostu za bardzo mu się stawiała. Ona zawsze była bardzo stanowcza. Pokłócili się o metody pracy. Ewa jak pewnie wiesz, jest zwolenniczką metody Stanisławskiego. Nic ci to nie mówi? Wczuwamy się w postać, w nią i jej świat. Wiesz... Świadome oddziałuje na nieświadomość itd. W każdym razie on z góry ustalił, że go to nie interesuje, że to nienowoczesne. To była właściwie jedna z pierwszych kłótni z reżyserem.</i><br/><br/><a href="do:teatr337A">1: <i>Dlaczego macie aż takie problemy z tą sztuką?</i></a><br/><a href="do:teatr337B">2: <i>Skąd te ciągłe kłótnie z reżyserem?</i></a><br/><a href="do:teatr337C">3: [Wróć na scenę]</a>'
+      }),
+      b: new LocationState({
+        text: 'Aktor: <i>Reżyser rozgłasza wszystkim, że ci, którym odmówił roli byli słabymi aktorami. Mi się wydaje, że akurat Ewy to nie dotyczy – po prostu za bardzo mu się stawiała. Ona zawsze była bardzo stanowcza. Pokłócili się o metody pracy. Ewa jak pewnie wiesz, jest zwolenniczką metody Stanisławskiego. Nic ci to nie mówi? Wczuwamy się w postać, w nią i jej świat. Wiesz... Świadome oddziałuje na nieświadomość itd. W każdym razie on z góry ustalił, że go to nie interesuje, że to nienowoczesne. To była właściwie jedna z pierwszych kłótni z reżyserem.</i><br/><br/><a href="do:teatr337D">1: <i>Skąd te ciągłe kłótnie z reżyserem?</i></a><br/><a href="do:teatr337C">2: [Wróć na scenę]</a>'
+      }),
+      c: new LocationState({
+        text: 'Aktor: <i>Reżyser rozgłasza wszystkim, że ci, którym odmówił roli byli słabymi aktorami. Mi się wydaje, że akurat Ewy to nie dotyczy – po prostu za bardzo mu się stawiała. Ona zawsze była bardzo stanowcza. Pokłócili się o metody pracy. Ewa jak pewnie wiesz, jest zwolenniczką metody Stanisławskiego. Nic ci to nie mówi? Wczuwamy się w postać, w nią i jej świat. Wiesz... Świadome oddziałuje na nieświadomość itd. W każdym razie on z góry ustalił, że go to nie interesuje, że to nienowoczesne. To była właściwie jedna z pierwszych kłótni z reżyserem.</i><br/><br/><a href="do:teatr337E">1: <i>Dlaczego macie aż takie problemy z tą sztuką?</i></a><br/><a href="do:teatr337C">2: [Wróć na scenę]</a>'
+      }),
+      d: new LocationState({
+        text: 'Aktor: <i>Reżyser rozgłasza wszystkim, że ci, którym odmówił roli byli słabymi aktorami. Mi się wydaje, że akurat Ewy to nie dotyczy – po prostu za bardzo mu się stawiała. Ona zawsze była bardzo stanowcza. Pokłócili się o metody pracy. Ewa jak pewnie wiesz, jest zwolenniczką metody Stanisławskiego. Nic ci to nie mówi? Wczuwamy się w postać, w nią i jej świat. Wiesz... Świadome oddziałuje na nieświadomość itd. W każdym razie on z góry ustalił, że go to nie interesuje, że to nienowoczesne. To była właściwie jedna z pierwszych kłótni z reżyserem.</i><br/><br/><a href="do:teatr337C">1: [Wróć na scenę]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr337A", =>
+    game.state(335, 'c')
+    game.lactivate(335)
+    game.goto(335)
+  game.pushAction "teatr337B", =>
+    game.state(336, 'c')
+    game.lactivate(336)
+    game.goto(336)
+  game.pushAction "teatr337C", =>
+    game.lactivate(327)
+    game.goto(327)
+  game.pushAction "teatr337D", =>
+    game.state(335, 'd')
+    game.lactivate(335)
+    game.goto(335)
+  game.pushAction "teatr337E", =>
+    game.state(336, 'd')
+    game.lactivate(336)
+    game.goto(336)
+
+#--------3i------------------338
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Aktor opuszcza pokój, udając się na scenę, a ty zostajesz w pokoju sam. Rozglądasz się i dostrzegasz na podłodze mała kartkę, z zapisanym fragmentem "Romea i Julii".<br/><br/><a href="do:teatr338A">1: [Podnieś kartkę.]</a><br/><a href="do:teatr338B">2: [Idź na scenę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr338A", =>
+    game.lactivate(338)
+    game.goto(338)
+  game.pushAction "teatr338B", =>
+    game.lactivate(327)
+    game.goto(327)
+
+#--------3j------------------339
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Na kartce widnieje następująca treść:<i>Mości pielgrzymie, bluźnisz swojej dłoni,<br/>Która nie grzeszy zdrożnym dotykaniem;<br/>Jestli ujęcie rąk pocałowaniem,<br/>Pozwól mi je ucałować, bardzo proszę</i><br/><br/><a href="do:teatr339A">1: [Idź na scenę.]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr339A", =>
+    game.lactivate(327)
+    game.goto(327)
+
+#--------1------------------340
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Twoja dziewczyna musi powtórzyć swoje kwestie do sztuki. Pomóż jej, włączając się w dialog. Ostatnim razem nie poszło ci to za dobrze, Ewa do dziś ma do ciebie o to żal. Na szczęście masz szansę to naprawić. Postaraj się!<br/><br/><a href="do:teatr340A">1: [Dalej]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr340A", =>
+    game.lactivate(341)
+    game.goto(341)
+
+#--------2------------------341
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ewa: <i>Mości pielgrzymie, bluźnisz swojej dłoni,<br/>Która nie grzeszy zdrożnym dotykaniem;<br/>Jestli ujęcie rąk pocałowaniem,<br/>Nikt go ze świętych pielgrzymom nie broni.</i><br/><br/><a href="do:teatr341A">1: <i>Pozwól mi je ucałować, bardzo proszę</i></a><br/><a href="do:teatr341B">2: <i>Ziść więc cel moich, stojąc niewzruszenie,<br>I z ust swych moim daj wziąć rozgrzeszenie</i></a>'
+      })
+    },
+  }))
+  game.pushAction "teatr341A", =>
+    game.lactivate(342)
+    game.goto(342)
+  game.pushAction "teatr341B", =>
+    game.lactivate(342)
+    game.goto(342)
+
+#--------3------------------342
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ewa: <i>Ktoś ty jest, co się nocą osłaniając,<br/>Podchodzisz moją samotność?</i><br/><br/><a href="do:teatr342A">1: <i>Niebo, które wie o tem zesłało mnie tu umyślnie abym oddał hołd twoim wdziękom.</i></a><br/><a href="do:teatr342B">2: <i>Z nazwiska<br/>Nie mógłbym tobie powiedzieć, kto jestem;<br/>Nazwisko moje jest mi nienawistne,<br/>Bo jest, o! święta, nieprzyjazne tobie;<br/>Zdarłbym je, gdybym miał je napisane</i></a>'
+      })
+    },
+  }))
+  game.pushAction "teatr342A", =>
+    game.lactivate(343)
+    game.goto(343)
+  game.pushAction "teatr342B", =>
+    game.lactivate(343)
+    game.goto(343)
+
+#--------4------------------343
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Ewa: <i>Zaraz idę.<br/>– Jeśli mię zwodzisz, o! to cię zaklinam,<br/>Skończ te zabiegi i zostaw mię żalom.</i><br/><br/><a href="do:teatr343A">1: <i>Jakto! Zaje się, że jeszcze wątpisz o mojej szczerości! Czy chcesz abym straszliwemi przysięgami stwierdził moje przyrzeczenie? Niech niebo…</i></a><br/><a href="do:teatr343B">2: <i>Jak pragnę zbawienia...</i></a>'
+      })
+    },
+  }))
+  game.pushAction "teatr343A", =>
+    game.lactivate(344)
+    game.goto(344)
+  game.pushAction "teatr343B", =>
+    game.lactivate(344)
+    game.goto(344)
+
+#--------5------------------344
+  game.push(new Location({
+    img: '/assets/obrazki/aaaaa.jpg',
+    active: true,
+    activeState: 'a',
+    states: {
+      a: new LocationState({
+        text: 'Próba skończona...<br/><br/><a href="do:teatr344A">1: [MAPA]</a>'
+      })
+    },
+  }))
+  game.pushAction "teatr344A", =>
+    game.lactivate(0)
+    game.goto(0)
 
 
 
