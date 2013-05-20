@@ -85,7 +85,7 @@ $ ->
 #----------MAPA------------
 #-----------1-------------0
   game.push(new Location({
-    img: '/assets/IMG01_0001.jpg',
+    img: '/assets/IMG01_0001_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -135,7 +135,7 @@ $ ->
 #----------PARK------------
 #--------L1-1-------------1
   game.push(new Location({
-    img: '/assets/IMG01_0040.jpg',
+    img: '/assets/IMG01_0040_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -150,7 +150,7 @@ $ ->
 
 #--------L1-2-------------2
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -168,7 +168,7 @@ $ ->
 
 #--------L1-3-------------3
   game.push(new Location({
-    img: '/assets/IMG01_0042.jpg',
+    img: '/assets/IMG01_0042_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -189,7 +189,7 @@ $ ->
 
 #--------L1-4-------------4
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -210,7 +210,7 @@ $ ->
 
 #--------L1-5-------------5
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -228,7 +228,7 @@ $ ->
 
 #--------L1-6-------------6
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -249,7 +249,7 @@ $ ->
 
 #--------L1-7-------------7
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -264,7 +264,7 @@ $ ->
 
 #--------L1-8-------------8
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -282,7 +282,7 @@ $ ->
 
 #--------L1-9-------------9
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -301,7 +301,7 @@ $ ->
 
 #--------L1-10-----------10
   game.push(new Location({
-    img: '/assets/IMG01_0045.jpg',
+    img: '/assets/IMG01_0045_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -320,7 +320,7 @@ $ ->
 
 #--------L2-1------------11
   game.push(new Location({
-    img: '/assets/IMG01_0040.jpg',
+    img: '/assets/IMG01_0040_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -350,7 +350,7 @@ $ ->
 
 #--------L2-2------------12
   game.push(new Location({
-    img: '/assets/IMG_EN.jpg',
+    img: '/assets/IMG_EN_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -368,7 +368,7 @@ $ ->
 
 #--------L2-3------------13
   game.push(new Location({
-    img: '/assets/IMG_ENW1.jpg',
+    img: '/assets/IMG_ENW1_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -389,7 +389,7 @@ $ ->
 
 #--------L2-4------------14
   game.push(new Location({
-    img: '/assetsIMG_NW.jpg',
+    img: '/assetsIMG_NW_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -407,7 +407,7 @@ $ ->
 
 #--------L2-5------------15
   game.push(new Location({
-    img: '/assets/IMG_ENS1.jpg',
+    img: '/assets/IMG_ENS1_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -429,7 +429,7 @@ $ ->
 
 #--------L2-6------------16
   game.push(new Location({
-    img: '/assets/IMG_ENSW.jpg',
+    img: '/assets/IMG_ENSW_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -453,7 +453,7 @@ $ ->
 
 #--------L2-7------------17
   game.push(new Location({
-    img: '/assets/IMG_ENSW2.jpg',
+    img: '/assets/IMG_ENSW2_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -477,7 +477,7 @@ $ ->
 
 #--------L2-8------------18
   game.push(new Location({
-    img: '/assets/IMG_NSW1.jpg',
+    img: '/assets/IMG_NSW1_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -498,7 +498,7 @@ $ ->
 
 #--------L2-8------------19
   game.push(new Location({
-    img: '/assets/IMG_ENS2.jpg',
+    img: '/assets/IMG_ENS2_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -519,7 +519,7 @@ $ ->
 
 #--------L2-8------------20
   game.push(new Location({
-    img: '/assets/IMG_ENSW3.jpg',
+    img: '/assets/IMG_ENSW3_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -543,7 +543,7 @@ $ ->
 
 #--------L2-8------------21
   game.push(new Location({
-    img: '/assets/IMG_NSW2.jpg',
+    img: '/assets/IMG_NSW2_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -564,7 +564,7 @@ $ ->
 
 #--------L2-8------------22
   game.push(new Location({
-    img: '/assets/IMG_ES.jpg',
+    img: '/assets/IMG_ES_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -582,7 +582,7 @@ $ ->
 
 #--------L2-8------------23
   game.push(new Location({
-    img: '/assets/IMG_ESW1.jpg',
+    img: '/assets/IMG_ESW1_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -603,7 +603,7 @@ $ ->
 
 #--------L2-8------------24
   game.push(new Location({
-    img: '/assets/IMG_ESW2.jpg',
+    img: '/assets/IMG_ESW2_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -624,7 +624,7 @@ $ ->
 
 #--------L2-8------------25
   game.push(new Location({
-    img: '/assets/IMG_SW.jpg',
+    img: '/assets/IMG_SW_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -642,7 +642,7 @@ $ ->
 
 #--------L3-1------------26
   game.push(new Location({
-    img: '/assets/IMG01_0041.jpg',
+    img: '/assets/IMG01_0041_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -657,7 +657,7 @@ $ ->
 
 #--------L3-2------------27
   game.push(new Location({
-    img: '/assets/IMG01_0010.jpg',
+    img: '/assets/IMG01_0010_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -672,7 +672,7 @@ $ ->
 
 #--------L3-3------------28
   game.push(new Location({
-    img: '/assets/IMG01_0029.jpg',
+    img: '/assets/IMG01_0029_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -694,7 +694,7 @@ $ ->
 
 #--------L3-4------------29
   game.push(new Location({
-    img: '/assets/IMG01_0029.jpg',
+    img: '/assets/IMG01_0029_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -712,7 +712,7 @@ $ ->
 
 #--------L3-5------------30
   game.push(new Location({
-    img: '/assets/IMG01_0029.jpg',
+    img: '/assets/IMG01_0029_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -727,7 +727,7 @@ $ ->
 
 #--------L3-6------------31
   game.push(new Location({
-    img: '/assets/IMG01_0029.jpg',
+    img: '/assets/IMG01_0029_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -743,7 +743,7 @@ $ ->
 
 #--------L3-7------------32
   game.push(new Location({
-    img: '/assets/IMG01_0029.jpg',
+    img: '/assets/IMG01_0029_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -758,7 +758,7 @@ $ ->
 
 #--------L3-8------------33
   game.push(new Location({
-    img: '/assets/IMG01_0029.jpg',
+    img: '/assets/IMG01_0029_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -773,7 +773,7 @@ $ ->
 
 #--------L3-9------------34
   game.push(new Location({
-    img: '/assets/IMG01_0043.jpg',
+    img: '/assets/IMG01_0043_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -794,7 +794,7 @@ $ ->
 
 #--------L3-10-----------35
   game.push(new Location({
-    img: '/assets/IMG01_0048.jpg',
+    img: '/assets/IMG01_0048_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -812,7 +812,7 @@ $ ->
 
 #--------L3-11-----------36
   game.push(new Location({
-    img: '/assets/IMG01_0026.jpg',
+    img: '/assets/IMG01_0026_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -834,7 +834,7 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
 
 #--------L3-12-----------37
   game.push(new Location({
-    img: '/assets/IMG01_0009.jpg',
+    img: '/assets/IMG01_0009_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -849,7 +849,7 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
 
 #--------L3-13-----------38
   game.push(new Location({
-    img: '/assets/IMG01_0018.jpg',
+    img: '/assets/IMG01_0018_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -868,7 +868,7 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
 
 #--------L3-14-----------39
   game.push(new Location({
-    img: '/assets/IMG01_0024.jpg',
+    img: '/assets/IMG01_0024_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -892,7 +892,7 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
 
 #--------L3-15-----------40
   game.push(new Location({
-    img: '/assets/IMG01_0044_61.jpg',
+    img: '/assets/IMG01_0044_61_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -907,7 +907,7 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
 
 #--------L3-16-----------41
   game.push(new Location({
-    img: '/assets/IMG01_0040.jpg',
+    img: '/assets/IMG01_0040_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -926,7 +926,7 @@ coś pod nosem. Opierasz się o mur parku i zamykasz oczy. Gdy je otwierasz, zn�
 
 #--------L3-17-----------42
   game.push(new Location({
-    img: '/assets/IMG01_0044_52.jpg',
+    img: '/assets/IMG01_0044_52_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -942,7 +942,7 @@ zdążysz cokolwiek zrobić, na ścieżce nie ma nikogo.<br/><br/><a href="do:pa
 
 #--------L3-18-----------43
   game.push(new Location({
-    img: '/assets/IMG01_0044_61.jpg',
+    img: '/assets/IMG01_0044_61_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -958,7 +958,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------L3-19-----------44
   game.push(new Location({
-    img: '/assets/IMG01_0044.jpg',
+    img: '/assets/IMG01_0044_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -973,7 +973,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------L3-20-----------45
   game.push(new Location({
-    img: '/assets/IMG01_0008.jpg',
+    img: '/assets/IMG01_0008_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -991,7 +991,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-1-------46
   game.push(new Location({
-    img: '/assets/IMG01_0068.jpg',
+    img: '/assets/IMG01_0068_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1006,7 +1006,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-2-------47
   game.push(new Location({
-    img: '/assets/IMG01_0082.jpg',
+    img: '/assets/IMG01_0082_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1021,7 +1021,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-3-------48
   game.push(new Location({
-    img: '/assets/IMG01_0105.jpg',
+    img: '/assets/IMG01_0105_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1036,7 +1036,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-4-------49
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1051,7 +1051,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-5-------50
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1066,7 +1066,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-6-------51
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1084,7 +1084,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-7-------52
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1099,7 +1099,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-8-------53
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1118,7 +1118,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-9-------54
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1136,7 +1136,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-10------55
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1151,7 +1151,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------M-CH-11------56
   game.push(new Location({
-    img: '/assets/IMG01_0069.jpg',
+    img: '/assets/IMG01_0069_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1170,7 +1170,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 #-----------UCZELNIA-------
 #-----------U-1A---------57
   game.push(new Location({
-    img: '/assets/IMG01_0058.jpg',
+    img: '/assets/IMG01_0058_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1185,7 +1185,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-1B---------58
   game.push(new Location({
-    img: '/assets/IMG01_0061.jpg',
+    img: '/assets/IMG01_0061_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1203,7 +1203,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-1C---------59
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1218,7 +1218,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-1D---------60
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1233,7 +1233,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2A---------61
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1255,7 +1255,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2B---------62
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1270,7 +1270,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2C---------63
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1288,7 +1288,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2D---------64
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1307,7 +1307,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2E---------65
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1325,7 +1325,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2F---------66
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1340,7 +1340,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2G---------67
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1355,7 +1355,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2H---------68
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1370,7 +1370,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2I---------69
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1385,7 +1385,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2J---------70
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1400,7 +1400,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2K---------71
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1415,7 +1415,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2L---------72
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1433,7 +1433,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2M---------73
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1454,7 +1454,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2N---------74
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1472,7 +1472,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2O---------75
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1488,7 +1488,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2P---------76
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1507,7 +1507,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2R---------77
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1526,7 +1526,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2S---------78
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1545,7 +1545,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2T---------79
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1564,7 +1564,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2U---------80
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1585,7 +1585,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2W---------81
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1606,7 +1606,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2K'--------82
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1621,7 +1621,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-2K''-------83
   game.push(new Location({
-    img: '/assets/IMG01_0071.jpg',
+    img: '/assets/IMG01_0071_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1638,7 +1638,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3A---------84
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1661,7 +1661,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3B---------85
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1676,7 +1676,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3C---------86
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1691,7 +1691,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3D---------87
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1706,7 +1706,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3E---------88
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1727,7 +1727,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3F---------89
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1748,7 +1748,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3G---------90
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1763,7 +1763,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3H---------91
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1784,7 +1784,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3I---------92
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1799,7 +1799,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3J---------93
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1814,7 +1814,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3K---------94
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1829,7 +1829,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3L---------95
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1850,7 +1850,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3M---------96
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1865,7 +1865,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3N---------97
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1883,7 +1883,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3O---------98
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1898,7 +1898,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3P---------99
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1919,7 +1919,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3R---------100
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1940,7 +1940,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3S---------101
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1958,7 +1958,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3T---------102
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1973,7 +1973,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3U---------103
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -1988,7 +1988,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3W---------104
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2006,7 +2006,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3X---------105
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2021,7 +2021,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3Y---------106
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2036,7 +2036,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------U-3Z---------107
   game.push(new Location({
-    img: '/assets/IMG01_0060.jpg',
+    img: '/assets/IMG01_0060_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2053,7 +2053,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 #---UNIWERSYTET-ONIRYCZNY--
 #----------UO-1A---------108
   game.push(new Location({
-    img: '/assets/IMG01_0038.jpg',
+    img: '/assets/IMG01_0038_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2068,7 +2068,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-1B---------109
   game.push(new Location({
-    img: '/assets/IMG01_0039.jpg',
+    img: '/assets/IMG01_0039_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2088,7 +2088,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2A---------110
   game.push(new Location({
-    img: '/assets/IMG01_0047.jpg',
+    img: '/assets/IMG01_0047_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2104,7 +2104,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2B---------111
   game.push(new Location({
-    img: '/assets/IMG01_0051.jpg',
+    img: '/assets/IMG01_0051_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2128,7 +2128,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2C---------112
   game.push(new Location({
-    img: '/assets/IMG01_0051.jpg',
+    img: '/assets/IMG01_0051_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2224,7 +2224,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2D---------113
   game.push(new Location({
-    img: '/assets/IMG01_0051.jpg',
+    img: '/assets/IMG01_0051_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2320,7 +2320,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2E---------114
   game.push(new Location({
-    img: '/assets/IMG01_0051.jpg',
+    img: '/assets/IMG01_0051_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2342,7 +2342,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2F---------115
   game.push(new Location({
-    img: '/assets/IMG01_0051.jpg',
+    img: '/assets/IMG01_0051_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2366,7 +2366,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2G---------116
   game.push(new Location({
-    img: '/assets/IMG01_0070.jpg',
+    img: '/assets/IMG01_0070_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2381,7 +2381,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2H---------117
   game.push(new Location({
-    img: '/assets/IMG01_0070.jpgg',
+    img: '/assets/IMG01_0070_m.jpgg',
     active: true,
     activeState: 'a',
     states: {
@@ -2396,7 +2396,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2I---------118
   game.push(new Location({
-    img: '/assets/IMG01_0049.jpg',
+    img: '/assets/IMG01_0049_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2414,7 +2414,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2J---------119
   game.push(new Location({
-    img: '/assets/IMG01_0048.jpg',
+    img: '/assets/IMG01_0048_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2433,11 +2433,11 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     activeState: 'a',
     states: {
       a: new LocationState({
-        img: '/assets/IMG01_0078.jpg',
+        img: '/assets/IMG01_0078_m.jpg',
         text: 'Przy wielkim, nakrytym białym obrusem stole siedzą Zając,  Suseł i Kapelusznik. Ilość naczyń na stole świadczy o tym, że muszą czekać na ciebie już od dłuższego czasu.<br/><br/><a href="do:uczelnia120A">1: [Podejdź do Zająca.]</a><br/><a href="do:uczelnia120B">2: [Podejdź do Susła.]</a><br/><a href="do:uczelnia120C">3: [Podejdź do Kapelusznika.]</a>'
       }),
       b: new LocationState({
-        img: '/assets/IMG01_0054.jpg',
+        img: '/assets/IMG01_0054_m.jpg',
         text: 'Znajdujesz się teraz w niewielkim, ale zapełnionym po brzegi TYM i OWYM sklepiku. Za ladą stoi Elegancko Wyglądająca Owca.<br/>Elegancko Wyglądająca Owca: <i>Proszę, zapraszam, niech się szanowny dobrodziej rozejrzy! Jestem do usług.</i><br/><br/><a href="do:uczelnia120D">1: [Obejrzyj towar na półkach.]</a><br/><a href="do:uczelnia120E">2: [Obejrzyj towar w głębi sklepu.]</a><br/><a href="do:uczelnia120F">3: [Podejdź do lady.]</a>'
       })
     },
@@ -2463,7 +2463,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2L---------121
   game.push(new Location({
-    img: '/assets/IMG01_0050.jpg',
+    img: '/assets/IMG01_0050_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2481,7 +2481,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2M---------122
   game.push(new Location({
-    img: '/assets/IMG01_0077.jpg',
+    img: '/assets/IMG01_0077_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2499,7 +2499,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2N---------123
   game.push(new Location({
-    img: '//assets/IMG01_0046.jpg',
+    img: '//assets/IMG01_0046_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2518,7 +2518,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2O---------124
   game.push(new Location({
-    img: '/assets/IMG01_0050.jpg',
+    img: '/assets/IMG01_0050_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2533,7 +2533,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2P---------125
   game.push(new Location({
-    img: '/assets/IMG01_0050.jpg',
+    img: '/assets/IMG01_0050_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2556,7 +2556,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2R---------126
   game.push(new Location({
-    img: '/assets/IMG01_0050.jpg',
+    img: '/assets/IMG01_0050_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2571,7 +2571,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2S---------127
   game.push(new Location({
-    img: '/assets/IMG01_0077.jpg',
+    img: '/assets/IMG01_0077_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2589,7 +2589,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2SA--------128
   game.push(new Location({
-    img: '/assets/IMG01_0077.jpg',
+    img: '/assets/IMG01_0077_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2607,7 +2607,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2SB--------129
   game.push(new Location({
-    img: '/assets/IMG01_0077.jpg',
+    img: '/assets/IMG01_0077_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2625,7 +2625,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2SC--------130
   game.push(new Location({
-    img: '/assets/IMG01_0077.jpg',
+    img: '/assets/IMG01_0077_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2643,7 +2643,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2SD--------131
   game.push(new Location({
-    img: '/assets/IMG01_0077.jpg',
+    img: '/assets/IMG01_0077_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2661,7 +2661,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2T---------132
   game.push(new Location({
-    img: '/assets/IMG01_0046.jpg',
+    img: '/assets/IMG01_0046_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2676,7 +2676,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2U---------133
   game.push(new Location({
-    img: '/assets/IMG01_0046.jpg',
+    img: '/assets/IMG01_0046_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2691,7 +2691,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3A---------134
   game.push(new Location({
-    img: '/assets/IMG01_0047.jpg',
+    img: '/assets/IMG01_0047_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2706,7 +2706,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3C---------135
   game.push(new Location({
-    img: '/assets/IMG01_0052.jpg',
+    img: '/assets/IMG01_0052_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2725,7 +2725,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3D---------136
   game.push(new Location({
-    img: '/assets/IMG01_0055.jpg',
+    img: '/assets/IMG01_0055_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2762,7 +2762,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3F---------138
   game.push(new Location({
-    img: '/assets/IMG01_0052.jpg',
+    img: '/assets/IMG01_0052_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2783,7 +2783,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3G---------139
   game.push(new Location({
-    img: '/assets/IMG01_0052.jpg',
+    img: '/assets/IMG01_0052_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2798,7 +2798,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3H---------140
   game.push(new Location({
-    img: '/assets/IMG01_0055.jpg',
+    img: '/assets/IMG01_0055_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2813,7 +2813,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3I---------141
   game.push(new Location({
-    img: '/assets/IMG01_0055.jpg',
+    img: '/assets/IMG01_0055_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2828,7 +2828,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3J---------142
   game.push(new Location({
-    img: '/assets/IMG01_0055.jpg',
+    img: '/assets/IMG01_0055_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2843,7 +2843,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3K---------143
   game.push(new Location({
-    img: '/assets/IMG01_0055.jpg',
+    img: '/assets/IMG01_0055_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2861,7 +2861,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3L---------144
   game.push(new Location({
-    img: '/assets/IMG01_0053.jpg',
+    img: '/assets/IMG01_0053_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2876,7 +2876,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-3M---------145
   game.push(new Location({
-    img: '/assets/IMG01_0053.jpg',
+    img: '/assets/IMG01_0053_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2891,7 +2891,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-4A---------146
   game.push(new Location({
-    img: '/assets/IMG01_0057.jpg',
+    img: '/assets/IMG01_0057_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2909,7 +2909,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-4B---------147
   game.push(new Location({
-    img: '/assets/IMG01_0057.jpg',
+    img: '/assets/IMG01_0057_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2924,7 +2924,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-4C---------148
   game.push(new Location({
-    img: '/assets/IMG01_0057.jpg',
+    img: '/assets/IMG01_0057_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2939,7 +2939,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-4D---------149
   game.push(new Location({
-    img: '/assets/IMG01_0057.jpg',
+    img: '/assets/IMG01_0057_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2954,7 +2954,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-4E---------150
   game.push(new Location({
-    img: '/assets/IMG01_0056.jpg',
+    img: '/assets/IMG01_0056_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2973,7 +2973,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-4F---------151
   game.push(new Location({
-    img: '/assets/IMG01_0056.jpg',
+    img: '/assets/IMG01_0056_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -2991,7 +2991,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 #--------RESTAURACJA----------
 #------S1--1--------------152
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3006,7 +3006,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2--------------153
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3027,7 +3027,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.1------------154
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3045,7 +3045,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.1.2----------155
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3063,7 +3063,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.1.2.2--------156
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3078,7 +3078,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.2------------157
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3096,7 +3096,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.2.1----------158
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3111,7 +3111,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.2.2----------159
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3126,7 +3126,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.3------------160
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3141,7 +3141,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S1--2.3.1----------161
   game.push(new Location({
-    img: '/assets/IMG01_0076.jpg',
+    img: '/assets/IMG01_0076_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3156,7 +3156,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--1--------------162
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3171,7 +3171,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2--------------163
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3192,7 +3192,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1------------164
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3210,7 +3210,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1.1----------165
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3228,7 +3228,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1.2----------166
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3243,7 +3243,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1.1.1--------167
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3258,7 +3258,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1.1.2--------168
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3273,7 +3273,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1.1.2.1------169
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3288,7 +3288,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1.1.2.1.1----170
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3303,7 +3303,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.1.1.2.1.1.1--171
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3318,7 +3318,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.2------------172
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3333,7 +3333,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.2.1----------173
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3351,7 +3351,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.2.1.1--------174
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3366,7 +3366,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.2.1.2--------175
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3381,7 +3381,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.3------------176
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3399,7 +3399,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.3.1----------177
   game.push(new Location({
-    img: '/assets/IMG01_0067.jpg',
+    img: '/assets/IMG01_0067_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3417,7 +3417,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.3.1.1--------178
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3432,7 +3432,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S2--2.3.2----------179
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3448,7 +3448,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--1--------------180
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3463,7 +3463,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--2--------------181
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3481,7 +3481,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--2.1------------182
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3499,7 +3499,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--2.1.1----------183
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3514,7 +3514,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--2.1.2----------184
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3529,7 +3529,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--2.2------------185
   game.push(new Location({
-    img: '/assets/IMG01_0080.jpg',
+    img: '/assets/IMG01_0080_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3544,7 +3544,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--3--------------186
   game.push(new Location({
-    img: '/assets/IMG01_0074.jpg',
+    img: '/assets/IMG01_0074_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3562,7 +3562,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--3.1------------187
   game.push(new Location({
-    img: '/assets/IMG01_0074.jpg',
+    img: '/assets/IMG01_0074_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3577,7 +3577,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #------S3--3.2------------188
   game.push(new Location({
-    img: '/assets/IMG01_0074.jpg',
+    img: '/assets/IMG01_0074_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3592,7 +3592,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----S3--4---------------189
   game.push(new Location({
-    img: '/assets/IMG01_0099.jpg',
+    img: '/assets/IMG01_0099_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3607,7 +3607,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-----------1-----------190
   game.push(new Location({
-    img: '/assets/IMG01_0033.jpg',
+    img: '/assets/IMG01_0033_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's0',
@@ -3626,7 +3626,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
     
 #--------1-1-----------191
   game.push(new Location({
-    img: '/assets/IMG01_033.jpg',
+    img: '/assets/IMG01_033_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's0',
@@ -3645,7 +3645,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------1-2-----------192
   game.push(new Location({
-    img: '/assets/IMG01_0033.jpg',
+    img: '/assets/IMG01_0033_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's0',
@@ -3665,7 +3665,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------1-3-----------193
   game.push(new Location({
-    img: '/assets/IMG01_0033.jpg',
+    img: '/assets/IMG01_0033_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's0',
@@ -3684,7 +3684,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #-------2-----------194
   game.push(new Location({
-    img: '/assets/IMG01_0036.jpg',
+    img: '/assets/IMG01_0036_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's1',
@@ -3706,7 +3706,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------2-1-----------195
   game.push(new Location({
-    img: '/assets/IMG01_0031.jpg',
+    img: '/assets/IMG01_0031_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's2',
@@ -3722,7 +3722,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------2-2----------196
   game.push(new Location({
-    img: '/assets/IMG01_0031.jpg',
+    img: '/assets/IMG01_0031_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's2',
@@ -3738,7 +3738,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------3-----------197
   game.push(new Location({
-    img: '/assets/IMG01_0031.jpg',
+    img: '/assets/IMG01_0031_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3759,7 +3759,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------3-1-----------198
   game.push(new Location({
-    img: '/assets/IMG01_0032.jpg',
+    img: '/assets/IMG01_0032_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3777,7 +3777,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------4-----------199
   game.push(new Location({
-    img: '/assets/IMG01_0036.jpg',
+    img: '/assets/IMG01_0036_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's5',
@@ -3796,7 +3796,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------4-1----------200
   game.push(new Location({
-    img: '/assets/IMG01_0037.jpg',
+    img: '/assets/IMG01_0037_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3814,7 +3814,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------1-----------201
   game.push(new Location({
-    img: '/assets/IMG01_0036.jpg',
+    img: '/assets/IMG01_0036_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's6',
@@ -3833,7 +3833,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------2-----------202
   game.push(new Location({
-    img: '/assets/IMG01_0035.jpg',
+    img: '/assets/IMG01_0035_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's7',
@@ -3852,7 +3852,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------2-1-----------203
   game.push(new Location({
-    img: '/assets/IMG01_0034.jpg',
+    img: '/assets/IMG01_0034_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3870,7 +3870,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------2-2-----------204
   game.push(new Location({
-    img: '/assets/IMG01_0034.jpg',
+    img: '/assets/IMG01_0034_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3888,7 +3888,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------3-1-----------205
   game.push(new Location({
-    img: '/assets/IMG01_0005.jpg',
+    img: '/assets/IMG01_0005_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3909,7 +3909,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------3-2------------206
   game.push(new Location({
-    img: '/assets/IMG01_0005.jpg',
+    img: '/assets/IMG01_0005_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3927,7 +3927,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------4------------207
   game.push(new Location({
-    img: '/assets/IMG01_0035.jpg',
+    img: '/assets/IMG01_0035_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's8',
@@ -3946,7 +3946,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #--------4-1------------208
   game.push(new Location({
-    img: '/assets/IMG01_0034.jpg',
+    img: '/assets/IMG01_0034_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3965,7 +3965,7 @@ teatrze.</a>'
 
 #--------4-2------------209
   game.push(new Location({
-    img: '/assets/IMG01_0034.jpg',
+    img: '/assets/IMG01_0034_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3984,7 +3984,7 @@ teatrze.</a>'
 
 #--------1------------210
   game.push(new Location({
-    img: '/assets/IMG01_0004.jpg',
+    img: '/assets/IMG01_0004_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -3999,7 +3999,7 @@ teatrze.</a>'
 
 #--------2------------211
   game.push(new Location({
-    img: '/assets/IMG01_0004.jpg',
+    img: '/assets/IMG01_0004_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4017,7 +4017,7 @@ teatrze.</a>'
 
 #--------2-1------------212
   game.push(new Location({
-    img: '/assets/IMG01_0004.jpg',
+    img: '/assets/IMG01_0004_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4032,7 +4032,7 @@ teatrze.</a>'
 
 #--------2-1-1------------213
   game.push(new Location({
-    img: '/assets/IMG01_0004.jpg',
+    img: '/assets/IMG01_0004_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4050,7 +4050,7 @@ teatrze.</a>'
 
 #--------1-----------214
   game.push(new Location({
-    img: '/assets/IMG01_0011.jpg',
+    img: '/assets/IMG01_0011_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's9',
@@ -4069,7 +4069,7 @@ teatrze.</a>'
 
 #--------2-----------215
   game.push(new Location({
-    img: '/assets/IMG01_0013.jpg',
+    img: '/assets/IMG01_0013_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's10',
@@ -4085,7 +4085,7 @@ teatrze.</a>'
 
 #--------3-----------216
   game.push(new Location({
-    img: '/assets/IMG01_0013.jpg',
+    img: '/assets/IMG01_0013_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4103,7 +4103,7 @@ teatrze.</a>'
 
 #--------4-----------217
   game.push(new Location({
-    img: '/assets/IMG01_0013.jpg',
+    img: '/assets/IMG01_0013_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's12',
@@ -4123,7 +4123,7 @@ teatrze.</a>'
 
 #--------4-1-----------218
   game.push(new Location({
-    img: '/assets/IMG01_0013.jpg',
+    img: '/assets/IMG01_0013_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's13',
@@ -4139,7 +4139,7 @@ teatrze.</a>'
 
 #-------4-2-----------219
   game.push(new Location({
-    img: '/assets/IMG01_0013.jpg',
+    img: '/assets/IMG01_0013_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4157,7 +4157,7 @@ teatrze.</a>'
 
 #--------5-----------220
   game.push(new Location({
-    img: '/assets/IMG01_0020.jpg',
+    img: '/assets/IMG01_0020_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's16',
@@ -4176,7 +4176,7 @@ teatrze.</a>'
 
 #--------5-1-----------221
   game.push(new Location({
-    img: '/assets/IMG01_0020.jpg',
+    img: '/assets/IMG01_0020_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's15',
@@ -4192,7 +4192,7 @@ teatrze.</a>'
 
 #----------6-----------222
   game.push(new Location({
-    img: '/assets/IMG01_0020.jpg',
+    img: '/assets/IMG01_0020_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's18',
@@ -4211,7 +4211,7 @@ teatrze.</a>'
 
 #----------7-----------223
   game.push(new Location({
-    img: '/assets/IMG01_0022.jpg',
+    img: '/assets/IMG01_0022_m.jpg',
     active: true,
     activeState: 'a',
     sound: 's19',
@@ -4230,7 +4230,7 @@ teatrze.</a>'
 #-----MIESZKANIE-ZNAJOMEGO-----------------------
 #----------1a----------224
   game.push(new Location({
-    img: '/assets/IMG01_0103.jpg',
+    img: '/assets/IMG01_0103_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4251,7 +4251,7 @@ teatrze.</a>'
 
 #----------1b----------225
   game.push(new Location({
-    img: '/assets/IMG01_0104.jpg',
+    img: '/assets/IMG01_0104_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4272,7 +4272,7 @@ teatrze.</a>'
 
 #----------1c----------226
   game.push(new Location({
-    img: '/assets/IMG01_0104.jpg',
+    img: '/assets/IMG01_0104_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4290,7 +4290,7 @@ teatrze.</a>'
 
 #----------1d----------227
   game.push(new Location({
-    img: '/assets/IMG01_0104.jpg',
+    img: '/assets/IMG01_0104_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4318,7 +4318,7 @@ teatrze.</a>'
 
 #----------1e----------228
   game.push(new Location({
-    img: '/assets/IMG01_0104.jpg',
+    img: '/assets/IMG01_0104_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4338,7 +4338,7 @@ teatrze.</a>'
 
 #----------1f----------229
   game.push(new Location({
-    img: '/assets/IMG01_0102.jpg',
+    img: '/assets/IMG01_0102_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4358,7 +4358,7 @@ teatrze.</a>'
 
 #----------1g----------230
   game.push(new Location({
-    img: '/assets/IMG01_0101.jpg',
+    img: '/assets/IMG01_0101_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4373,7 +4373,7 @@ teatrze.</a>'
 
 #----------1h----------231
   game.push(new Location({
-    img: '/assets/IMG01_0100.jpg',
+    img: '/assets/IMG01_0100_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4393,7 +4393,7 @@ teatrze.</a>'
 
 #----------1i----------232
   game.push(new Location({
-    img: '/assets/IMG01_0104.jpg',
+    img: '/assets/IMG01_0104_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4417,7 +4417,7 @@ teatrze.</a>'
 
 #----------1j----------233
   game.push(new Location({
-    img: '/assets/IMG01_0102.jpg',
+    img: '/assets/IMG01_0102_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4437,7 +4437,7 @@ teatrze.</a>'
 
 #----------1x----------234
   game.push(new Location({
-    img: '/assets/IMG01_0104.jpg',
+    img: '/assets/IMG01_0104_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4452,7 +4452,7 @@ teatrze.</a>'
 
 #----------1z----------235
   game.push(new Location({
-    img: '/assets/IMG01_0099.jpg',
+    img: '/assets/IMG01_0099_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4467,7 +4467,7 @@ teatrze.</a>'
 
 #----------2a----------236
   game.push(new Location({
-    img: '/assets/IMG01_0098.jpg',
+    img: '/assets/IMG01_0098_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4482,7 +4482,7 @@ teatrze.</a>'
 
 #----------2b----------237
   game.push(new Location({
-    img: '/assets/IMG01_0098.jpg',
+    img: '/assets/IMG01_0098_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4503,7 +4503,7 @@ teatrze.</a>'
 
 #----------2c----------238
   game.push(new Location({
-    img: '/assets/IMG01_0098.jpg',
+    img: '/assets/IMG01_0098_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4526,7 +4526,7 @@ teatrze.</a>'
 
 #----------2d----------239
   game.push(new Location({
-    img: '/assets/IMG01_0098.jpg',
+    img: '/assets/IMG01_0098_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4541,7 +4541,7 @@ teatrze.</a>'
 
 #----------2e----------240
   game.push(new Location({
-    img: '/assets/IMG01_0098.jpg',
+    img: '/assets/IMG01_0098_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4556,7 +4556,7 @@ teatrze.</a>'
 
 #----------2f----------241
   game.push(new Location({
-    img: '/assets/IMG01_0095.jpg',
+    img: '/assets/IMG01_0095_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4581,7 +4581,7 @@ teatrze.</a>'
 
 #----------2g----------242  
   game.push(new Location({
-    img: '/assets/IMG01_0096.jpg',
+    img: '/assets/IMG01_0096_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4596,7 +4596,7 @@ teatrze.</a>'
 
 #----------2h----------243
   game.push(new Location({
-    img: '/assets/IMG01_0091.jpg',
+    img: '/assets/IMG01_0091_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4614,7 +4614,7 @@ teatrze.</a>'
 
 #----------2i----------244
   game.push(new Location({
-    img: '/assets/IMG01_0091.jpg',
+    img: '/assets/IMG01_0091_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4631,7 +4631,7 @@ teatrze.</a>'
 
 #----------2j----------245 a, b, c
   game.push(new Location({
-    img: '/assets/IMG01_0091.jpg',
+    img: '/assets/IMG01_0091_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4662,7 +4662,7 @@ teatrze.</a>'
 
 #----------2z----------246
   game.push(new Location({
-    img: '/assets/IMG01_0098.jpg',
+    img: '/assets/IMG01_0098_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4679,7 +4679,7 @@ teatrze.</a>'
 
 #----------3a----------247
   game.push(new Location({
-    img: '/assets/IMG01_0093.jpg',
+    img: '/assets/IMG01_0093_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4700,7 +4700,7 @@ teatrze.</a>'
 
 #----------3b----------248
   game.push(new Location({
-    img: '/assets/IMG01_0094.jpg',
+    img: '/assets/IMG01_0094_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4722,7 +4722,7 @@ teatrze.</a>'
 
 #----------3c----------249
   game.push(new Location({
-    img: '/assets/IMG01_0093.jpg',
+    img: '/assets/IMG01_0093_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4744,7 +4744,7 @@ teatrze.</a>'
 
 #----------3d----------250
   game.push(new Location({
-    img: '/assets/IMG01_0092.jpg',
+    img: '/assets/IMG01_0092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4762,7 +4762,7 @@ teatrze.</a>'
 
 #----------4a----------251
   game.push(new Location({
-    img: '/assets/IMG01_0090.jpg',
+    img: '/assets/IMG01_0090_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4777,7 +4777,7 @@ teatrze.</a>'
 
 #----------4b----------252
   game.push(new Location({
-    img: '/assets/IMG01_0092.jpg',
+    img: '/assets/IMG01_0092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4792,7 +4792,7 @@ teatrze.</a>'
 
 #----------4c----------253
   game.push(new Location({
-    img: '/assets/IMG01_0092.jpg',
+    img: '/assets/IMG01_0092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4807,7 +4807,7 @@ teatrze.</a>'
 
 #----------4d----------254
   game.push(new Location({
-    img: '/assets/IMG01_0092.jpg',
+    img: '/assets/IMG01_0092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4822,7 +4822,7 @@ teatrze.</a>'
 
 #----------4e----------255
   game.push(new Location({
-    img: '/assets/IMG01_0089.jpg',
+    img: '/assets/IMG01_0089_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4837,7 +4837,7 @@ teatrze.</a>'
 
 #----------4f----------256
   game.push(new Location({
-    img: '/assets/IMG01_0089.jpg',
+    img: '/assets/IMG01_0089_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4856,7 +4856,7 @@ teatrze.</a>'
 #---------PASMENTERIA---------------#
 #--------1------------------------257
   game.push(new Location({
-    img: '/assets/IMG01_0012.jpg',
+    img: '/assets/IMG01_0012_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4874,7 +4874,7 @@ teatrze.</a>'
 
 #--------1.2----------------------258
   game.push(new Location({
-    img: '/assets/IMG01_0016.jpg',
+    img: '/assets/IMG01_0016_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4895,7 +4895,7 @@ teatrze.</a>'
 
 #--------1.2.1--------------------259
   game.push(new Location({
-    img: '/assets/IMG01_0016.jpg',
+    img: '/assets/IMG01_0016_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4910,7 +4910,7 @@ teatrze.</a>'
 
 #--------1.1----------------------260
   game.push(new Location({
-    img: '/assets/IMG01_0016.jpg',
+    img: '/assets/IMG01_0016_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4928,7 +4928,7 @@ teatrze.</a>'
 
 #--------1.2.1.2------------------261
   game.push(new Location({
-    img: '/assets/IMG01_0016.jpg',
+    img: '/assets/IMG01_0016_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4943,7 +4943,7 @@ teatrze.</a>'
 
 #--------1.2.1.2.1----------------262
   game.push(new Location({
-    img: '/assets/IMG01_0016.jpg',
+    img: '/assets/IMG01_0016_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4958,7 +4958,7 @@ teatrze.</a>'
 
 #--------1.2.1.2.2----------------263
   game.push(new Location({
-    img: '/assets/IMG01_0016.jpg',
+    img: '/assets/IMG01_0016_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4976,7 +4976,7 @@ teatrze.</a>'
 
 #--------1.2.1.2.2.1--------------264
   game.push(new Location({
-    img: '/assets/IMG01_0016.jpg',
+    img: '/assets/IMG01_0016_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4991,7 +4991,7 @@ teatrze.</a>'
 
 #--------2------------------------265
   game.push(new Location({
-    img: '/assets/IMG01_0027.jpg',
+    img: '/assets/IMG01_0027_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5006,7 +5006,7 @@ teatrze.</a>'
 
 #--------2.1----------------------266
   game.push(new Location({
-    img: '/assets/IMG01_0027.jpg',
+    img: '/assets/IMG01_0027_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5024,7 +5024,7 @@ teatrze.</a>'
 
 #--------2.1.1--------------------267
   game.push(new Location({
-    img: '/assets/IMG01_0027.jpg',
+    img: '/assets/IMG01_0027_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5039,7 +5039,7 @@ teatrze.</a>'
 
 #--------2.1.2--------------------268
   game.push(new Location({
-    img: '/assets/IMG01_0027.jpg',
+    img: '/assets/IMG01_0027_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5054,7 +5054,7 @@ teatrze.</a>'
 
 #--------3------------------------269
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5069,7 +5069,7 @@ teatrze.</a>'
 
 #--------3.1----------------------270
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5087,7 +5087,7 @@ teatrze.</a>'
 
 #--------3.2.1--------------------271
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5102,7 +5102,7 @@ teatrze.</a>'
 
 #--------3.1.1--------------------272
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5117,7 +5117,7 @@ teatrze.</a>'
 
 #--------3.1.1.1------------------273
   game.push(new Location({
-    img: '//assets/IMG01_0007.jpg',
+    img: '//assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5132,7 +5132,7 @@ teatrze.</a>'
 
 #--------3.1.2--------------------274
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5147,7 +5147,7 @@ teatrze.</a>'
 
 #--------3.2.1.1------------------275
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5165,7 +5165,7 @@ teatrze.</a>'
 
 #--------3.2.1.1.2----------------276
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5180,7 +5180,7 @@ teatrze.</a>'
 
 #--------3.2.1.1.1----------------277
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5201,7 +5201,7 @@ teatrze.</a>'
 
 #--------3.2.1.1.1.2--------------278
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5216,7 +5216,7 @@ teatrze.</a>'
 
 #--------3.2.1.1.1.1--------------279
   game.push(new Location({
-    img: '/assets/IMG01_0007.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5231,7 +5231,7 @@ teatrze.</a>'
 
 #--------4------------------------280
   game.push(new Location({
-    img: '/assets/IMG01_0014.jpg',
+    img: '/assets/IMG01_0014_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5246,7 +5246,7 @@ teatrze.</a>'
 
 #--------4.1----------------------281
   game.push(new Location({
-    img: '/assets/IMG01_0014.jpg',
+    img: '/assets/IMG01_0014_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5267,7 +5267,7 @@ teatrze.</a>'
 
 #--------4.1.1--------------------282
   game.push(new Location({
-    img: '/assets/IMG01_0027.jpg',
+    img: '/assets/IMG01_0027_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5285,7 +5285,7 @@ teatrze.</a>'
 
 #--------4.1.2--------------------283
   game.push(new Location({
-    img: '/assets/IMG01_0030.jpg',
+    img: '/assets/IMG01_0030_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5306,7 +5306,7 @@ teatrze.</a>'
 
 #--------4.1.2.1------------------284
   game.push(new Location({
-    img: '/assets/IMG01_0030.jpg',
+    img: '/assets/IMG01_0030_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5321,7 +5321,7 @@ teatrze.</a>'
 
 #--------4.1.2.2------------------285
   game.push(new Location({
-    img: '/assets/IMG01_0025.jpg',
+    img: '/assets/IMG01_0025_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5336,7 +5336,7 @@ teatrze.</a>'
 
 #--------4.1.2.3------------------286
   game.push(new Location({
-    img: '/assets/IMG01_0030.jpg',
+    img: '/assets/IMG01_0030_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5351,7 +5351,7 @@ teatrze.</a>'
 
 #--------4.1.3--------------------287
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5372,7 +5372,7 @@ teatrze.</a>'
 
 #--------4.1.3.1------------------288
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5390,7 +5390,7 @@ teatrze.</a>'
 
 #--------4.1.3.1.1----------------289
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5408,7 +5408,7 @@ teatrze.</a>'
 
 #--------4.1.3.1.2----------------290
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5426,7 +5426,7 @@ teatrze.</a>'
 
 #--------4.1.3.1.1.1--------------291
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5441,7 +5441,7 @@ teatrze.</a>'
 
 #--------4.1.3.1.1.2--------------292
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5456,7 +5456,7 @@ teatrze.</a>'
 
 #--------4.1.3.1.1.2.1------------293
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5471,7 +5471,7 @@ teatrze.</a>'
 
 #--------4.1.3.1.1.1.2------------294
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5486,7 +5486,7 @@ teatrze.</a>'
 
 #--------4.1.3.2------------------295
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5504,7 +5504,7 @@ teatrze.</a>'
 
 #--------4.1.3.2.1----------------296
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5522,7 +5522,7 @@ teatrze.</a>'
 
 #--------4.1.3.2.1.1--------------297
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5537,7 +5537,7 @@ teatrze.</a>'
 
 #--------4.1.3.2.1.2--------------298
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5552,7 +5552,7 @@ teatrze.</a>'
 
 #--------4.1.3.2.1.1.1------------299
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5567,7 +5567,7 @@ teatrze.</a>'
 
 #--------4.1.3.2.2----------------300
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5582,7 +5582,7 @@ teatrze.</a>'
 
 #--------4.1.3.2.2.1--------------301
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5600,7 +5600,7 @@ teatrze.</a>'
 
 #--------4.1.3.2.2.1.1------------302
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5615,7 +5615,7 @@ teatrze.</a>'
 
 #--------4.1.3.3------------------303
   game.push(new Location({
-    img: '/assets/obrazki/aaaaa.jpg',
+    img: '/assets/obrazki/aaaaa_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5633,7 +5633,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.1----------------304
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5651,7 +5651,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.1.1--------------305
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5666,7 +5666,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.1.2--------------306
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5681,7 +5681,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.1.1.1------------307
   game.push(new Location({
-    img: '//assets/IMG01_0006.jpg',
+    img: '//assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5696,7 +5696,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.2----------------308
   game.push(new Location({
-    img: '/assets/IMG01_0006.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5711,7 +5711,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.2.1--------------309
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5729,7 +5729,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.2.1.1------------310
   game.push(new Location({
-    img: '/assets/IMG01_0015.jpg',
+    img: '/assets/IMG01_0015_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5744,7 +5744,7 @@ teatrze.</a>'
 
 #--------5------------------------311
   game.push(new Location({
-    img: '/assets/IMG01_0017.jpg',
+    img: '/assets/IMG01_0017_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5759,7 +5759,7 @@ teatrze.</a>'
 
 #--------5.1----------------------312
   game.push(new Location({
-    img: '/assets/IMG01_0017.jpg',
+    img: '/assets/IMG01_0017_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5780,7 +5780,7 @@ teatrze.</a>'
 
 #--------5.1.1--------------------313
   game.push(new Location({
-    img: '/assets/IMG01_0017.jpg',
+    img: '/assets/IMG01_0017_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5795,7 +5795,7 @@ teatrze.</a>'
 
 #--------5.1.2--------------------314
   game.push(new Location({
-    img: '/assets/IMG01_0017.jpg',
+    img: '/assets/IMG01_0017_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5810,7 +5810,7 @@ teatrze.</a>'
 
 #--------5.1.3--------------------315
   game.push(new Location({
-    img: '/assets/IMG01_0017.jpg',
+    img: '/assets/IMG01_0017_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5828,7 +5828,7 @@ teatrze.</a>'
 
 #--------5.1.2.1------------------316
   game.push(new Location({
-    img: '/assets/IMG01_0023.jpg',
+    img: '/assets/IMG01_0023_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5845,7 +5845,7 @@ teatrze.</a>'
 #------------TEATR----------------
 #--------1a------------------317
   game.push(new Location({
-    img: '/assets/IMG01_0059.jpg',
+    img: '/assets/IMG01_0059_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5860,7 +5860,7 @@ teatrze.</a>'
 
 #--------1b------------------318
   game.push(new Location({
-    img: '/assets/IMG01_0059.jpg',
+    img: '/assets/IMG01_0059_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5878,7 +5878,7 @@ teatrze.</a>'
 
 #--------1c------------------319
   game.push(new Location({
-    img: '/assets/IMG01_0059.jpg',
+    img: '/assets/IMG01_0059_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5893,7 +5893,7 @@ teatrze.</a>'
 
 #--------1d------------------320
   game.push(new Location({
-    img: '/assets/IMG01_0059.jpg',
+    img: '/assets/IMG01_0059_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5908,7 +5908,7 @@ teatrze.</a>'
 
 #--------2a------------------321
   game.push(new Location({
-    img: '/assets/IMG01_0087.jpg',
+    img: '/assets/IMG01_0087_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5927,7 +5927,7 @@ teatrze.</a>'
 
 #--------2b------------------322
   game.push(new Location({
-    img: '/assets/IMG01_0087.jpg',
+    img: '/assets/IMG01_0087_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5942,7 +5942,7 @@ teatrze.</a>'
 
 #--------2c------------------323
   game.push(new Location({
-    img: '/assets/IMG01_0081.jpg',
+    img: '/assets/IMG01_0081_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5969,7 +5969,7 @@ teatrze.</a>'
 
 #--------2d------------------324
   game.push(new Location({
-    img: '/assets/IMG01_0081.jpg',
+    img: '/assets/IMG01_0081_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5984,7 +5984,7 @@ teatrze.</a>'
 
 #--------2e------------------325
   game.push(new Location({
-    img: '/assets/IMG01_0081.jpg',
+    img: '/assets/IMG01_0081_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5999,7 +5999,7 @@ teatrze.</a>'
 
 #--------2f------------------326
   game.push(new Location({
-    img: '/assets/IMG01_0081.jpg',
+    img: '/assets/IMG01_0081_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6017,7 +6017,7 @@ teatrze.</a>'
 
 #--------2g------------------327
   game.push(new Location({
-    img: '/assets/IMG01_0085.jpg',
+    img: '/assets/IMG01_0085_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6042,7 +6042,7 @@ teatrze.</a>'
 
 #--------2h------------------328
   game.push(new Location({
-    img: '/assets/IMG01_0081.jpg',
+    img: '/assets/IMG01_0081_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6057,7 +6057,7 @@ teatrze.</a>'
 
 #--------2i------------------329
   game.push(new Location({
-    img: '/assets/IMG01_0087.jpg',
+    img: '/assets/IMG01_0087_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6072,7 +6072,7 @@ teatrze.</a>'
 
 #--------2j------------------330
   game.push(new Location({
-    img: '/assets/IMG01_0081.jpg',
+    img: '/assets/IMG01_0081_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6087,7 +6087,7 @@ teatrze.</a>'
 
 #--------3a------------------331
   game.push(new Location({
-    img: '//assets/IMG01_0084.jpg',
+    img: '//assets/IMG01_0084_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6103,7 +6103,7 @@ teatrze.</a>'
 
 #--------3b------------------332
   game.push(new Location({
-    img: '/assets/IMG01_0082.jpg',
+    img: '/assets/IMG01_0082_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6118,7 +6118,7 @@ teatrze.</a>'
 
 #--------3c------------------333
   game.push(new Location({
-    img: '/assets/IMG01_0082.jpg',
+    img: '/assets/IMG01_0082_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6139,7 +6139,7 @@ teatrze.</a>'
 
 #--------3d------------------334
   game.push(new Location({
-    img: '/assets/IMG01_0082.jpg',
+    img: '/assets/IMG01_0082_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6160,7 +6160,7 @@ teatrze.</a>'
 
 #--------3e------------------335
   game.push(new Location({
-    img: '/assets/IMG01_0082.jpg',
+    img: '/assets/IMG01_0082_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6200,7 +6200,7 @@ teatrze.</a>'
 
 #--------3f------------------336
   game.push(new Location({
-    img: '/assets/IMG01_0082.jpg',
+    img: '/assets/IMG01_0082_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6240,7 +6240,7 @@ teatrze.</a>'
 
 #--------3g------------------337
   game.push(new Location({
-    img: '/assets/IMG01_0082.jpg',
+    img: '/assets/IMG01_0082_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6280,7 +6280,7 @@ teatrze.</a>'
 
 #--------3i------------------338
   game.push(new Location({
-    img: '/assets/IMG01_0062.jpg',
+    img: '/assets/IMG01_0062_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6298,7 +6298,7 @@ teatrze.</a>'
 
 #--------3j------------------339
   game.push(new Location({
-    img: '/assets/IMG01_0064.jpg',
+    img: '/assets/IMG01_0064_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6313,7 +6313,7 @@ teatrze.</a>'
 
 #--------1------------------340
   game.push(new Location({
-    img: '/assets/IMG01_0066.jpg',
+    img: '/assets/IMG01_0066_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6328,7 +6328,7 @@ teatrze.</a>'
 
 #--------2------------------341
   game.push(new Location({
-    img: '/assets/IMG01_0064.jpg',
+    img: '/assets/IMG01_0064_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6347,7 +6347,7 @@ teatrze.</a>'
 
 #--------3------------------342
   game.push(new Location({
-    img: '/assets/IMG01_0063.jpg',
+    img: '/assets/IMG01_0063_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6366,7 +6366,7 @@ teatrze.</a>'
 
 #--------4------------------343
   game.push(new Location({
-    img: '/assets/IMG01_0065.jpg',
+    img: '/assets/IMG01_0065_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6385,7 +6385,7 @@ teatrze.</a>'
 
 #--------5------------------344
   game.push(new Location({
-    img: '//assets/IMG01_0062.jpg',
+    img: '//assets/IMG01_0062_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6403,7 +6403,7 @@ teatrze.</a>'
 
 #--------5------------------345
   game.push(new Location({
-    img: '/assets/IMG01_0088.jpg',
+    img: '/assets/IMG01_0088_m.jpg',
     active: true,
     activeState: 'a',
     states: {
