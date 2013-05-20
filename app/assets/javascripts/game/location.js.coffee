@@ -20,7 +20,7 @@ class Location
   bindGame: (@game, @id) ->
   
   state: (activeState) ->
-    return @activeState if @activeState == activeState
+    #return @activeState if @activeState == activeState
     @states[@activeState].disable() if @activeState
     @disableSound()
     @activeState = activeState
