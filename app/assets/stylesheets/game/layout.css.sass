@@ -4,9 +4,18 @@ body,
 html
   margin: 0
   padding: 0
-  background: #756359
+  background: #000000
   font-family: 'Times New Roman'
   font-size: 14pt
+  color: #756359
+  height: 100%
+
+a
+  text-decoration: none
+  color: #756359
+  &:hover
+    color: red
+  font-size: 20pt
 
 .game-container,
 .map-container
@@ -44,4 +53,12 @@ html
     color: #756359
     &:hover
       color: red
+    font-size: 14pt
+
+.center-wrapper
+  width: 100%
+  height: 100%
+  td
+    vertical-align: middle
+    text-align: center
 

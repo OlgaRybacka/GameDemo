@@ -6385,7 +6385,7 @@ teatrze.</a>'
 
 #--------5------------------344
   game.push(new Location({
-    img: '//assets/IMG01_0062.jpg',
+    img: '/assets/IMG01_0062.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -6422,7 +6422,7 @@ teatrze.</a>'
     },
   }))
   game.pushAction "gotoEND", =>
-    game.goto(0)
+    window.location.pathname = '/'
 
 
 

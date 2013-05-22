@@ -1,5 +1,7 @@
 Game::Application.routes.draw do
   root :to => "home#index"
+  match '/game' => 'home#game'
+  match '/credits' => 'home#credits'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
