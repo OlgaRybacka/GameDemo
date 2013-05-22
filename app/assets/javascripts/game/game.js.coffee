@@ -6418,12 +6418,12 @@ teatrze.</a>'
       }),
       d: new LocationState({
         text: 'Jesteś bardziej skołowany tym, co działo się dzisiejszego dnia, niż zmęczony. Wracasz do swojego mieszkania, otwierasz główne drzwi...<br/>Przez chwilę, krótką chwilę, nie rozumiesz. Potem zaczynasz. Powinieneś się tego domyślić, że rozwiązanie jest na początku: w końcu poszukiwałeś Ewy - tej pierwszej.<br/>Ewa stoi na klatce schodowej. Nawet na ciebie nie czeka. Po prostu tam jest. Zanim zrozumiesz w pełni, zanim zdążysz otworzyć usta, słyszysz jej słowa: <br/>Ewa: <i>Nareszcie jesteś! Dzisiejszy dzień był dość dziwny, nie sądzisz? A  może nawet był najbardziej niezwykły ze wszystkich? Nie jesteś nieco skołowany? Nie wydaje ci się, że śniłeś? A może stwierdziłeś, że ktoś ci dosypał jakiejś dziwnej substancji do herbaty? To co zaszło, było iluzją. Ludzie, których spotkałeś, grali. Doskonale wpisali się w mój scenariusz. Tak, tak, mój scenariusz. Wreszcie mogę ci to powiedzieć – to ja wszystko wymyśliłam. Oczywiście z pomocą paru znajomych, ale, co ja gadam! Wkręciłam w tę akcję pół Poznania! Niezły Truman Show… <br/>Wybacz, że cię ci zrobiliśmy taką wodę z mózgu, ale nie miałam innego pomysłu, żeby ratować ten związek. Sam wiesz, że niczego nie rozwiązuje w konwencjonalny sposób. Zanim zaczniesz na mnie krzyczeć i prawić kazania, że to niemoralne, pomyśl, ile mnie to kosztowało. Ta pazerna cyganka, kazała sobie słono zapłacić, ale powiedziała, że jeśli się tu zjawisz, po przejściu moich sprawdzianów, to wszystkie ciemne chmury się rozwieją. No, i jesteś… Widzisz, jesteśmy dla siebie stworzeni, a jak zostaniemy razem, to nie będziesz się ze mną nudził. Przecież my nigdy nie byliśmy normalni. Cały nasz związek to jeden wielki cyrk, a ja chcę z tobą zostać, mimo wszystko.<br/>Byłam cały czas informowana, co robisz i mówisz, trochę cię nawet śledziłam i muszę stwierdzić, że tobie naprawdę na mnie zależy! Nic nie mów, po prostu chodźmy się rozerwać. Zamówiłam dla nas stolik. Blady coś jesteś, nie dziwię się. Może zanim wyjdziemy to odpoczniesz chwilę. Zrobię ci herbaty i spokojnie sobie to wszystko przemyślisz. <br/>Nazywaj mnie świrem, śmiej się ze mnie, wkurzaj, cokolwiek. Możesz nawet obmyślić zemstę, i będę nawet z ciebie dumna, jak przebijesz takiego dzikusa, jak ja! Ale zostańmy razem, cholernie za tobą tęskniłam…. I udowodniłeś, że ty za mną też.</i><br/><br/><a href="do:gotoEND">1: [KONIEC]</a>'
+
       })
     },
   }))
   game.pushAction "gotoEND", =>
     window.location.pathname = '/'
-
 
 
   $('a').live('click', (e) ->
