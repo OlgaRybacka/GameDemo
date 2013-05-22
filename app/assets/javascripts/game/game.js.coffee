@@ -6087,7 +6087,7 @@ teatrze.</a>'
 
 #--------3a------------------331
   game.push(new Location({
-    img: '//assets/IMG01_0084_m.jpg',
+    img: '/assets/IMG01_0084_m.jpg',
     active: true,
     activeState: 'a',
     states: {
