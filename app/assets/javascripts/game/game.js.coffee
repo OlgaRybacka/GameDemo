@@ -4641,7 +4641,7 @@ teatrze.</a>'
       b: new LocationState({
         text: 'Twoja zupka nie spełnia wymogów Melona oraz Instytutu Matki i Dziecka. Masz jeszcze tylko jedną szansę.<br/><br/><a href="do:MZ_245B">1: [Spróbuj ponownie]</a>'
       }),
-      C: new LocationState({
+      c: new LocationState({
         text: 'Twoja zupka nie spełnia wymogów Melona oraz Instytutu Matki i Dziecka.<br/><br/><a href="do:MZ_245C">1: [Przetrząśnij kuchnię w poszukiwaniu zupki.]</a>'
       })
     },
