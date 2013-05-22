@@ -14,9 +14,9 @@ $ ->
       transform: "translateY(#{translate}px) scale(#{scale})"
       'transform-origin': '50% 0'
       })
+#  resize()
+#  $(window).resize(resize)
+#  window.setTimeout(->
+#      resize()
+#    , 1)
 
-  #resize()
-  #$(window).resize(resize)
-  #window.setTimeout(->
-  #    resize()
-  #  , 1)
