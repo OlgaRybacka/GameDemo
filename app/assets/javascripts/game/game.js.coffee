@@ -2499,7 +2499,7 @@ smutkiem patrzy Ci w oczy.<br/>Ewa: <i>Przepraszam...</i><br/>Od tej chwili wszy
 
 #----------UO-2N---------123
   game.push(new Location({
-    img: '//assets/IMG01_0046_m.jpg',
+    img: '/assets/IMG01_0046_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4744,7 +4744,7 @@ teatrze.</a>'
 
 #----------3d----------250
   game.push(new Location({
-    img: '/assets/IMG01_0092_m.jpg',
+    img: '/assets/IMG01_00092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4777,7 +4777,7 @@ teatrze.</a>'
 
 #----------4b----------252
   game.push(new Location({
-    img: '/assets/IMG01_0092_m.jpg',
+    img: '/assets/IMG01_00092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4792,7 +4792,7 @@ teatrze.</a>'
 
 #----------4c----------253
   game.push(new Location({
-    img: '/assets/IMG01_0092_m.jpg',
+    img: '/assets/IMG01_00092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -4807,7 +4807,7 @@ teatrze.</a>'
 
 #----------4d----------254
   game.push(new Location({
-    img: '/assets/IMG01_0092_m.jpg',
+    img: '/assets/IMG01_00092_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5117,7 +5117,7 @@ teatrze.</a>'
 
 #--------3.1.1.1------------------273
   game.push(new Location({
-    img: '//assets/IMG01_0007_m.jpg',
+    img: '/assets/IMG01_0007_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5267,7 +5267,7 @@ teatrze.</a>'
 
 #--------4.1.1--------------------282
   game.push(new Location({
-    img: '/assets/IMG01_0027_m.jpg',
+    img: '/assets/IMG01_0014_m.jpg',
     active: true,
     activeState: 'a',
     states: {
@@ -5681,7 +5681,7 @@ teatrze.</a>'
 
 #--------4.1.3.3.1.1.1------------307
   game.push(new Location({
-    img: '//assets/IMG01_0006_m.jpg',
+    img: '/assets/IMG01_0006_m.jpg',
     active: true,
     activeState: 'a',
     states: {
